@@ -56,22 +56,22 @@
             <h2>Nasz zespół</h2>
                 <figure>
         <img src="../images/JohnDoe.jpg" alt="John Doe" width="270" height="260"><figcaption>
-                <p>John Doe</p>
+                <p><b>John Doe</b></p>
                 <p>Product Designer</p>
             </figcaption></figure>
             <figure>
             <img src="../images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"><figcaption>
-                <p>John Doe</p>
+                <p><b>John Doe</b></p>
                 <p>Frontend Developer</p>
             </figcaption></figure>
             <figure>
             <img src="../images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"><figcaption>
-                <p>John Doe</p>
+                <p><b>John Doe</b></p>
                 <p>Marketing</p>
             </figcaption></figure>
             <figure>
             <img src="../images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"><figcaption>
-                <p>John Doe</p>
+                <p><b>John Doe</b></p>
                 <p>UI Designer</p>
             </figcaption></figure>
             </section>
