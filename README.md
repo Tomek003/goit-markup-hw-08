@@ -46,7 +46,7 @@
      <footer>
         <h3><a href="text">Webstudio</a></h3>
         <div>
-            <a href="text">m. Warszawa, al. Jerozolimskie 21</a>
+            <address>m. Warszawa, al. Jerozolimskie 21</address>
             <a href="mailto:info@example.com">info@example.com</a>
             <a href="tel:+48111111111">+48 111 111 111</a>
         </div>
