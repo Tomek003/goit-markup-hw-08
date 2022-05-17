@@ -37,6 +37,11 @@
                 <img src="../zadanie1/images/image2.jpg" alt="Image2" width="370" height="294">
                 <img src="../zadanie1/images/image3.jpg" alt="Image3" width="370" height="294">
             </div>
+            <h2>Nasz zespół</h2>
+            <img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260">
+            <img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260">
+            <img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
+            <img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260">
         </main>
      <footer>
         <h3><a href="text">Webstudio</a></h3>
