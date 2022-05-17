@@ -22,10 +22,12 @@
 </div>
         </header>
         <main>
-            <h1>Efektywne rozwiązania dla waszego biznesu</h1>
+            <section>
+                <h1>Efektywne rozwiązania dla waszego biznesu</h1>
             <div class="buttons">
                 <button type="button" class="button">Zamów usługę</button>
             </div>
+            </section>
             <section>
                 <ul>
                 <li><h4>lorem ipsum</h4></li>
