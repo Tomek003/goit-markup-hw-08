@@ -31,18 +31,27 @@
             </div>
             </section>
             <section>
-                <div>
-           <ul>
-                <li><h4>LOREM IPSUM</h4>
-                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
-                <li><h4>LOREM IPSUM</h4>
-                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
-                <li><h4>LOREM IPSUM</h4>
-                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
-                <li><h4>LOREM IPSUM</h4>
-               <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
-            </ul>
-            </div>
+                <dl>
+                 <dt>LOREM IPSUM</dt>
+                <dd>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </dd>
+                    <dt>LOREM IPSUM</dt>
+                <dd>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
+                    malesuada
+                </dd>
+                    <dt>LOREM IPSUM</dt>
+                <dd>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
+                    malesuada
+                </dd>
+                <dt>LOREM IPSUM</dt>
+                <dd>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
+                    malesuada
+                </dd>
+            </dl>
             </section>
     <section>
             <h2>Czym się zajmujemy</h2>
