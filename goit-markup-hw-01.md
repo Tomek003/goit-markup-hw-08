@@ -30,29 +30,42 @@
                 <button type="button" class="button">Zamów usługę</button>
             </div>
             </section>
-            <section>
-                <dl>
-                 <dt>LOREM IPSUM</dt>
-                <dd>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                </dd>
-                    <dt>LOREM IPSUM</dt>
-                <dd>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
-                    malesuada
-                </dd>
-                    <dt>LOREM IPSUM</dt>
-                <dd>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
-                    malesuada
-                </dd>
-                <dt>LOREM IPSUM</dt>
-                <dd>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et
-                    malesuada
-                </dd>
-            </dl>
-            </section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>LOREM IPSUM</th>
+                            <th>LOREM IPSUM</th>
+                            <th>LOREM IPSUM</th>
+                            <th>LOREM IPSUM</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                    <td>Lorem ipsum dolor sit amet,</td>
+                    <td>Lorem ipsum dolor sit amet,</td>
+                    <td>Lorem ipsum dolor sit amet,</td> 
+                    <td>Lorem ipsum dolor sit amet,</td>
+                 </tr>
+                    <tr>
+                        <td>consectetur adipiscing elit.</td>
+                        <td>consectetur adipiscing elit.</td>
+                        <td>consectetur adipiscing elit.</td>
+                        <td>consectetur adipiscing elit.</td>
+                    </tr>
+                   <tr>
+                    <td>Nam vel arcu sem. Sed non</td>
+                    <td>Nam vel arcu sem. Sed non</td>
+                    <td>Nam vel arcu sem. Sed non</td>
+                    <td>Nam vel arcu sem. Sed non</td>
+                </tr>
+                <tr>
+                    <td>sodales dui. Interdum et malesuada</td>
+                    <td>sodales dui. Interdum et malesuada</td>
+                    <td>sodales dui. Interdum et malesuada</td>
+                    <td>sodales dui. Interdum et malesuada</td>
+                </tr>
+                </tbody>
+            </table>
     <section>
             <h2>Czym się zajmujemy</h2>
             <ul>
