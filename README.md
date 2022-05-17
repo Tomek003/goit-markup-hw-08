@@ -26,11 +26,14 @@
             <div class="buttons">
                 <button type="button" class="button">Zamów usługę</button>
             </div>
-            <ul>
-                <li>LOREM IPSUM</li>
-                <li>LOREM IPSUM</li>
-                <li>LOREM IPSUM</li>
+            <section>
+                <ul>
+                <li><h4>lorem ipsum</h4></li>
+                <li><h4>lorem ipsum</h4></li>
+                <li><h4>lorem ipsum</h4></li>
             </ul>
+        </section>
+    
             <div>
                 <h2>Czym się zajmujemy</h2>
                 <img src="../zadanie1/images/image1.jpg" alt="Image1" width="370" height="294">
