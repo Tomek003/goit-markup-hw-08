@@ -45,10 +45,12 @@
     </section>
     <section>
             <h2>Nasz zespół</h2>
-            <img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260">
-            <img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260">
-            <img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
-            <img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260">
+            <ul>
+            <li><img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260"></li><h3>John Doe</h3><p>Product Designer</p>
+            <li><img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"></li><h3>John Doe</h3><p>Frontend Developer</p>
+            <li><img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"></li><h3>John Doe</h3><p>Marketing</p>
+            <li><img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"></li><h3>John Doe</h3><p>UI Designer</p>
+            </ul>
             </section>
         </main>
      <footer>
