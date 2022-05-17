@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <!-- Metadane -->
+        <meta charset="utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Webstudio</title>
     </head>
     <body>
+        <!-- Zawartość strony-->
         <header>
-            <h3><a href="text">Webstudio</a></h3> 
+            <h3><a href="text">Webstudio</a></h3>
         <nav>
             <ul>
                 <li>Agencja</li>
@@ -17,7 +19,7 @@
             </ul>
         </nav>
         <div>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com">info@example.com</a>
             <a href="tel:+48111111111">+48 111 111 111</a>
 </div>
         </header>
@@ -29,36 +31,61 @@
             </div>
             </section>
             <section>
-                <ul>
-                <li><h4>lorem ipsum</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
-                <li><h4>lorem ipsum</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
-                <li><h4>lorem ipsum</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
+                <div>
+           <ul>
+                <li><h4>LOREM IPSUM</h4>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
+                <li><h4>LOREM IPSUM</h4>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
+                <li><h4>LOREM IPSUM</h4>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
+                <li><h4>LOREM IPSUM</h4>
+               <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</pre></li>
             </ul>
-        </section>
+            </div>
+            </section>
     <section>
-        <div>
             <h2>Czym się zajmujemy</h2>
-            <img src="../zadanie1/images/image1.jpg" alt="Image1" width="370" height="294">
-            <img src="../zadanie1/images/image2.jpg" alt="Image2" width="370" height="294">
-            <img src="../zadanie1/images/image3.jpg" alt="Image3" width="370" height="294">
-        </div>
+            <ul>
+            <li><img src="image1.jpg" alt="Image1" width="370" height="294"></li>
+            <li><img src="image2.jpg" alt="Image2" width="370" height="294"></li>
+            <li><img src="image3.jpg" alt="Image3" width="370" height="294"></li>
+            </ul>
     </section>
     <section>
             <h2>Nasz zespół</h2>
-            <ul>
-            <li><img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260"></li>
-            <li><img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"></li>
-            <li><img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"></li>
-            <li><img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"></li>
-            </ul>
+                <figure>
+        <img src="../images/JohnDoe.jpg" alt="John Doe" width="270" height="260"><figcaption>
+                <p>John Doe</p>
+                <p>Product Designer</p>
+            </figcaption></figure>
+            <figure>
+            <img src="../images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"><figcaption>
+                <p>John Doe</p>
+                <p>Frontend Developer</p>
+            </figcaption></figure>
+            <figure>
+            <img src="../images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"><figcaption>
+                <p>John Doe</p>
+                <p>Marketing</p>
+            </figcaption></figure>
+            <figure>
+            <img src="../images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"><figcaption>
+                <p>John Doe</p>
+                <p>UI Designer</p>
+            </figcaption></figure>
             </section>
         </main>
      <footer>
+         <!-- Stopka -->
         <h3><a href="text">Webstudio</a></h3>
         <div>
-            <address>m. Warszawa, al. Jerozolimskie 21</address>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <address><b>m. Warszawa,<br/> al. Jerozolimskie 21</b>
+                </address>
+            <address>
+            <p><a href="mailto:info@example.com">info@example.com</a></p>
             <a href="tel:+48111111111">+48 111 111 111</a>
+            </address>
         </div>
     </footer>
     </body>
