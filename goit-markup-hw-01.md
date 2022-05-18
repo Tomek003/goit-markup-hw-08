@@ -69,30 +69,30 @@
     <section>
             <h2>Czym się zajmujemy</h2>
             <ul>
-            <li><img src="image1.jpg" alt="Image1" width="370" height="294"></li>
-            <li><img src="image2.jpg" alt="Image2" width="370" height="294"></li>
-            <li><img src="image3.jpg" alt="Image3" width="370" height="294"></li>
+            <li><img src="../zadanie1/images/image1.jpg" alt="Image1" width="370" height="294"></li>
+            <li><img src="../zadanie1/images/image2.jpg" alt="Image2" width="370" height="294"></li>
+            <li><img src="../zadanie1/images/image3.jpg" alt="Image3" width="370" height="294"></li>
             </ul>
     </section>
     <section>
             <h2>Nasz zespół</h2>
                 <figure>
-        <img src="../images/JohnDoe.jpg" alt="John Doe" width="270" height="260"><figcaption>
+        <img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260"><figcaption>
                 <p><b>John Doe</b></p>
                 <p>Product Designer</p>
             </figcaption></figure>
             <figure>
-            <img src="../images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"><figcaption>
+            <img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260"><figcaption>
                 <p><b>John Doe</b></p>
                 <p>Frontend Developer</p>
             </figcaption></figure>
             <figure>
-            <img src="../images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"><figcaption>
+            <img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260"><figcaption>
                 <p><b>John Doe</b></p>
                 <p>Marketing</p>
             </figcaption></figure>
             <figure>
-            <img src="../images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"><figcaption>
+            <img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260"><figcaption>
                 <p><b>John Doe</b></p>
                 <p>UI Designer</p>
             </figcaption></figure>
