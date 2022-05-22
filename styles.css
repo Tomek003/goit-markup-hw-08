@@ -1,0 +1,99 @@
+:root { --brand-color: #212121;
+}
+.body {font-family: 'Roboto', 'Raleway', sans-serif;
+    font-weight: 400, 500, 700, 900;
+    color: var(--brand-color);
+    cursor:default;
+}
+.name {font-weight: 900;
+font-size: 44;
+text-align: center;
+text-transform: uppercase;
+}
+.lorem {text-align: left;
+font-size: 14;
+text-transform: uppercase;
+}
+.lorem2 {
+    font-weight: 400;
+    font-size: 14;
+    color: var(#757575);
+    text-transform: none;
+}
+.profession, .team{
+    font-size: 36;
+    text-align: center;
+}
+.profession, .team, .lorem {
+    font-weight: 700;
+}
+.john {
+    font-weight: 500;
+    font-size: 16;
+    text-align: center;
+}
+.link {font-family: 'Raleway';
+    color: var(--brand-color);
+text-decoration: none;
+}
+   .link:hover {
+    text-decoration: underline;
+    color: #2196F3;
+   }
+    .link:focus {
+            text-decoration: underline;
+            color: #2196F3;
+}
+    .button {color: var(--brand-color);
+        cursor: pointer;
+        background-color: #F5F4FA;
+    }
+        .button:hover {text-decoration: underline;
+    }
+       .button:focus {background-color: #2196F3;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+  .site-nav {
+font-size: 14;
+font-weight: 500;
+font-family: 'Roboto';
+text-decoration: none;
+text-align: center;
+}
+.footer{
+    font-family: 'Raleway';
+    font-size: 26;
+    color: var(#2196F3);
+    text-decoration: none;
+}
+.footer:hover {
+    text-decoration: underline;
+}
+.address {
+    font-family: 'Roboto';
+    color: var(#FFFFFF);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14;
+    font-style: normal;
+    cursor:default;
+}
+.mail {font-family: 'Roboto';
+color: var(rgba(255, 255, 255, 0.6));
+text-decoration: none;
+text-decoration-line: underline;
+cursor: pointer;
+font-weight: 400;
+font-size: 14;
+font-style: normal;
+}
+.phone {
+    font-family: 'Roboto';
+    color: var(rgba(255, 255, 255, 0.6));
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14;
+    font-style:normal;
+    cursor:default;
+}
