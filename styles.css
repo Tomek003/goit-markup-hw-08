@@ -18,21 +18,18 @@
 /* buttony */
 .button,
 .button1 {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
     color: var(--brand-color);
-    cursor: pointer;
-    background-color: #FFFFFF;
     font-family: 'Roboto';
     font-size: 16px;
 }
 .button {
     font-weight: 700;
     line-height: 30px;
-    padding:10px 41px 10px 42px;
+    padding: 10px 41px 10px 42px;
     width: 200px;
     height: 50px;
+    display: inline-flex;
+    justify-content: center;
     background-color: #2196F3;
     color: #FFFFFF;
     border: none;
@@ -42,16 +39,21 @@
 .button1 {
     font-weight: 500;
     border: none;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 26px;
+    padding: 6px 22px 6px 22px;
+    margin-left: 8px;
     border-radius: 4px;
     background-color: #F5F4FA;
 }
 .button:hover, .button1:hover {
-    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
 }
-.button:focus, .button1:focus {
+.button1:hover {
     background-color: #2196F3;
     color: #FFFFFF;
-    text-decoration: none;
 }
 /* menu*/
 .page-header {height: 80px;
@@ -62,7 +64,6 @@ height: 100%;
 display: flex;
 align-items: center;
 padding: 24px 1240px 25px 215px;
-border: 1px solid red;
 justify-content: space-between;
 }
 .navi {width: 400px;
@@ -112,70 +113,77 @@ background-color: #2F303A;
 font-weight: 900;
 font-size: 44px;
 margin: 0px;
+padding-bottom: 30px;
 line-height: 60px;
 text-transform: uppercase;
 }
 .child{padding-bottom:200px;
 }
-.card-set {display: flex;
-flex-wrap: wrap;
+.card-set{
 list-style-type: none;
+padding-top: 94px;
+display: flex;
+    justify-content: space-between;
 }
 .lorem{
     font-size: 14px;
+    width: 270px;
+    height: 16px;
     text-transform: uppercase;
-    text-align: left;
 }
-.team1, .profession1, .profession, .team{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-.profession, .team, .lorem,.lorem1, .john, .john2 {
-    font-family: 'Roboto';}
-
-.lorem1{
+.lorem1 {
     font-weight: 400;
     font-size: 14px;
-    color: var(#757575);
+    width: 275px;
+    height: 75px;
+    padding-top: 10px;
+    color:#757575;
     text-transform: none;
     text-align: left;
 }
+
+.profession, .team, .lorem,.lorem1, .name, .job {
+    font-family: 'Roboto';}
+
+.team1, .profession1, .profession, .team {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;}
+
 .profession, .team{
     font-size: 36px;
 }
-.profession, .team, .john, .john2 {
+.profession, .team, .name, .job {
     text-align: center;
 }
 .profession, .team, .lorem {
     font-weight: 700;
     color: var(--brand-color);
 }
+.name, .job {
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.name {
+    font-weight: 500;
+    color: var(--brand-color);
+}
+.job {
+    font-weight: 400;
+    color: #757575;
+}
 .container1 {
     background-color: #F5F4FA;
 }
-.john, .john2 {font-size: 16px;
-background-color: #FFFFFF;
-border:dashed;
-border-radius: 0px 0px 4px 4px;
-}
-.image{
-    border:dashed;
-}
-.john {
-    font-weight: 500;
-    color: var(--brand-color);
-    }
-.john2 {
-font-weight: 400;
-color: #757575;
-}
-  .site-nav {
+  .site {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       align-items: flex-start;
-    list-style-type: none;
+    list-style-type: none;}
+
+    .site-nav{
 font-size: 18px;
 font-weight: 700;
 color: var(--brand-color);
@@ -186,7 +194,9 @@ color: var(--brand-color);
     }
     .site-nav, .site-nav1 {font-family: 'Roboto';
     text-decoration: none;
-text-align: left;}
+text-align: left;
+padding-bottom: 4px;
+}
 
 /*stopka*/
 .footer {background-color: #2F303A;
