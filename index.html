@@ -5,7 +5,7 @@
         <meta charset="utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+        <link rel="stylesheet" href="../zadanie1/css/modern-normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,83 +18,90 @@
     </head>
     <body>
         <!-- Zawartość strony-->
-        <header class="title">
-            <h3><a class="link" href="text">WebStudio</a></h3>
-            <nav>
-                <ul>
+        <header class="page-header">
+            <div class="content">
+                <a class="logo" href="text"><h2 class="logo">Web<span class="logo1">Studio</span></h2>
+                <nav class="navi">
+                <ul class="menu navi">
                     <li><a class="link1" href="index.html">Agencja</a></li>
                     <li><a class="link1" href="portfolio.html">Portfolio</a></li>
                     <li><a class="link1" href="text">Kontakt</a></li>
+                    </ul>
+                </nav>
+                    <ul class="menu navi">
+                <li><a class="gray-link" href="mailto:info@devstudio.com">info@example.com</a></li>
+                <li><a class="gray-link" href="tel:+48111111111">+48 111 111 111</a></li>
                 </ul>
-            </nav>
-            <div>
-                <a class="link1" href="mailto:info@devstudio.com">info@example.com</a>
-                <a class="link1" href="tel:+48111111111">+48 111 111 111</a>
-            </div>
+                </div>
         </header>
         <main>
             <div class="box">
                 <div class="parent">
                 <h1 class="parent">Efektywne rozwiązania dla waszego biznesu</h1>
+                </div>
             <div class="child">
                 <button type="button" class="button">Zamów usługę</button>
             </div>
-            </div>
         </div>
-                <ul class="lorem">
-                <li>lorem ipsum</li>
-                            <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Nam vel arcu sem. Sed<br> non sodales dui. Interdum et malesuada </li>
-                <li>lorem ipsum</li>
-                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Nam vel arcu sem. Sed<br> non sodales dui. Interdum et
-                    malesuada </li>
-                    <li>lorem ipsum</li>
-                    <li class="lorem1">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nam vel arcu sem. Sed<br> non sodales dui. Interdum et
-                        malesuada </li>
-                        <li>lorem ipsum</li>
-                        <li class="lorem1">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Nam vel arcu sem. Sed<br> non sodales dui. Interdum et
-                            malesuada </li>
+        <div class="container">
+                <ul class="card-set">
+                <li class="lorem">lorem ipsum</li>
+                            <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Nam vel arcu sem. Sed<br> non sodales dui. Interdum et malesuada</li>
+                <li class="lorem">lorem ipsum</li>
+                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Nam vel arcu sem. Sed<br>non sodales dui. Interdum et
+                    malesuada</li>
+                    <li class="lorem">lorem ipsum</li>
+                    <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Nam vel arcu sem. Sed<br>non sodales dui. Interdum et
+                        malesuada</li>
+                        <li class="lorem">lorem ipsum</li>
+                        <li class="lorem1">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit.Nam vel arcu sem. Sed<br>non sodales dui. Interdum et
+                            malesuada</li>
                             </ul>
+                            </div>
     <section>
+        <div id="container" class="container">
             <h2 class="profession">Czym się zajmujemy</h2>
             <ul class="profession1">
             <li><img src="../zadanie1/images/image1.jpg" alt="Image1" width="370" height="294"></li>
             <li><img src="../zadanie1/images/image2.jpg" alt="Image2" width="370" height="294"></li>
             <li><img src="../zadanie1/images/image3.jpg" alt="Image3" width="370" height="294"></li>
             </ul>
+            </div>
     </section>
     <section>
+        <div id="container1" class="container1">
             <h2 class="team">Nasz zespół</h2>
                 <ul class="team1">
-        <li><img src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260" >
+        <li><img class="image" src="../zadanie1/images/JohnDoe.jpg" alt="John Doe" width="270" height="260">
                 <p class="john"><b>John Doe</b></p>
                 <p class="john2">Product Designer</p></li>
             <li>
-            <img src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260">
+            <img class="image" src="../zadanie1/images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260">
                 <p class="john"><b>John Doe</b></p>
                 <p class="john2">Frontend Developer</p>
             </li>
             <li>
-            <img src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
+            <img class="image" src="../zadanie1/images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
                 <p class="john"><b>John Doe</b></p>
                 <p class="john2">Marketing</p>
             </li>
             <li>
-            <img src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260">
+            <img class="image" src="../zadanie1/images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260">
                 <p class="john"><b>John Doe</b></p>
                 <p class="john2">UI Designer</p>
             </li>
             </ul>
+            </div>
             </section>
         </main>
-    <footer>
-        <!-- Stopka -->
-        <h3><a href="text" class="link">WebStudio</a></h3>
+            <!-- Stopka -->
+    <footer class="footer">
+        <a class="logo" href="text"><h2 class="logo">Web<span class="logo2">Studio</span></h2>
         <div>
-            <address class="address"><b>m. Warszawa, al. Jerozolimskie 21</b>
-            </address>
-            <address>
-                <p><a href="mailto:info@example.com" class="link1">info@example.com</a></p>
-                <a href="tel:+48111111111" class="link1">+48 111 111 111</a>
+            <address class="address"><b>m. Warszawa, al. Jerozolimskie 21</b></address>
+<address>
+                <p><a href="mailto:info@example.com" class="link2">info@example.com</a></p>
+                <a href="tel:+48111111111" class="link3">+48 111 111 111</a>
             </address>
         </div>
     </footer>
