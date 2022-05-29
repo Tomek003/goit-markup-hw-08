@@ -3,122 +3,207 @@
 *::after {box-sizing: border-box;}
 :root { --brand-color: #212121;
 }
+
 .body {font-family: 'Roboto', 'Raleway', sans-serif;
     font-weight: 400, 500, 700, 900;
     color: var(--brand-color);
     cursor:default;
+    margin: 0px;
 }
-.box {display: block;
-padding-top: 80;
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+}
+/* buttony */
+.button,
+.button1 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--brand-color);
+    cursor: pointer;
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+.button {
+    font-weight: 700;
+    line-height: 30px;
+    padding:10px 41px 10px 42px;
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.button1 {
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+.button:hover, .button1:hover {
+    text-decoration: underline;
+}
+.button:focus, .button1:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* menu*/
+.page-header {height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+.content{
+height: 100%;
+display: flex;
+align-items: center;
+padding: 24px 1240px 25px 215px;
+border: 1px solid red;
+justify-content: space-between;
+}
+.navi {width: 400px;
+list-style-type: none;}
+.menu .navi{display: flex;
+    width:100%;
+    padding-left: 93px;
+background-color: #FFFFFF;
+}
+.link1, .gray-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.link1{color: var(--brand-color);}
+.gray-link {color: #757575;}
+
+.link1:hover, .gray-link:hover, .link1:focus, .gray-link:focus {
+    text-decoration: underline;
+    color: #2196F3;
+}
+    /* WebStudio */
+.logo, .logo1, .logo2 {
+            font-family: 'Raleway';
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 31px;
+            text-decoration: none;
+        }
+        .logo {color: #2196F3;}
+        .logo1 {color: var(--brand-color);}
+        .logo2 {color: #FFFFFF;
+        }
+.box{display: block;
+    box-sizing: content-box;
 background-color: #2F303A;
 }
-.parent, .child{background-color: #2F303A;
+.parent, .child{
     text-align: center;
-    display: block;
-    box-sizing: content-box;
+    font-family: 'Roboto';
+    color: #FFFFFF;
 }
-.parent{
-padding-top: 200;
-padding-right: 452;
-padding-bottom: 280;
-padding-left: 452;
-font-family: 'Roboto';
-font-color: #FFFFFF;
-font-size: 44;
+.parent{padding-top: 80px;
+font-weight: 900;
+font-size: 44px;
+margin: 0px;
+line-height: 60px;
 text-transform: uppercase;
 }
-.child {
-padding-left: 700;
+.child{padding-bottom:200px;
 }
-.lorem{display: flex;
-flex-direction: column;}
-.team1, .profession1, .site-nav{
+.card-set {display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+}
+.lorem{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.team1, .profession1, .profession, .team{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    list-style-type: none;
 }
 .profession, .team, .lorem,.lorem1, .john, .john2 {
     font-family: 'Roboto';}
 
-.lorem {text-align: left;
-font-size: 14;
-text-transform: uppercase;
-}
 .lorem1{
     font-weight: 400;
-    font-size: 14;
+    font-size: 14px;
     color: var(#757575);
     text-transform: none;
+    text-align: left;
 }
 .profession, .team{
-    font-size: 36;
+    font-size: 36px;
 }
 .profession, .team, .john, .john2 {
     text-align: center;
 }
 .profession, .team, .lorem {
     font-weight: 700;
-    font-color: var(--brand-color);
+    color: var(--brand-color);
 }
-.john, .john2 {font-size: 16;}
-
+.container1 {
+    background-color: #F5F4FA;
+}
+.john, .john2 {font-size: 16px;
+background-color: #FFFFFF;
+border:dashed;
+border-radius: 0px 0px 4px 4px;
+}
+.image{
+    border:dashed;
+}
 .john {
     font-weight: 500;
+    color: var(--brand-color);
     }
 .john2 {
 font-weight: 400;
-font-color: #757575}
-
-/* dotyczy linku WebStudio */
-
-.link {font-family: 'Raleway';
-    color: var(--brand-color);
-text-decoration: none;
+color: #757575;
 }
-   .link:hover{
-    text-decoration: underline;
-    color: #2196F3;
-   }
- .link:focus {
-            text-decoration: underline;
-            color: #2196F3;
-}
-/* dotyczy maila i telefonu*/
-
-.link1 {font-family: 'Roboto';
-    color: var(--brand-color);
-    font-style: normal;
-    text-decoration: none;
-}
-/* buttony */
-    .button, .button1 {color: var(--brand-color);
-        cursor: pointer;
-        background-color: #F5F4FA;
-        font-family: 'Roboto';
-        font-size: 16;
-    }
-    .button {font-weight: 700;}
-    .button1 {font-weight: 500;}
-        .button:hover, .button1:hover {text-decoration: underline;
-    }
-       .button:focus, .button1:focus {background-color: #2196F3;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
   .site-nav {
-      display: inline-block;
-font-size: 14;
-font-weight: 500;
-font-family: 'Roboto';
-text-decoration: none;
-text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    list-style-type: none;
+font-size: 18px;
+font-weight: 700;
+color: var(--brand-color);
+}
+.site-nav1 {font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    }
+    .site-nav, .site-nav1 {font-family: 'Roboto';
+    text-decoration: none;
+text-align: left;}
+
+/*stopka*/
+.footer {background-color: #2F303A;
+    padding:60px 1240px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
-    color: var(#FFFFFF);
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 400;
-    font-size: 14;
+    font-size: 14px;
     font-style: normal;
     cursor:default;
 }
+.link2, .link3, .link4 {font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+        font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);}
+.link2, .link3 {text-decoration: none;}
