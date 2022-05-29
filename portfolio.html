@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Metadane -->
-        <meta charset="utf-8"/>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
+        <head>
+            <!-- Metadane -->
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../zadanie1/css/modern-normalize.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+                rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../zadanie1/css/styles.css">
+            <link rel="stylesheet" href="../zadanie1/css/styles.css">
         <title>Portfolio</title>
         </head>
           <body>
             <!-- Zawartość strony-->
-            <header class="title">
-                <h3><a class="link" href="text">WebStudio</a></h3>
-                <nav>
-                    <ul>
-                        <li><a class="link1" href="index.html">Agencja</a></li>
-                        <li><a class="link1" href="portfolio.html">Portfolio</a></li>
-                        <li><a class="link1" href="text">Kontakt</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <a class="link1" href="mailto:info@devstudio.com">info@example.com</a>
-                    <a class="link1" href="tel:+48111111111">+48 111 111 111</a>
+            <header class="page-header">
+                <div class="content">
+                    <a class="logo" href="text">
+                        <h2 class="logo">Web<span class="logo1">Studio</span></h2>
+                        <nav class="navi">
+                            <ul class="menu navi">
+                                <li><a class="link1" href="index.html">Agencja</a></li>
+                                <li><a class="link1" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="link1" href="text">Kontakt</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="menu navi">
+                            <li><a class="gray-link" href="mailto:info@devstudio.com">info@example.com</a></li>
+                            <li><a class="gray-link" href="tel:+48111111111">+48 111 111 111</a></li>
+                        </ul>
                 </div>
             </header>
             <main>
                     <section>
+                        <div id="container" class="container">
                         <h2 hidden>Buttony</h2>
                         <button type="button" class="button1">Wszystkie</button>
                         <button type="button" class="button1">Strony</button>
                         <button type="button" class="button1">Aplikacje</button>
                         <button type="button" class="button1">Dizajn</button>
                         <button type="button" class="button1">Marketing</button>
+                        </div>
                     </section>
                 <section>
+                    <div class="container">
                         <ul class="site-nav">
-                            <li><img src="./images/technocrack.jpg" alt="Technocrack" width="370" height="294"><h4>Technocrack</h4><br><p>Strona internetowa</p></li>
-                            <li><img src="./images/neworlean.jpg" alt="Grafika New Orlean" width="370" height="294"><h4>Grafika New Orlean vs Golden Star</h4><br><p>Dizajn</p></li>
-                            <li><img src="./images/seafood.jpg" alt="Restauracja SeaFood" width="370" height="294"><h4>Restauracja SeaFood</h4><br><p>Aplikacja</p></li>
-                            <li><img src="./images/prime.jpg" alt="Projekt Prime" width="370" height="294"><h4>Projekt Prime</h4><br><p>Marketing</p></li>
-                            <li><img src="./images/boxes.jpg" alt="Projekt Boxes" width="370" height="294"><h4>Projekt Boxes</h4><br><p>Aplikacja</p></li>
-                            <li><img src="./images/borders.jpg" alt="Inspiration has no Borders" width="370" height="294"><h4>Inspiration has no Borders</h4><br><p>Strona internetowa</p></li>
-                            <li><img src="./images/magazyn.jpg" alt="Magazyn Limited Edition" width="370" height="294"><h4>Magazyn Limited Edition</h4><br><p>Dizajn</p></li>
-                            <li><img src="./images/lab.jpg" alt="Projekt LAB" width="370" height="294"><h4>Projekt LAB</h4><br><p>Marketing</p></li>
-                            <li><img src="./images/growing.jpg" alt="Growing Business" width="370" height="294"><h4>Growing business</h4><br><p>Aplikacja</p></li>
+                            <li><img src="./images/technocrack.jpg" alt="Technocrack" width="370" height="294"><h4 class="site-nav">Technocrack</h4><p class="site-nav1">Strona internetowa</p></li>
+                            <li><img src="./images/neworlean.jpg" alt="Grafika New Orlean" width="370" height="294"><h4 class="site-nav">Grafika New Orlean vs Golden Star</h4><p class="site-nav1">Dizajn</p></li>
+                            <li><img src="./images/seafood.jpg" alt="Restauracja SeaFood" width="370" height="294"><h4 class="site-nav">Restauracja SeaFood</h4><p class="site-nav1">Aplikacja</p></li>
+                            <li><img src="./images/prime.jpg" alt="Projekt Prime" width="370" height="294"><h4 class="site-nav">Projekt Prime</h4><p class="site-nav1">Marketing</p></li>
+                            <li><img src="./images/boxes.jpg" alt="Projekt Boxes" width="370" height="294"><h4 class="site-nav">Projekt Boxes</h4><p class="site-nav1">Aplikacja</p></li>
+                            <li><img src="./images/borders.jpg" alt="Inspiration has no Borders" width="370" height="294"><h4 class="site-nav">Inspiration has no Borders</h4><p class="site-nav1">Strona internetowa</p></li>
+                            <li><img src="./images/magazyn.jpg" alt="Magazyn Limited Edition" width="370" height="294"><h4 class="site-nav">Magazyn Limited Edition</h4><p class="site-nav1">Dizajn</p></li>
+                            <li><img src="./images/lab.jpg" alt="Projekt LAB" width="370" height="294"><h4 class="site-nav">Projekt LAB</h4><p class="site-nav1">Marketing</p></li>
+                            <li><img src="./images/growing.jpg" alt="Growing Business" width="370" height="294"><h4 class="site-nav">Growing business</h4><p class="site-nav1">Aplikacja</p></li>
                         </ul>
+                        </div>
                 </section>
                 </main>
-                <footer>
-                    <!-- Stopka -->
-                    <h3><a href="text" class="link">WebStudio</a></h3>
+                <!-- Stopka -->
+                <footer class="footer">
+                    <a class="logo" href="text"><h2 class="logo">Web<span class="logo2">Studio</span></h2>
                     <div>
                         <address class="address"><b>m. Warszawa, al. Jerozolimskie 21</b>
                         </address>
                         <address>
-                            <p><a href="mailto:info@example.com" class="link1">info@example.com</a></p>
-                            <a href="tel:+48111111111" class="link1">+48 111 111 111</a>
+                            <p><a href="mailto:info@example.com" class="link2">info@example.com</a></p>
+                            <a href="tel:+48111111111" class="link3">+48 111 111 111</a>
                         </address>
                     </div>
                 </footer>
