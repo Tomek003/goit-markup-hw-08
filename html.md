@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadane -->
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/modern-normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Webstudio</title>
+    </head>
+    <body>
+        <!-- Zawartość strony-->
+        <header class="page-header">
+            <div class="content">
+                <a class="logo" href="text"><h2 class="logo">Web<span class="logo1">Studio</span></h2>
+                <nav class="navi">
+                <ul class="menu navi">
+                    <li><a class="link1" href="/index.html">Agencja</a></li>
+                    <li><a class="link1" href="/portfolio.html">Portfolio</a></li>
+                    <li><a class="link1" href="text">Kontakt</a></li>
+                    </ul>
+                </nav>
+                    <ul class="menu navi">
+                <li><a class="gray-link" href="mailto:info@devstudio.com">info@example.com</a></li>
+                <li><a class="gray-link" href="tel:+48111111111">+48 111 111 111</a></li>
+                </ul>
+                </div>
+        </header>
+        <main>
+            <div class="box">
+                <div class="parent">
+                <h1 class="parent">Efektywne rozwiązania dla waszego biznesu</h1>
+                </div>
+            <div class="child">
+                <button type="button" class="button">Zamów usługę</button>
+            </div>
+        </div>
+                <ul class="card-set">
+                <li class="lorem">lorem ipsum</li>
+                <li class="lorem">lorem ipsum</li>
+                <li class="lorem">lorem ipsum</li>
+                <li class="lorem">lorem ipsum</li>
+                </ul>
+                <ul class="card-set">
+                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
+                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
+                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
+                <li class="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
+                </ul>
+    <section>
+            <h2 class="profession">Czym się zajmujemy</h2>
+            <ul class="profession1">
+            <li class="image1"><img class="image1" src="./images/image1.jpg" alt="Image1" width="370" height="294"></li>
+            <li class="image2"><img src="./images/image2.jpg" alt="Image2" width="370" height="294"></li>
+            <li class="image3"><img src="./images/image3.jpg" alt="Image3" width="370" height="294"></li>
+            </ul>
+    </section>
+    <section>
+        <div id="container1" class="container1">
+            <h2 class="team">Nasz zespół</h2>
+                <ul class="team1">
+        <li class="card1"><img class="card-image no-gap" src="./images/JohnDoe2.jpg" alt="John Doe2" width="270" height="260">
+                <p class="name"><b>John Doe</b></p>
+                <p class="job">Product Designer</p></li>
+            <li class="card2">
+            <img class="card-image no-gap" src="./images/JohnDoe.jpg" alt="John Doe" width="270" height="260">
+                <p class="name"><b>John Doe</b></p>
+                <p class="job">Frontend Developer</p>
+            </li>
+            <li class="card3">
+            <img class="card-image no-gap" src="./images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
+                <p class="name"><b>John Doe</b></p>
+                <p class="job">Marketing</p>
+            </li>
+            <li class="card4">
+            <img class="card-image no-gap" src="./images/JohnDoe4.jpg" alt="John Doe4" width="270" height="260">
+                <p class="name"><b>John Doe</b></p>
+                <p class="job">UI Designer</p>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </section>
+        </main>
+            <!-- Stopka -->
+    <footer class="footer">
+        <a class="logo" href="text"><h2 class="logo">Web<span class="logo2">Studio</span></h2>
+        <div>
+            <address class="address"><b>m. Warszawa, al. Jerozolimskie 21</b></address>
+<address>
+                <p><a href="mailto:info@example.com" class="link2">info@example.com</a></p>
+                <a href="tel:+48111111111" class="link3">+48 111 111 111</a>
+            </address>
+        </div>
+    </footer>
+    </body>
+</html>
