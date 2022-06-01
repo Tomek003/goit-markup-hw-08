@@ -121,20 +121,20 @@ background-color: #2F303A;
     font-family: 'Roboto';
     color: #FFFFFF;
 }
-.parent{padding: 80px 452px 30px 452px;
+.parent{margin: 200px 452px 280px 452px;
 font-weight: 900;
 font-size: 44px;
-margin: 0px;
+padding-bottom:40px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{padding-bottom:200px;
+.child{margin-bottom: 200px;
+    margin-left: 700px;
 }
 .card-set{display: flex;
     justify-content: space-between;
 list-style-type: none;
 }
-.lorem1:nth-child(2n){border: 1px solid red;}
 .lorem {
     font-size: 14px;
     line-height: 16px;
@@ -277,3 +277,4 @@ padding-left: 24px;
         letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
+
