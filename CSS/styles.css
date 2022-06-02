@@ -61,7 +61,7 @@ margin-left:621px;}
 /* menu*/
 .page-header {height: 80px;
     border-bottom: 1px solid #ECECEC;
-    margin-bottom:94px;
+    margin-bottom:0px;
     
 }
 .content{display: flex;
@@ -278,3 +278,4 @@ padding-left: 24px;
         letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
+
