@@ -141,7 +141,6 @@ margin-left: 30px;}
 
 .card-set{display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 list-style-type: none;
 border: none;
 padding-bottom: 94px;
