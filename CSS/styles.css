@@ -128,7 +128,7 @@ font-size: 44px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{margin: 40px;
+.child{margin-top: 40px;
 }
 .card {display: list-item;
     max-width:270px;
