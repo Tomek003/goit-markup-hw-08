@@ -131,9 +131,20 @@ text-transform: uppercase;
 .child{margin-bottom: 200px;
     margin-left: 700px;
 }
+.lorem-ipsum{padding-top:94px;
+padding-bottom: 94px;}
+
+.card {display: list-item;
+    max-width:270px;
+margin-bottom: 30px;
+margin-left: 30px;}
+
 .card-set{display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 list-style-type: none;
+border: none;
+padding-bottom: 94px;
 }
 .lorem {
     font-size: 14px;
@@ -144,9 +155,6 @@ list-style-type: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width:270px;
-    height:75px;
-    padding-left:215px;
     color:#757575;
     text-transform: none;
     text-align: left;
@@ -157,13 +165,12 @@ list-style-type: none;
 
 .team1, .profession1, .profession, .name, .job {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             list-style-type: none;}
 
-            .team {
-    padding: 0px 695px 25px 695px;
-            }
-            .profession{padding: 47px 624px 25px 624px;}
+.team {padding: 0px 695px 25px 695px;
+    }
+.profession{padding: 47px 624px 25px 600px;}
 
 .profession1{padding-bottom: 47px;
 margin-bottom: 0px;}
@@ -226,8 +233,7 @@ margin-bottom: 15px;}
 
 .photo7, .photo8, .photo9{margin-bottom:47px;}
 
-  .site {
-      display: flex;
+.site {display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
     list-style-type: none;}
