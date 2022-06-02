@@ -122,15 +122,13 @@ background-color: #2F303A;
     font-family: 'Roboto';
     color: #FFFFFF;
 }
-.parent{margin: 0px 452px 280px 452px;
+.parent{margin: 200px 452px 280px 452px;
 font-weight: 900;
 font-size: 44px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{margin-top: 100px;
-    margin-bottom: 70px;
-    margin-left: 700px;
+.child{margin: 40px 700px 200px 700px;
 }
 .card {display: list-item;
     max-width:270px;
