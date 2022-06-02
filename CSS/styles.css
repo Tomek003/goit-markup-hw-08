@@ -163,9 +163,9 @@ padding-bottom: 0px;
             justify-content: space-between;
             list-style-type: none;}
 
-.team {padding: 0px 695px 25px 695px;
+.team {padding: 94px 695px 25px 695px;
     }
-.profession{padding: 0px 624px 25px 600px;}
+.profession{padding: 94px 624px 25px 600px;}
 
 .profession1{padding-bottom: 94px;}
 
@@ -255,7 +255,7 @@ padding-left: 24px;
 
 /*stopka*/
 .footer {background-color: #2F303A;
-    padding: 60px 1240px 60px 215px;
+    padding: 94px 1240px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
