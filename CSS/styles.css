@@ -131,8 +131,8 @@ text-transform: uppercase;
 .child{margin-bottom: 200px;
     margin-left: 700px;
 }
-/*.lorem-ipsum{padding-top:94px;
-padding-bottom: 94px;}*/
+.lorem-ipsum{padding-top:94px;
+padding-bottom: 94px;}
 
 .card {display: list-item;
     max-width:270px;
