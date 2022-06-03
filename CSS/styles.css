@@ -227,13 +227,13 @@ justify-content: space-between;}
 .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {border: 1px solid #EEEEEE;
 margin-bottom: 15px;}
 
-.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
+/*.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
 
 .photo1, .photo2, .photo4, .photo5, .photo7, .photo8 {margin-right: 15px;}
 
 .photo7, .photo8, .photo9{margin-bottom:47px;}
 
-/*.photo1, .photo4, .photo7{margin-left:215px;}*/
+.photo1, .photo4, .photo7{margin-left:215px;}*/
 
 .site {display: flex;
       justify-content: space-between;
