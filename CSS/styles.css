@@ -224,8 +224,9 @@ justify-content: space-between;}
     padding-bottom: 94px;
 }
 .photo {border: 1px solid #EEEEEE;
-margin-bottom: 15px;
-flex-basis: calc((100% - 60px) / 9);}
+    margin-bottom: 15px;}
+
+/*flex-basis: calc((100% - 60px) / 9);}*/
 
 /*.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
 
