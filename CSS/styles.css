@@ -62,8 +62,7 @@ margin-left:620px;}
 /* menu*/
 .page-header {height: 80px;
     border-bottom: 1px solid #ECECEC;
-    margin-bottom:0px;
-    
+    margin-bottom: 0px; 
 }
 .content{display: flex;
     margin-right: 227px;
@@ -71,6 +70,7 @@ margin-left:620px;}
 height: 100%;
 }
 .menu{display: flex;
+    align-items: center;
 background-color: #FFFFFF;
 list-style-type: none;
 }
