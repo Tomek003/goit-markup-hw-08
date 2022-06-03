@@ -162,7 +162,7 @@ padding-bottom: 94px;
 
 .team1, .profession1, .profession, .name, .job {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             list-style-type: none;}
 
 .team {padding: 94px 695px 25px 695px;
