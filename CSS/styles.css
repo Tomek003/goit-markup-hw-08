@@ -73,6 +73,7 @@ height: 100%;
 .menu{display: flex;
 background-color: #FFFFFF;
 list-style-type: none;
+    height: 100%;
 }
 .menu-list{margin-right:23px;
 margin-left:23px;}
