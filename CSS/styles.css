@@ -62,7 +62,8 @@ margin-left:620px;}
 /* menu*/
 .page-header {height: 80px;
     border-bottom: 1px solid #ECECEC;
-    margin-bottom: 0px; 
+    margin-bottom:0px;
+    
 }
 .content{display: flex;
     margin-right: 227px;
@@ -222,19 +223,22 @@ justify-content: space-between;}
     background-color: #F5F4FA;
     padding-bottom: 94px;
 }
-.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {border: 1px solid #EEEEEE;
-margin-bottom: 15px;}
-.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
+.photo {border: 1px solid #EEEEEE;
+margin-bottom: 15px;
+flex-basis: calc((100% - 60px) / 3);}
+
+/*.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
 
 .photo1, .photo2, .photo4, .photo5, .photo7, .photo8 {margin-right: 15px;}
 
-.photo7, .photo8, .photo9{margin-bottom:47px;}
+.photo7, .photo8, .photo9{margin-bottom:47px;}*/
 
 .site {display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 30px;
     list-style-type: none;
-margin-bottom: 94px;}
+margin-bottom:94px;}
 
     .site-nav{
 font-size: 18px;
@@ -281,4 +285,3 @@ padding-left: 24px;
         letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
-
