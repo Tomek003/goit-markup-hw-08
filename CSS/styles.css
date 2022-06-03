@@ -130,7 +130,9 @@ font-size: 44px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{margin-top: 40px;
+.child{margin-top: 350px;
+    margin-right: 700px;
+    margin-bottom: 200px;
 }
 .card {display: list-item;
     max-width:270px;
