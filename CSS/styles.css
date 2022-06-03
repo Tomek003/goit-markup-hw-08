@@ -46,7 +46,7 @@ margin-left:620px;}
     justify-content: center;
     line-height: 26px;
     letter-spacing: 0.03em;
-    padding: 94px 22px 6px 22px;
+    padding: 6px 22px 6px 22px;
     margin-left: 8px;
     border-radius: 4px;
     background-color: #F5F4FA;
@@ -73,7 +73,6 @@ height: 100%;
 .menu{display: flex;
 background-color: #FFFFFF;
 list-style-type: none;
-    height: 100%;
 }
 .menu-list{margin-right:23px;
 margin-left:23px;}
