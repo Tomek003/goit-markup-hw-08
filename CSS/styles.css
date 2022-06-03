@@ -133,7 +133,8 @@ text-transform: uppercase;
 .child{display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 700px 200px 700px;
+    margin-right: auto;
+        margin-left: auto;
 }
 .card {display: list-item;
     max-width:270px;
@@ -223,16 +224,14 @@ justify-content: space-between;}
     background-color: #F5F4FA;
     padding-bottom: 94px;
 }
-.photo {border: 1px solid #EEEEEE;
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {border: 1px solid #EEEEEE;
     margin-bottom: 15px;}
 
-/*flex-basis: calc((100% - 60px) / 9);}*/
-
-/*.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
+.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
 
 .photo1, .photo2, .photo4, .photo5, .photo7, .photo8 {margin-right: 15px;}
 
-.photo7, .photo8, .photo9{margin-bottom:47px;}*/
+.photo7, .photo8, .photo9{margin-bottom:47px;}
 
 .site {display: flex;
       justify-content: space-between;
