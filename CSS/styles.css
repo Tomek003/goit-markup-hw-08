@@ -132,6 +132,7 @@ text-transform: uppercase;
 .child{margin-top: 350px;
     margin-right: 700px;
     margin-bottom: 200px;
+    margin-left: 700px;
 }
 .card {display: list-item;
     max-width:270px;
