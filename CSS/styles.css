@@ -129,7 +129,9 @@ font-size: 44px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{
+.child{display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px 700px 200px 700px;
 }
 .card {display: list-item;
