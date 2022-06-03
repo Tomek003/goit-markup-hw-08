@@ -230,7 +230,8 @@ margin-bottom: 15px;}
 .site {display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    list-style-type: none;}
+    list-style-type: none;
+margin-bottom: 94px;}
 
     .site-nav{
 font-size: 18px;
@@ -256,7 +257,7 @@ padding-left: 24px;
 
 /*stopka*/
 .footer {background-color: #2F303A;
-    padding: 94px 1240px 60px 215px;
+    padding: 60px 1240px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
