@@ -22,8 +22,9 @@
     color: var(--brand-color);
     font-family: 'Roboto';
     font-size: 16px;}
-.buttons{margin-bottom:50px;
-margin-left:621px;}
+.buttons{margin-top: 94px;
+    margin-bottom:50px;
+margin-left:620px;}
 .button {
     font-weight: 700;
     line-height: 30px;
