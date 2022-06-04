@@ -43,6 +43,10 @@
     text-transform: uppercase;
 }
 /* buttony */
+.buttons{margin-top:94px;
+    margin-bottom: 50px;
+display: flex;
+justify-content: center;}
 .button,
 .button1 {
     color: var(--brand-color);
@@ -133,11 +137,14 @@ background-color: #FFFFFF;
         .logo2 {color: #FFFFFF;
         }
 
-.card-set{
+.card-set{display: flex;
+    justify-content: space-evenly;
 list-style-type: none;
+margin-top:94px;
+margin-bottom: 94px;
 }
-.lorem {display: inline;
-    justify-content: space-between;
+
+.lorem {
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -159,17 +166,15 @@ list-style-type: none;
             justify-content: space-evenly;
             list-style-type: none;}
 
-            .team {
-    padding: 0px 695px 25px 695px;
-            }
-            .profession{padding: 47px 624px 25px 624px;}
-
-.profession1{padding-bottom: 47px;
-margin-bottom: 0px;}
+.profession{
+    padding: 0px 624px 25px 624px;
+    }
+.profession1{margin-bottom: 94px;}
 
 .image1, .image2, .image3{
 display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+padding-right:30px;}
 
 .profession, .team{
     font-size: 36px;
@@ -181,6 +186,8 @@ justify-content: space-between;}
 .profession, .team, .lorem {
     font-weight: 700;
     color: var(--brand-color);
+}
+.team {padding: 0px 695px 25px 695px;
 }
 .name, .job {
     font-size: 16px;
@@ -198,9 +205,6 @@ justify-content: space-between;}
 .card1, .card2, .card3, .card4 {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;}
-
-    .card1{margin-left:215px;}
-    .card4{margin-right:215px;}
 
     .card-image.no-gap {display: block;
     }
@@ -229,7 +233,8 @@ margin-bottom: 15px;}
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    list-style-type: none;}
+    list-style-type: none;
+margin-bottom: 94px;}
 
     .site-nav{
 font-size: 18px;
@@ -253,7 +258,7 @@ padding-left: 24px;
 
 /*stopka*/
 .footer {background-color: #2F303A;
-    padding: 47px 1240px 60px 215px;
+    padding: 60px 1240px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
