@@ -11,32 +11,30 @@
     margin: 0px;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0px auto;
     background-color: #FFFFFF;
-    
 }
 .background-image{ max-width: 1600px;
     height: 600px;
     background-size: cover;
+    opacity: 0.1;
 }
 /* buttony */
 .button,
 .button1 {
     color: var(--brand-color);
     font-family: 'Roboto';
-    font-size: 16px;}
-.buttons{margin-top: 94px;
-    margin-bottom:50px;
-margin-left:620px;}
+    font-size: 16px;
+}
 .button {
     font-weight: 700;
     line-height: 30px;
+    padding: 10px 41px 10px 42px;
     width: 200px;
     height: 50px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
     background-color: #2196F3;
     color: #FFFFFF;
     border: none;
@@ -49,7 +47,6 @@ margin-left:620px;}
     display: inline-flex;
     justify-content: center;
     line-height: 26px;
-    letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
     margin-left: 8px;
     border-radius: 4px;
@@ -66,37 +63,27 @@ margin-left:620px;}
 /* menu*/
 .page-header {height: 80px;
     border-bottom: 1px solid #ECECEC;
-    margin-bottom:0px;
-    
 }
-.content{display: flex;
-    margin-right: 227px;
-    margin-left:215px;
+.content{
 height: 100%;
+display: flex;
+align-items: center;
+padding: 24px 1240px 25px 215px;
+justify-content: space-between;
 }
-.menu{display: flex;
-    align-items: center;
-background-color: #FFFFFF;
-list-style-type: none;
-}
-.menu-list{margin-right:23px;
-margin-left:23px;}
-
-.menu-list2 {margin-right: 25px;
-    margin-left: 25px;
-}
-
-.menu2{display: flex;
-    margin-left: auto;
+.navi {width: 400px;
 list-style-type: none;}
-
+.menu .navi{display: flex;
+    width:100%;
+    padding-left: 93px;
+background-color: #FFFFFF;
+}
 .link1, .gray-link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
     font-size: 14px;
-    letter-spacing: 0.02em;
     text-decoration: none;
 }
 .link1{color: var(--brand-color);}
@@ -112,48 +99,35 @@ list-style-type: none;}
             font-size: 26px;
             font-weight: 700;
             line-height: 31px;
-            letter-spacing: 0.03em;
             text-decoration: none;
         }
         .logo {color: #2196F3;}
         .logo1 {color: var(--brand-color);}
         .logo2 {color: #FFFFFF;
         }
-.parent{display: flex;
-    margin-bottom: 320px;
+.box{display: block;
+    box-sizing: content-box;
 background-color: #2F303A;
 }
-.box, .child{
+.parent, .child{
     text-align: center;
     font-family: 'Roboto';
     color: #FFFFFF;
 }
-.box{margin: 200px 452px 280px 452px;
+.parent{padding: 80px 452px 30px 452px;
 font-weight: 900;
 font-size: 44px;
+margin: 0px;
 line-height: 60px;
 text-transform: uppercase;
 }
-.child{display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 350px;
-    padding-bottom: 200px;
-    margin-right: auto;
-        margin-left: auto;
+.child{padding-bottom:200px;
 }
-.card {display: list-item;
-    max-width:270px;
-margin-bottom: 30px;
-margin-left: 30px;}
-
-.card-set{display: flex;
-    justify-content: space-between;
+.card-set{
 list-style-type: none;
-border: none;
-padding-bottom: 94px;
 }
-.lorem {
+.lorem {display: inline;
+    justify-content: space-between;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -172,14 +146,16 @@ padding-bottom: 94px;
 
 .team1, .profession1, .profession, .name, .job {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             list-style-type: none;}
 
-.team {padding: 94px 695px 25px 695px;
-    }
-.profession{padding: 94px 624px 25px 600px;}
+            .team {
+    padding: 0px 695px 25px 695px;
+            }
+            .profession{padding: 47px 624px 25px 624px;}
 
-.profession1{padding-bottom: 94px;}
+.profession1{padding-bottom: 47px;
+margin-bottom: 0px;}
 
 .image1, .image2, .image3{
 display: flex;
@@ -228,21 +204,27 @@ justify-content: space-between;}
 }
 .container1 {
     background-color: #F5F4FA;
+    padding-top: 47px;
     padding-bottom: 94px;
 }
 .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {border: 1px solid #EEEEEE;
 margin-bottom: 15px;}
-.site {display: flex;
+.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
+
+.photo1, .photo2, .photo4, .photo5, .photo7, .photo8 {margin-right: 15px;}
+
+.photo7, .photo8, .photo9{margin-bottom:47px;}
+
+  .site {
+      display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    list-style-type: none;
-margin-bottom:94px;}
+    list-style-type: none;}
 
     .site-nav{
 font-size: 18px;
 font-weight: 700;
 line-height: 36px;
-letter-spacing: 0.06em;
 margin-bottom: 2px;
 color: var(--brand-color);
 }
@@ -250,7 +232,6 @@ color: var(--brand-color);
     font-weight: 400;
     color: #757575;
     line-height: 30px;
-    letter-spacing: 0.03em;
     margin-top: 2px;
     }
     .site-nav, .site-nav1 {font-family: 'Roboto';
@@ -262,7 +243,7 @@ padding-left: 24px;
 
 /*stopka*/
 .footer {background-color: #2F303A;
-    padding: 60px 1240px 60px 215px;
+    padding: 47px 1240px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
@@ -270,8 +251,6 @@ padding-left: 24px;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     font-style: normal;
     cursor:default;
 }
@@ -279,7 +258,5 @@ padding-left: 24px;
     font-style: normal;
     font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
