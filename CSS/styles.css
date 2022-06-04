@@ -133,7 +133,8 @@ text-transform: uppercase;
 .child{display: flex;
     justify-content: center;
     align-items: center;
-    padding: 350px 700px 200px 700px;
+    padding-top: 350px;
+    padding-bottom: 200px;
     margin-right: auto;
         margin-left: auto;
 }
