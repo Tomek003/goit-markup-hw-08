@@ -16,6 +16,10 @@
     background-color: #FFFFFF;
     
 }
+.background-image{ width: 1600px;
+    height: 600px;
+    background-size: cover;
+}
 /* buttony */
 .button,
 .button1 {
