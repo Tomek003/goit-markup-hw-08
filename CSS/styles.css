@@ -16,7 +16,7 @@
     background-color: #FFFFFF;
     
 }
-.background-image{ width: 1600px;
+.background-image{ max-width: 1600px;
     height: 600px;
     background-size: cover;
 }
