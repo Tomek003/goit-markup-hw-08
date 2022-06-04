@@ -89,17 +89,22 @@
 .content{
 height: 100%;
 display: flex;
-align-items: center;
-padding: 24px 1240px 25px 215px;
+padding: 24px 0px 25px 215px;
 justify-content: space-between;
+align-items: center;
 }
 .navi {width: 400px;
-list-style-type: none;}
-.menu .navi{display: flex;
-    width:100%;
-    padding-left: 93px;
+}
+.menu, .menu2{display: inline-flex;
 background-color: #FFFFFF;
 }
+.menu{margin-left: -93px;}
+.menu2{margin-right: 227px;}
+
+.menu-list, .menu-list2 {list-style-type: none;}
+.menu-list {padding-right:46px;}
+.menu-list2{padding-right: 50px;}
+
 .link1, .gray-link {
     font-family: 'Roboto';
     font-style: normal;
