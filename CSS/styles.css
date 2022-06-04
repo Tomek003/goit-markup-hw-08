@@ -18,7 +18,29 @@
 .background-image{ max-width: 1600px;
     height: 600px;
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0,7;
+}
+.parent {
+    display: flex;
+    background-color: #2F303A;
+    width: 1200px;
+}
+.text-box,
+.child {
+    text-align: center;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+}
+.text-box {
+    /*padding: 80px 452px 30px 452px;*/
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
 }
 /* buttony */
 .button,
@@ -105,24 +127,7 @@ background-color: #FFFFFF;
         .logo1 {color: var(--brand-color);}
         .logo2 {color: #FFFFFF;
         }
-.box{display: block;
-    box-sizing: content-box;
-background-color: #2F303A;
-}
-.parent, .child{
-    text-align: center;
-    font-family: 'Roboto';
-    color: #FFFFFF;
-}
-.parent{padding: 80px 452px 30px 452px;
-font-weight: 900;
-font-size: 44px;
-margin: 0px;
-line-height: 60px;
-text-transform: uppercase;
-}
-.child{padding-bottom:200px;
-}
+
 .card-set{
 list-style-type: none;
 }
