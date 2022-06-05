@@ -1,8 +1,6 @@
 *,
 *::before,
 *::after {box-sizing: border-box;}
-:root { --brand-color: #212121;
-}
 
 .body {font-family: 'Roboto', 'Raleway', sans-serif;
     font-weight: 400, 500, 700, 900;
@@ -16,28 +14,30 @@
     margin: 0px auto;
     background-color: #FFFFFF;
 }
-.background-image, .background-overlay{
+.bg-image {background-color: #2F303A;
+    background-image: url("../images/Img.jpg"), 
+    linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4));
     background-size: cover;
-    opacity: 0.7;
+    background-repeat: no-repeat;
 }
-.parent {
-    display: flex;
-    justify-content: center;
-    background-color: #2F303A;
+    .parent{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    width: 696px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    margin: 0px 210px 80px 310px;
 }
-.text-box, .child {
+.parent, .child {
     text-align: center;
     font-family: 'Roboto';
     color: #FFFFFF;
 }
 .child{max-width: 200px;
-}
-.text-box{font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    margin-top: 260px;
-    background-color: #2F303A;
-    text-transform: uppercase;
 }
 /* buttony */
 .buttons{margin-top:94px;
@@ -56,7 +56,7 @@ justify-content: center;}
     padding: 10px 41px 10px 42px;
     width: 200px;
     height: 50px;
-    margin: 400px 600px 200px -600px;
+    margin: 30px 450px 230px 560px;
     background-color: #2196F3;
     color: #FFFFFF;
     border: none;
@@ -282,13 +282,15 @@ padding-left: 24px;
     display: inline-flex;
     width:113px;
     height:16px;
+    border: 1px solid red;
     line-height: 16px;
 text-transform: uppercase;
 color: #FFFFFF;
 margin: 0px 171px 0px 150px;}
 
 .social-link{
-    margin: 20px 171px 200px 300px;}
+    margin: 20px 171px 200px 300px;
+border: 1px solid red;}
 
 .icon-Social-links {
     width: 150px;
