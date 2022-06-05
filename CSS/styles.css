@@ -16,11 +16,10 @@
     margin: 0px auto;
     background-color: #FFFFFF;
 }
-/*.background-image{ max-width: 1600px;
-    height: 600px;
+.background-image, .background-overlay{
     background-size: cover;
-    opacity: 0,7;
-}*/
+    opacity: 0.7;
+}
 .parent {
     display: flex;
     justify-content: center;
@@ -33,7 +32,7 @@
 }
 .child{max-width: 200px;
 }
-.text-box {font-weight: 900;
+.text-box{font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     margin-top: 260px;
@@ -226,22 +225,17 @@ padding-right:30px;}
     padding-bottom: 94px;
 }
 
-.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {border: 1px solid #EEEEEE;
-margin-bottom: 15px;}
-.photo4, .photo5, .photo6, .photo7, .photo8, .photo9 {margin-top: 15px;}
-
-.photo1, .photo2, .photo4, .photo5, .photo7, .photo8 {margin-right: 15px;}
-
-.photo7, .photo8, .photo9{margin-bottom:47px;}
+.photo {border: 1px solid #EEEEEE;
+margin-bottom: 30px;}
 
   .site {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
     list-style-type: none;
-margin-bottom: 94px;}
+margin-bottom: 64px;}
 
-.photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover, .photo5:hover, .photo6:hover, .photo7:hover, .photo8:hover, .photo9:hover{box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12), 
+.photo:hover{box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12), 
     4px 4px 4px rgba(0, 0, 0, 0.06), 
     4px 4px 6px rgba(0, 0, 0, 0.16),
     8px 0px 10px rgba(0, 0, 0, 0.30),
@@ -281,10 +275,31 @@ padding-left: 24px;
     font-style: normal;
     cursor:default;
 }
+.social-title{font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-flex;
+    width:113px;
+    height:16px;
+    line-height: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+margin: 0px 171px 0px 150px;}
+
+.social-link{
+    margin: 20px 171px 200px 300px;}
+
+.icon-Social-links {
+    width: 150px;
+    height: 32px;
+    background-position: 0 -96px;
+    fill:#fff;
+    fill-opacity: 0.1;
+}
 .link2, .link3, .link4 {font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
         font-size: 14px;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
-
