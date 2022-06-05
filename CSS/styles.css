@@ -1,10 +1,10 @@
 *,
 *::before,
 *::after {box-sizing: border-box;}
+:root {--brand-color: #212121;}
 
 .body {font-family: 'Roboto', 'Raleway', sans-serif;
     font-weight: 400, 500, 700, 900;
-    color: var(--brand-color);
     cursor:default;
     margin: 0px;
 }
@@ -15,11 +15,10 @@
     background-color: #FFFFFF;
 }
 .bg-image {background-color: #2F303A;
-    background-image: url("../images/Img.jpg"), 
-    linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -104,6 +103,26 @@ background-color: #FFFFFF;
 .menu{margin-left: -93px;}
 .menu2{margin-right: 227px;}
 
+.icon-envelope, .icon-smartphone {
+    margin-right: 10px;
+    stroke: #757575;
+    stroke-width: 2px;
+    }
+
+.icon-envelope {
+            width: 16px;
+            height: 12px;
+        background-position: -528px 0;}
+
+.icon-smartphone {
+            width: 10px;
+            height: 16px;
+            background-position: -624px -48px;}
+
+.icon-envelope:hover, .icon-smartphone:hover {
+                            stroke: #2196F3;
+                            cursor: pointer;}
+
 .menu-list, .menu-list2 {list-style-type: none;}
 .menu-list {padding-right:46px;}
 .menu-list2{padding-right: 50px;}
@@ -157,7 +176,7 @@ margin-bottom: 94px;
     text-align: left;
 }
 
-.profession, .team, .lorem,.lorem1, .name, .job{
+.profession, .team, .lorem,.lorem1, .name, .job, .clients{
     font-family: 'Roboto';}
 
 .team1, .profession1, .profession, .name, .job {
@@ -175,14 +194,14 @@ display: flex;
 justify-content: space-between;
 padding-right:30px;}
 
-.profession, .team{
+.profession, .team, .clients{
     font-size: 36px;
     line-height: 42px;
 }
-.profession, .team, .name, .job {
+.profession, .team, .name, .job, .clients {
     text-align: center;
 }
-.profession, .team, .lorem {
+.profession, .team, .lorem, .clients {
     font-weight: 700;
     color: var(--brand-color);
 }
@@ -218,6 +237,17 @@ padding-right:30px;}
     height: 19px;
     padding: 10px 61px 30px 62px;
     margin: 0;
+}
+.contractor{padding-bottom: 94px;
+    padding-left: 215px;}
+
+.clients{padding:94px;}
+
+.icon-Logo--1 {
+    width: 41px;
+    height: 38px;
+    fill: #AFB1B8;
+    background-position: -144px -48px;
 }
 .container1 {
     background-color: #F5F4FA;
@@ -282,7 +312,6 @@ padding-left: 24px;
     display: inline-flex;
     width:113px;
     height:16px;
-    border: 1px solid red;
     line-height: 16px;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -290,7 +319,7 @@ margin: 0px 171px 0px 150px;}
 
 .social-link{
     margin: 20px 171px 200px 300px;
-border: 1px solid red;}
+}
 
 .icon-Social-links {
     width: 150px;
