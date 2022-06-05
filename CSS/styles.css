@@ -12,9 +12,8 @@
 .container {
     max-width: 1200px;
     margin: 0px auto;
-    background-color: #FFFFFF;
 }
-.bg-image {background-color: #2F303A;
+.section-heading {background-color: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4),
@@ -22,7 +21,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-    .parent{
+.parent{
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -30,13 +29,9 @@
     padding-top: 100px;
     text-transform: uppercase;
     margin: 0px 210px 80px 310px;
-}
-.parent, .child {
     text-align: center;
     font-family: 'Roboto';
     color: #FFFFFF;
-}
-.child{max-width: 200px;
 }
 /* buttony */
 .buttons{margin-top:94px;
@@ -85,24 +80,50 @@ justify-content: center;}
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* menu*/
-.page-header {height: 80px;
+.container.page-header {height: 80px;
     border-bottom: 1px solid #ECECEC;
 }
 .content{
 height: 100%;
 display: flex;
-padding: 24px 0px 25px 215px;
+padding: 24px 0px 0px 215px;
 justify-content: space-between;
-align-items: center;
 }
+ /* WebStudio */
+ .logo, .logo1, .logo2 {
+     font-family: 'Raleway';
+     font-size: 26px;
+     font-weight: 700;
+     line-height: 31px;
+     text-decoration: none;
+ }
+ .logo {
+     color: #2196F3;
+ }
+ .logo1 {
+     color: var(--brand-color);
+ }
+ .logo2 {
+     color: #FFFFFF;
+ }
 .navi {width: 400px;
 }
 .menu, .menu2{display: inline-flex;
 background-color: #FFFFFF;
 }
-.menu{margin-left: -93px;}
-.menu2{margin-right: 227px;}
+.menu{margin-left: 93px;
+}
+.menu2{margin-right: 50px;}
 
+.menu-list,.menu-list2 {
+    list-style-type: none;
+}
+.menu-list {
+    padding-right: 46px;
+}
+.menu-list2 {
+    padding-right: 20px;
+}
 .icon-envelope, .icon-smartphone {
     margin-right: 10px;
     stroke: #757575;
@@ -123,10 +144,6 @@ background-color: #FFFFFF;
                             stroke: #2196F3;
                             cursor: pointer;}
 
-.menu-list, .menu-list2 {list-style-type: none;}
-.menu-list {padding-right:46px;}
-.menu-list2{padding-right: 50px;}
-
 .link1, .gray-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -142,19 +159,6 @@ background-color: #FFFFFF;
     text-decoration: underline;
     color: #2196F3;
 }
-    /* WebStudio */
-.logo, .logo1, .logo2 {
-            font-family: 'Raleway';
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 31px;
-            text-decoration: none;
-        }
-        .logo {color: #2196F3;}
-        .logo1 {color: var(--brand-color);}
-        .logo2 {color: #FFFFFF;
-        }
-
 .card-set{display: flex;
     justify-content: space-evenly;
 list-style-type: none;
@@ -187,7 +191,11 @@ margin-bottom: 94px;
 .profession{
     padding: 0px 624px 25px 624px;
     }
-.profession1{margin-bottom: 94px;}
+.profession1, .card-set, .team1, .site {
+            padding-left: 0px;
+        }
+.profession1{margin-bottom: 94px;
+padding-left: 0px;}
 
 .image1, .image2, .image3{
 display: flex;
@@ -238,7 +246,7 @@ padding-right:30px;}
     padding: 10px 61px 30px 62px;
     margin: 0;
 }
-.contractor{padding-bottom: 94px;
+.container.contractor{padding-bottom: 94px;
     padding-left: 215px;}
 
 .clients{padding:94px;}
@@ -249,12 +257,6 @@ padding-right:30px;}
     fill: #AFB1B8;
     background-position: -144px -48px;
 }
-.container1 {
-    background-color: #F5F4FA;
-    padding-top: 47px;
-    padding-bottom: 94px;
-}
-
 .photo {border: 1px solid #EEEEEE;
 margin-bottom: 30px;}
 
@@ -271,7 +273,6 @@ margin-bottom: 64px;}
     8px 0px 10px rgba(0, 0, 0, 0.30),
     0px 8px 10px rgba(0, 0, 0, 0.30);
 cursor: pointer;}
-
     .site-nav{
 font-size: 18px;
 font-weight: 700;
@@ -293,8 +294,8 @@ padding-left: 24px;
 }
 
 /*stopka*/
-.footer {background-color: #2F303A;
-    padding: 60px 1240px 60px 215px;
+.container.footer {background-color: #2F303A;
+    padding: 60px 0px 60px 215px;
 }
 .address {
     font-family: 'Roboto';
@@ -320,7 +321,6 @@ margin: 0px 171px 0px 150px;}
 .social-link{
     margin: 20px 171px 200px 300px;
 }
-
 .icon-Social-links {
     width: 150px;
     height: 32px;
