@@ -186,7 +186,7 @@ margin-bottom: 0px;
     text-align: left;
 }
 
-.profession, .team, .lorem,.lorem1, .name, .job, .clients{
+.profession, .team, .lorem,.lorem1, .name, .job, .client-title{
     font-family: 'Roboto';}
 
 .section-team{background-color: #F5F4FA;}
@@ -210,18 +210,19 @@ display: flex;
 justify-content: space-between;
 padding-right:30px;}
 
-.profession, .team, .clients{
+.profession, .team, .client-title{
     font-size: 36px;
     line-height: 42px;
 }
-.profession, .team, .name, .job, .clients {
+.profession, .team, .name, .job, .client-title {
     text-align: center;
 }
-.profession, .team, .lorem, .clients {
+.profession, .team, .lorem, .client-title {
     font-weight: 700;
     color: var(--brand-color);
 }
-.team1{padding-bottom: 94px;}
+.team1{padding-bottom: 94px;
+margin-bottom: 0px;}
 .name, .job {
     font-size: 16px;
     background-color: #FFFFFF;
@@ -240,8 +241,7 @@ padding-right:30px;}
     0px 2px 3px rgba(0, 0, 0, 0.12),
     12px 0px 15px rgba(0, 0, 0, 0.30),
     0px 12px 15px rgba(0, 0, 0, 0.30);
-
-        border-radius: 0px 0px 4px 4px;}
+border-radius: 0px 0px 4px 4px;}
 
     .card-image.no-gap {display: block;
     }
@@ -254,12 +254,14 @@ padding-right:30px;}
     margin: 0;
 }
 .container.contractor{margin: 0 auto;
-    }
-
-.clients{margin: 0 auto;
     padding-bottom: 94px;
+    }
+.clients{display:flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
-
+.client-title{padding-top:94px;
+margin: 0 auto;}
 .icon-Logo--1 {
     width: 41px;
     height: 38px;
