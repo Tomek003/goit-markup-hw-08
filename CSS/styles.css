@@ -114,18 +114,20 @@ justify-content: space-between;
 background-color: #FFFFFF;
 margin-top: 27px;
 }
+.menu{padding-left: 93px;}
 
-.menu2{margin-right: -100px;
-margin-left:200px;}
+.menu2{margin-right: 50px;
+margin-left: 220px;
+padding-left: 0px;}
 
 .menu-list,.menu-list2 {
     list-style-type: none;
 }
-.menu-list {
+.menu-list:not(:last-child) {
     padding-right: 46px;
 }
-.menu-list2 {
-    padding-right: 20px;
+.menu-list2:not(:last-child) {
+    padding-right: 25px;
 }
 .icon-envelope, .icon-smartphone {
     margin-right: 10px;
