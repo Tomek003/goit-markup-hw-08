@@ -29,6 +29,7 @@
     line-height: 60px;
     width: 696px;
     padding-top: 100px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
@@ -168,6 +169,7 @@ padding-left: 0px;}
     justify-content: space-evenly;
 list-style-type: none;
 margin-top:94px;
+margin-bottom: 0px;
 }
 
 .lorem {
