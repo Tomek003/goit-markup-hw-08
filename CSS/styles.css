@@ -18,6 +18,8 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+            max-width: 1600px;
+            margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -28,7 +30,7 @@
     width: 696px;
     padding-top: 100px;
     text-transform: uppercase;
-    margin: 0px 210px 80px 310px;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Roboto';
     color: #FFFFFF;
@@ -50,7 +52,7 @@ justify-content: center;}
     padding: 10px 41px 10px 42px;
     width: 200px;
     height: 50px;
-    margin: 30px 450px 230px 560px;
+    margin: 0 auto 210px auto;
     background-color: #2196F3;
     color: #FFFFFF;
     border: none;
@@ -86,7 +88,7 @@ justify-content: center;}
 .content{
 height: 100%;
 display: flex;
-padding: 24px 0px 0px 215px;
+padding: 24px 46px -25px 215px;
 justify-content: space-between;
 }
  /* WebStudio */
@@ -110,10 +112,11 @@ justify-content: space-between;
 }
 .menu, .menu2{display: inline-flex;
 background-color: #FFFFFF;
+margin-top: 27px;
 }
-.menu{margin-left: 93px;
-}
-.menu2{margin-right: 50px;}
+
+.menu2{margin-right: -100px;
+margin-left:200px;}
 
 .menu-list,.menu-list2 {
     list-style-type: none;
@@ -163,7 +166,6 @@ background-color: #FFFFFF;
     justify-content: space-evenly;
 list-style-type: none;
 margin-top:94px;
-margin-bottom: 94px;
 }
 
 .lorem {
@@ -183,13 +185,15 @@ margin-bottom: 94px;
 .profession, .team, .lorem,.lorem1, .name, .job, .clients{
     font-family: 'Roboto';}
 
+.section-team{background-color: #F5F4FA;}
 .team1, .profession1, .profession, .name, .job {
             display: flex;
             justify-content: space-evenly;
             list-style-type: none;}
 
-.profession{
-    padding: 0px 624px 25px 624px;
+.profession, .team {margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 94px;
     }
 .profession1, .card-set, .team1, .site {
             padding-left: 0px;
@@ -213,8 +217,7 @@ padding-right:30px;}
     font-weight: 700;
     color: var(--brand-color);
 }
-.team {padding: 0px 695px 25px 695px;
-}
+.team1{padding-bottom: 94px;}
 .name, .job {
     font-size: 16px;
     background-color: #FFFFFF;
@@ -246,16 +249,43 @@ padding-right:30px;}
     padding: 10px 61px 30px 62px;
     margin: 0;
 }
-.container.contractor{padding-bottom: 94px;
-    padding-left: 215px;}
+.container.contractor{margin: 0 auto;
+    }
 
-.clients{padding:94px;}
+.clients{margin: 0 auto;
+    padding-bottom: 94px;
+}
 
 .icon-Logo--1 {
     width: 41px;
     height: 38px;
     fill: #AFB1B8;
     background-position: -144px -48px;
+}
+.icon-Logo {
+    width: 56px;
+    height: 32px;
+    background-position: -48px -48px;
+}
+.icon-Logo-3 {
+    width: 57px;
+    height: 32px;
+    background-position: -528px -48px;
+}
+.icon-Logo-2 {
+    width: 57px;
+    height: 32px;
+    background-position: -432px -48px;
+}
+.icon-Logo-1 {
+    width: 57px;
+    height: 32px;
+    background-position: -336px -48px;
+}
+.icon-Logo1 {
+    width: 57px;
+    height: 32px;
+    background-position: -240px -48px;
 }
 .photo {border: 1px solid #EEEEEE;
 margin-bottom: 30px;}
@@ -273,6 +303,7 @@ margin-bottom: 64px;}
     8px 0px 10px rgba(0, 0, 0, 0.30),
     0px 8px 10px rgba(0, 0, 0, 0.30);
 cursor: pointer;}
+
     .site-nav{
 font-size: 18px;
 font-weight: 700;
@@ -295,7 +326,8 @@ padding-left: 24px;
 
 /*stopka*/
 .container.footer {background-color: #2F303A;
-    padding: 60px 0px 60px 215px;
+    padding: 60px 0px 60px 150px;
+    margin: 0 auto;
 }
 .address {
     font-family: 'Roboto';
@@ -321,6 +353,7 @@ margin: 0px 171px 0px 150px;}
 .social-link{
     margin: 20px 171px 200px 300px;
 }
+
 .icon-Social-links {
     width: 150px;
     height: 32px;
