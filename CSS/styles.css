@@ -399,23 +399,54 @@ padding-left: 24px;
     font-style: normal;
     cursor:default;
 }
+.social-footer{display: flex;
+    align-items: center;
+    justify-content: center;
+margin: 0 auto;}
+
 .social-title{font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    margin-top: 0;
-    margin-left: 170px;
     line-height: 16px;
 text-transform: uppercase;
 color: #FFFFFF;}
 
-.icon-Social-links {margin: 0;
-    margin-bottom: auto;
-    margin-left: 170px;
-    background-position: 0 -96px;
-    fill:rgba(255, 255, 255, 0.1);
+.social-links{display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
 }
-.icon-social-links:hover {fill:#2196F3;
+.social-icons {
+        width: 44px;
+        height: 44px;
+        margin-right: 20px;
+        border-radius: 50%;
+    background-position: -336px 0;
+    fill: rgba(255, 255, 255, 0.1);
+}
+.icon-Ellipse-1 {
+    width: 32px;
+    height: 32px;
+    background-position: -240px 0;
+    
+}
+.icon-Ellipse-2 {
+    width: 32px;
+    height: 32px;
+    background-position: -288px 0;
+}
+.icon-Ellipse-3 {
+    width: 32px;
+    height: 32px;
+    background-position: -336px 0;
+}
+.icon-Ellipse-4 {
+    width: 44px;
+    height: 44px;
+    background-position: -384px 0;
+}
+.social-icons:hover {fill: #2196F3;
 cursor: pointer;}
 
 .link2, .link3, .link4 {font-family: 'Roboto';
@@ -424,4 +455,3 @@ cursor: pointer;}
         font-size: 14px;
     color: rgba(255, 255, 255, 0.6);}
 .link2, .link3 {text-decoration: none;}
-
