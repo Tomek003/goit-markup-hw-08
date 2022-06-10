@@ -89,8 +89,9 @@ justify-content: center;}
 .content{
 height: 100%;
 display: flex;
-padding: 24px 46px 0px 0px;
+padding: 24px 227px 25px 0px;
 justify-content: space-between;
+align-items: center;
 }
  /* WebStudio */
  .logo, .logo1, .logo2 {
@@ -130,27 +131,32 @@ margin-left: 220px;
 .menu-list2:not(:last-child) {
     padding-right: 25px;
 }
-.icon-envelope, .icon-smartphone {
+.icon-envelope-gray-link, .icon-smartphone-gray-link {
     margin-right: 10px;
-    stroke: #757575;
+    fill: #757575;
     stroke-width: 2px;
+    color: #757575;
     }
 
-.icon-envelope {
+.icon-envelope-gray-link {
             width: 16px;
             height: 12px;
         background-position: -528px 0;}
 
-.icon-smartphone {
+.icon-smartphone-gray-link {
             width: 10px;
             height: 16px;
             background-position: -624px -48px;}
 
-.icon-envelope:hover, .icon-smartphone:hover {
-                            stroke: #2196F3;
-                            cursor: pointer;}
+.icon-envelope-gray-link:hover,
+.icon-smartphone-gray-link:hover{
+    text-decoration: underline;
+    color: #2196F3;
+    stroke: #2196F3;
+    cursor: pointer;
+}
 
-.link1, .gray-link {
+.link1, .icon-envelope-gray-link, .icon-smartphone-gray-link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -159,12 +165,8 @@ margin-left: 220px;
     text-decoration: none;
 }
 .link1{color: var(--brand-color);}
-.gray-link {color: #757575;}
 
-.link1:hover, .gray-link:hover, .link1:focus, .gray-link:focus {
-    text-decoration: underline;
-    color: #2196F3;
-}
+
 .card-set{display: flex;
     justify-content: space-evenly;
 list-style-type: none;
@@ -179,6 +181,9 @@ margin-bottom: 0px;
     margin-bottom: 30px;
 width:270px; 
 height: 120px;}
+
+.lorem-image:hover{border: 2px solid #2196F3;
+}
 
 .icon-antenna-1 {
     width: 65px;
@@ -272,19 +277,30 @@ margin-bottom: 0px;}
 border-radius: 0px 0px 4px 4px;
 background-color: #FFFFFF;}
 
-.icon-Social-links-1 {
-    width: 150px;
-    height: 32px;
-    display: inline;
-    padding-left: 32px;
-    background-position: -192px -96px;
+.icon-Social-links-1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    fill: #AFB1B8;
     border: none;
-    fill: #212121;
 }
-.icon-Social-links-1:hover{fill: #2196F3;
+.social-link-icon {
+    width: 20px;
+    height: 20px;
+}
+.icon-Social-links-1:hover{background-color: #2196F3;
+    fill: #FFFFFF;
 cursor: pointer;}
+
     .card-image.no-gap {display: block;
     }
+
 .job {
     font-weight: 400;
     color: #757575;
@@ -318,36 +334,6 @@ margin: 0 auto;}
 .client-title{padding-top:94px;
 margin: 0 auto;}
 
-.icon-Logo--1 {
-    width: 41px;
-    height: 38px;
-    background-position: -144px -48px;
-}
-.icon-Logo {
-    width: 56px;
-    height: 32px;
-    background-position: -48px -48px;
-}
-.icon-Logo-3 {
-    width: 57px;
-    height: 32px;
-    background-position: -528px -48px;
-}
-.icon-Logo-2 {
-    width: 57px;
-    height: 32px;
-    background-position: -432px -48px;
-}
-.icon-Logo-1 {
-    width: 57px;
-    height: 32px;
-    background-position: -336px -48px;
-}
-.icon-Logo1 {
-    width: 57px;
-    height: 32px;
-    background-position: -240px -48px;
-}
 .photo {border: 1px solid #EEEEEE;
 margin-bottom: 30px;}
 
@@ -386,10 +372,39 @@ padding-left: 24px;
 }
 
 /*stopka*/
-.container.footer {background-color: #2F303A;
-    padding: 60px 0px 60px 150px;
-    margin: 0 auto;
+footer>.container {
+    display: flex;
+    align-items: center;
+    background-color: #2F303A;
+        padding: 60px 0px 60px 150px;
+        margin: 0 auto;
 }
+.link2, .link3, .link4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link2, .link3 {
+    text-decoration: none;
+}
+.social-title>h4 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.social-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 70px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;}
+
 .address {
     font-family: 'Roboto';
     color: #FFFFFF;
@@ -397,61 +412,27 @@ padding-left: 24px;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
-    cursor:default;
+    cursor: default;
 }
-.social-footer{display: flex;
+.icon-Social-links-footer {
+    display: flex;
     align-items: center;
     justify-content: center;
-margin: 0 auto;}
-
-.social-title{font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-text-transform: uppercase;
-color: #FFFFFF;}
-
-.social-links{display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-}
-.social-icons {
-        width: 44px;
-        height: 44px;
-        margin-right: 20px;
-        border-radius: 50%;
-    background-position: -336px 0;
-    fill: rgba(255, 255, 255, 0.1);
-}
-.icon-Ellipse-1 {
-    width: 32px;
-    height: 32px;
-    background-position: -240px 0;
-    
-}
-.icon-Ellipse-2 {
-    width: 32px;
-    height: 32px;
-    background-position: -288px 0;
-}
-.icon-Ellipse-3 {
-    width: 32px;
-    height: 32px;
-    background-position: -336px 0;
-}
-.icon-Ellipse-4 {
     width: 44px;
     height: 44px;
-    background-position: -384px 0;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
 }
-.social-icons:hover {fill: #2196F3;
-cursor: pointer;}
-
-.link2, .link3, .link4 {font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-        font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);}
-.link2, .link3 {text-decoration: none;}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.icon-Social-links-footer:hover,
+.icon-Social-links-footer:focus {
+    fill: #FFFFFF;
+    background-color: #2196F3;
+}
