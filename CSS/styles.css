@@ -202,6 +202,7 @@ margin-bottom: 0px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding: 25px 0;
 width:270px; 
 height: 120px;
 transition-property: border;
@@ -214,23 +215,23 @@ transition-property: border;
 }
 
 .icon-antenna-1 {
-    width: 65px;
+    width: 70px;
     height: 70px;
     background-position: 0 0;
 }
 .icon-clock-1 {
-    width: 67px;
+    width: 70px;
     height: 70px;
     background-position: -96px 0;
 }
 .icon-diagram-1 {
     width: 70px;
-    height: 54px;
+    height: 70px;
     background-position: -144px 0;
 }
 .icon-astronaut-1 {
     width: 70px;
-    height: 61px;
+    height: 70px;
     background-position: -48px 0;
 }
 .lorem {
@@ -315,7 +316,9 @@ padding-right:30px;}
     font-weight: 700;
     color: var(--brand-color);
 }
-.team1{
+.team1{display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 94px;
 margin-bottom: 0px;
 gap: 30px;}
@@ -561,3 +564,5 @@ padding-bottom: 10px;}
 }
 .icon-links-footer {width:20px;
 height: 20px;}
+
+
