@@ -609,6 +609,7 @@ height: 30px;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 background-color: var(--background-color);
+cursor: pointer;
 transition-property: transform;
 transition-duration: 2s; 
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
