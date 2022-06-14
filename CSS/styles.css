@@ -440,7 +440,8 @@ font-size: 18px;
     font-weight: 700;
     line-height: 36px;
     text-transform: none;
-color: var(--brand-color);}
+color: var(--brand-color);
+z-index: 2;}
 
 .overlay {position: absolute;
 bottom: 110px;
@@ -451,13 +452,14 @@ font-family: 'Roboto';
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: transparent;
+    color: black;
     letter-spacing: 0.03em;
     padding: 49px 45px 49px 24px;
 transform: translateY(100%);
 transition-property: transform;
 transition-duration: 250ms; 
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+z-index: 1;
 }
 
 .overlay>p {
@@ -468,27 +470,29 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2196F3E5;
     color: var(--secondary-color);
 }
-.portfolio-card-image.no-gap{
+.portfolio-card-image .no-gap{position: relative;
       display: block;
       width: 370px;
       height: 294px;
+      z-index: 5;
     }
     .card-image.no-gap {display: block;}
 
-  .site-nav{
+  .site-nav{position: relative;
 margin-top: 20px;
 margin-bottom: 2px;
 text-indent: 24px;
 background-color: var(--background-color);
-
+z-index: 3;
 }
-.site-nav1{
+.site-nav1{position: relative;
     font-size: 16px;
     font-weight: 400;
     color: #757575;
     line-height: 30px;
     margin-top: 2px;
     margin-bottom: 0px;
+    z-index: 3;
     }
     .portfolio-box, .site-nav1 {font-family: 'Roboto';
     text-decoration: none;
@@ -609,3 +613,5 @@ background-color: rgba(0, 0, 0, 0.2);
 .is-hidden {opacity: 0;
 visibility: hidden;
 pointer-events: none;}
+
+
