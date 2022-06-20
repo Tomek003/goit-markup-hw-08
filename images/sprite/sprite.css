@@ -3,104 +3,134 @@
   background-repeat: no-repeat;
   background-image: url(sprite.svg);
 }
-.icon-X {
+.icon-arrow {
   width: 32px;
   height: 32px;
   background-position: 0 0;
 }
-.icon-antenna-1 {
+.icon-checkbox {
   width: 32px;
   height: 32px;
   background-position: -48px 0;
 }
-.icon-astronaut-1 {
+.icon-envelope-modal {
   width: 32px;
   height: 32px;
   background-position: -96px 0;
 }
-.icon-clock-1 {
+.icon-phone {
   width: 32px;
   height: 32px;
   background-position: -144px 0;
 }
-.icon-diagram-1 {
+.icon-name {
   width: 32px;
   height: 32px;
   background-position: -192px 0;
 }
-.icon-envelope {
-  width: 43px;
+.icon-icon-send {
+  width: 32px;
   height: 32px;
   background-position: -240px 0;
 }
-.icon-facebook-1 {
+.icon-X {
+  width: 32px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-antenna-1 {
   width: 32px;
   height: 32px;
   background-position: -336px 0;
 }
-.icon-instagram-2 {
+.icon-astronaut-1 {
   width: 32px;
   height: 32px;
   background-position: -384px 0;
 }
-.icon-linkedin-1 {
+.icon-clock-1 {
   width: 32px;
   height: 32px;
   background-position: -432px 0;
 }
+.icon-diagram-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-envelope {
+  width: 43px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-facebook-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-instagram-2 {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-linkedin-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -720px 0;
+}
 .icon-Logo {
   width: 56px;
   height: 32px;
-  background-position: -480px 0;
+  background-position: 0 -48px;
 }
 .icon-Logo--1 {
   width: 56px;
   height: 32px;
-  background-position: -576px 0;
+  background-position: -96px -48px;
 }
 .icon-Logo1 {
   width: 57px;
   height: 32px;
-  background-position: -672px 0;
+  background-position: -192px -48px;
 }
 .icon-Logo-1 {
   width: 57px;
   height: 32px;
-  background-position: 0 -48px;
+  background-position: -288px -48px;
 }
 .icon-Logo-2 {
   width: 57px;
   height: 32px;
-  background-position: -96px -48px;
+  background-position: -384px -48px;
 }
 .icon-Logo-3 {
   width: 57px;
   height: 32px;
-  background-position: -192px -48px;
+  background-position: -480px -48px;
 }
 .icon-smartphone {
   width: 20px;
   height: 32px;
-  background-position: -288px -48px;
+  background-position: -576px -48px;
 }
 .icon-twitter-1 {
   width: 32px;
   height: 32px;
-  background-position: -336px -48px;
+  background-position: -624px -48px;
 }
 .icon-Vector {
   width: 32px;
   height: 32px;
-  background-position: -384px -48px;
+  background-position: -672px -48px;
 }
 .icon-Vector-1 {
   width: 36px;
   height: 32px;
-  background-position: -432px -48px;
+  background-position: 0 -96px;
 }
 .icon-Vector-2 {
   width: 18px;
   height: 32px;
-  background-position: -480px -48px;
+  background-position: -48px -96px;
 }
 
