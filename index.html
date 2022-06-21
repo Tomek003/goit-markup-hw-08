@@ -279,7 +279,8 @@
                     <label>
                         <input type="text" name="E-mail" placeholder="E-mail" class="e-mail">
                     </label>
-                    <button type="submit" class="submit-button"><svg class="icon-send"><use href="./images/icons.svg#icon-send" width="24" height="24"></use>
+                    <button type="submit" class="submit-button">
+                        <svg class="icon-send"><use href="./images/icons.svg#icon-send" width="24" height="24"></use>
                         <h4 class="submit-button-title">Zapisz się</h4></svg></button>
                 </form>
             </div>
@@ -287,10 +288,43 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close><svg class="icon-X" width="11" height="11">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="icon-X" width="11" height="11">
                 <use href="./images/icons.svg#icon-X"></use>
             </svg></button>
         </div>
+        <form class="modal-form" name="data-form" autocomplete="on" novalidate>
+                <h3>Zostaw swoje dane w formularzu poniżej</h3>
+            <label for="user_email">Imię
+                <input type="text" name="first-name" class="modal-form-field" id="user_email">
+                <svg class="icon-name" width="12" height="12">
+                    <use class="modal-icon" href="./images/icons.svg#icon-name"></use>
+                </svg>
+            </label>
+            <label>Telefon
+                <input type="text" name="phone-number" class="modal-form-field1">
+                <svg class="icon-phone" width="13" height="13">
+                    <use class="modal-icon" href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </label>
+            <label>E-mail
+                <input type="text" name="e-mail" class="modal-form-field2">
+                <svg class="icon-envelope-modal" width="15" height="12">
+                    <use class="modal-icon" href="./images/icons.svg#icon-envelope-modal"></use>
+                </svg>
+            </label>
+            <label>
+                Komentarz
+                <textarea name="comment" rows="6" placeholder="Wprowadź tekst" class="modal-form-field3"></textarea>
+            </label>
+            <label>
+                <input type="checkbox" name="terms" value="statement">
+                Oświadczam, iż akceptuję Regulamin i Politykę Prywatności
+            </label>
+    <button type="submit" class="form-submit-button">
+            <h4 class="form-submit-button-title">Wyślij</h4>
+        </button>
+        </form>
     </div>
     <script src="./js/modal.js"></script>
     </body>
