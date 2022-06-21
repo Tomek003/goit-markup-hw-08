@@ -633,6 +633,89 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 border-radius: 4px;
 }
 
+.modal-form{display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--brand-color);
+}
+
+.modal-form-field{position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -200%);
+width: 448px;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;}
+
+.modal-form-field1 {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-form-field2 {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-form-field3 {position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    width: 448px;
+    height: 128px;
+    padding-left: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    }
+
+    .modal-icon{position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);}
+
+.form-submit-button {
+    position: relative;
+    bottom: -491px;
+    left: 164px;
+    transform: translate(-75%, -50%);
+    background-color: var(--third-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+}
+.form-submit-button:hover {
+    cursor: pointer;
+}
+.form-submit-button-title {
+    position: absolute;
+    top: -10px;
+    left: 76px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondary-color);
+}
+
 .close-btn {position: absolute;
     top: 8px;
     right: 8px;
@@ -660,5 +743,3 @@ background-color: rgba(0, 0, 0, 0.2);
 .is-hidden {opacity: 0;
 visibility: hidden;
 pointer-events: none;}
-
-
