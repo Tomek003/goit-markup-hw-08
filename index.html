@@ -294,32 +294,36 @@
             </svg></button>
         </div>
         <form class="modal-form" name="data-form" autocomplete="on" novalidate>
-                <h3>Zostaw swoje dane w formularzu poniżej</h3>
-            <label for="user_email">Imię
-                <input type="text" name="first-name" class="modal-form-field" id="user_email">
+                <h3 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h3>
+            <label class="modal-form-name">Imię
+                <input type="text" name="first-name" class="modal-form-field" required>
                 <svg class="icon-name" width="12" height="12">
                     <use class="modal-icon" href="./images/icons.svg#icon-name"></use>
                 </svg>
             </label>
-            <label>Telefon
-                <input type="text" name="phone-number" class="modal-form-field1">
+            
+            <label class="modal-form-phone">Telefon
+                <input type="text" name="phone-number" class="modal-form-field1" required>
                 <svg class="icon-phone" width="13" height="13">
                     <use class="modal-icon" href="./images/icons.svg#icon-phone"></use>
                 </svg>
             </label>
-            <label>E-mail
-                <input type="text" name="e-mail" class="modal-form-field2">
+            
+            <label class="modal-form-mail">E-mail
+                <input type="text" name="e-mail" class="modal-form-field2" required>
                 <svg class="icon-envelope-modal" width="15" height="12">
                     <use class="modal-icon" href="./images/icons.svg#icon-envelope-modal"></use>
                 </svg>
             </label>
-            <label>
+            
+            <label class="modal-form-comment">
                 Komentarz
-                <textarea name="comment" rows="6" placeholder="Wprowadź tekst" class="modal-form-field3"></textarea>
+                <textarea name="comment" placeholder="Wprowadź tekst" class="modal-form-field3"></textarea>
             </label>
-            <label>
-                <input type="checkbox" name="terms" value="statement">
-                Oświadczam, iż akceptuję Regulamin i Politykę Prywatności
+        
+            <label class="modal-form-terms">
+                <input type="checkbox" name="terms" value="statement" required>
+                Oświadczam, iż akceptuję <span><a href="" class="terms-link">Regulamin</a></span> i <span><a href="" class="terms-link">Politykę Prywatności</a></span>
             </label>
     <button type="submit" class="form-submit-button">
             <h4 class="form-submit-button-title">Wyślij</h4>
