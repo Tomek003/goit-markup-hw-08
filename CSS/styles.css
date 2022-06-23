@@ -651,22 +651,17 @@ align-items: center;
 }
 
 
-.modal-form-title{position: absolute;
-    top: 190px;
+.modal-form-title{
+    margin-top: 40px;
+    margin-bottom: 15px;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 20px;
         line-height: 23px;
         color: var(--brand-color);
 }
-.modal-icon {
-    position: absolute;
-}
 
-.modal-form-name{position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%);
+.modal-form-name{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -676,12 +671,17 @@ transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-name {position: absolute;
+top: 109px;
+left: 55px;}
 
 .modal-form-field{display: flex;
     justify-content: center;
     align-items: center;
 width: 448px;
 height: 40px;
+margin-top: 4px;
+text-indent: 35px;
 border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition-property: fill;
@@ -690,10 +690,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-form-phone {
-    position: absolute;
-    top: 410px;
-    left: 50%;
-    transform: translate(-50%, -120%);
     margin-top: 14px;
     margin-bottom: 14px;
     font-family: 'Roboto';
@@ -705,12 +701,19 @@ border: 1px solid rgba(33, 33, 33, 0.2);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.icon-phone{position: absolute;
+top: 180px;
+left: 55px;}
+
 .modal-form-field1 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 448px;
     height: 40px;
+    margin-top: 4px;
+    text-indent: 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition-property: fill;
@@ -719,10 +722,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-form-mail {
-    position: absolute;
-    top: 412px;
-    left: 50%;
-    transform: translate(-50%, 20%);
     margin-bottom: 14px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -734,12 +733,18 @@ border: 1px solid rgba(33, 33, 33, 0.2);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-envelope-modal{position: absolute;
+bottom: 338px;
+left: 53px;}
+
 .modal-form-field2 {
     display: flex;
         justify-content: center;
         align-items: center;
     width: 448px;
     height: 40px;
+    margin-top: 4px;
+    text-indent: 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition-property: fill;
@@ -748,10 +753,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-form-comment {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -767,6 +768,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
     align-items: center;
     width: 448px;
     height: 128px;
+    margin-top: 4px;
     padding-top: 12px;
     padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -776,10 +778,9 @@ border: 1px solid rgba(33, 33, 33, 0.2);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.modal-form-terms {position: absolute;
-    bottom: 265px;
-    left: 50%;
-    transform: translate(-50%, 20%);
+.modal-form-terms {
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -794,11 +795,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
     .terms-link:hover {text-decoration: underline;
     color: var(--third-color);}
 
-.form-submit-button {
-    position: relative;
-    bottom: -595px;
-    left: 164px;
-    transform: translate(-75%, 175%);
+.form-submit-button {display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
     background-color: var(--third-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
@@ -810,9 +811,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
     cursor: pointer;
 }
 .form-submit-button-title {
-    position: absolute;
-    top: -10px;
-    left: 76px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
