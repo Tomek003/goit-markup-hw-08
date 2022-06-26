@@ -1,0 +1,77 @@
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-right: -8px;
+    margin-bottom: 64px;
+    margin-left: -8px;
+}
+.grid__item {
+    border: 1px solid #EEEEEE;
+    margin-right: 15px;
+  margin-left: 15px;
+    margin-bottom: 30px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.grid__item:hover {box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12), 
+    4px 4px 4px rgba(0, 0, 0, 0.06), 
+    4px 4px 6px rgba(0, 0, 0, 0.16),
+    8px 0px 10px rgba(0, 0, 0, 0.30),
+    0px 8px 10px rgba(0, 0, 0, 0.30);
+cursor: pointer;}
+
+.portfolio{position: relative;
+    width: 370px;
+    height: 404px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-family: var(--main-font);
+    font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: none;
+        text-decoration: none;
+    color: var(--font-brand-color);
+}
+    
+    .portfolio__overlay {position: absolute;
+    bottom: 110px;
+    left: 0;
+    width: 370px;
+        height: 294px;
+    font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: transparent;
+        letter-spacing: 0.03em;
+        padding: 49px 45px 49px 24px;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .portfolio:hover .portfolio__overlay {
+        transform: translateY(0);
+        background-color: var(--main-decoration-color);
+        color: var(--font-secondary-color);
+    }
+      .portfolio__site-nav{position: relative;
+    margin-top: 10px;
+    margin-bottom: -8px;
+    text-indent: 24px;
+    }
+    .portfolio__site-nav1{position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--font-fourth-color);
+        line-height: 30px;
+        text-decoration: none;
+    }

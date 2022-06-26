@@ -1,0 +1,33 @@
+.box {
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--font-secondary-color);
+}
+.box__text-box1 {
+    position: relative;
+    bottom: 164px;
+    left: 0px;
+    text-indent: 90px;
+}
+
+.box__text-box2 {
+    position: relative;
+    bottom: 234px;
+    left: 400px;
+    text-indent: 113px;
+}
+
+.box__text-box3 {
+    position: relative;
+    bottom: 304px;
+    left: 800px;
+    text-indent: 94px;
+}

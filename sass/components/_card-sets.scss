@@ -1,0 +1,49 @@
+.card-set__image{background: var(--fifth-decoration-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 25px 0;
+width:270px; 
+height: 120px;
+}
+
+.card-set__image:hover{cursor: pointer;
+}
+
+.icon-antenna-1 {
+    width: 70px;
+    height: 70px;
+    background-position: 0 0;
+}
+.icon-clock-1 {
+    width: 70px;
+    height: 70px;
+    background-position: -96px 0;
+}
+.icon-diagram-1 {
+    width: 70px;
+    height: 70px;
+    background-position: -144px 0;
+}
+.icon-astronaut-1 {
+    width: 70px;
+    height: 70px;
+    background-position: -48px 0;
+}
+.card-set--title {font-family: var(--main-font);
+    font-weight: 700;
+        color: var(--font-brand-color);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.card-set--text {font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--font-fourth-color);
+    text-transform: none;
+    text-align: left;
+}

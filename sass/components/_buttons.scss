@@ -1,0 +1,34 @@
+.buttons {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.button1 {
+    color: var(--font-brand-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 26px;
+    padding: 6px 22px 6px 22px;
+    margin-left: 8px;
+    border-radius: 4px;
+    background-color: var(--fifth-decoration-color);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button1:hover {
+    background-color: var(--main-decoration-color);
+    color: var(--font-secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+    text-decoration: none;
+
+}

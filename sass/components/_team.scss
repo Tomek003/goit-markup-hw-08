@@ -1,0 +1,86 @@
+.team{font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--font-brand-color);
+margin: 0 auto;
+padding-bottom: 50px;
+padding-top: 94px;}
+
+.team__list {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+list-style-type: none;}
+
+.team__card{
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--secondary-decoration-color);
+}
+
+.team__name {display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    width: 270px;
+    height: 19px;
+    margin: 0;
+    padding: 30px 99px 20px 99px;
+    color: var(--font-brand-color);
+}
+
+.team__job {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--font-fourth-color);
+    width: 270px;
+    height: 19px;
+    padding: 10px 61px 30px 62px;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 19px;
+}
+.team__social-icons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-decoration-color);
+    fill: #AFB1B8;
+    border: none;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+.team__social-icons:hover{background-color: var(--main-decoration-color);
+    fill: var(--secondary-decoration-color);
+cursor: pointer;}
+
+.team__social-icons:first-of-type {
+    margin-left: 20px;}
+
+.team__social-icons:not(:last-of-type) {margin-top: 16px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.team__social-icons:last-of-type {margin-top: 16px;
+    margin-right: 20px;
+margin-bottom: 15px;}
+
+.social-link-icon {
+    width: 20px;
+    height: 20px;
+}

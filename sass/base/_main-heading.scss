@@ -1,0 +1,24 @@
+.main-section-heading {
+    background-color: var(--main-decoration-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+    max-width: 1600px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-main-section {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--font-secondary-color);
+}

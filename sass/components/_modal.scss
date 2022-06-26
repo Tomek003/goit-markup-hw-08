@@ -1,0 +1,237 @@
+.modal{position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    width: 528px;
+min-height:581px;
+background-color: var(--secondary-decoration-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.modal__form{display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+.modal__title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--font-brand-color);
+}
+
+.modal__name {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--font-fourth-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    text-indent: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__name:focus-within, .modal__phone:focus-within, 
+.modal__mail:focus-within, .modal__comment:focus-within 
+{fill: var(--main-decoration-color);}
+
+.modal__field:focus-within, .modal__field1:focus-within, 
+.modal__field2:focus-within, .modal__field3:focus-within
+{border: 1px solid var(--main-decoration-color);
+    border-radius: 4px;
+    outline: none;
+}
+.modal__icon--name {position: absolute;
+top: 109px;
+left: 55px;}
+
+.modal__phone {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color:var(--font-fourth-color);
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon--phone{position: absolute;
+top: 180px;
+left: 55px;}
+
+.modal__field1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    text-indent: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__mail {
+    margin-bottom: 14px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--font-fourth-color);
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon--envelope-modal{position: absolute;
+bottom: 323px;
+left: 53px;}
+
+.modal__field2 {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    text-indent: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__comment {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color:var(--font-fourth-color);
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__field3 {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 448px;
+    height: 128px;
+    margin-top: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.modal__terms {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+color: var(--font-fourth-color);}
+
+
+.modal__terms::before{content: "";
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    margin-top: 20px;
+    margin-right: 7px;
+outline: 2px solid var(--font-brand-color);
+border-radius: 4px;
+transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__checkbox:checked + .modal__terms::before {
+    background-color: var(--main-decoration-color);
+background-image: url(../images/check.svg);
+width: 16px;
+    height: 16px;
+outline: none;}
+
+.modal__checkbox--visually-hidden {position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0; 
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.modal__terms--link {text-decoration: none;
+transition-property: text-decoration, color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+.modal__terms--link:hover {text-decoration: underline;
+    color: var(--font-third-color);}
+
+.modal__submit-button {display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: var(--main-decoration-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+}
+.modal__submit-button:hover {
+    cursor: pointer;
+}
+.modal__submit-button--title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--font-secondary-color);
+}
+.modal__close-btn {position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: var(--main-background-color);
+cursor: pointer;
+transition-property: transform;
+transition-duration: 2s; 
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close-btn:hover{transform: rotate(360deg);}
