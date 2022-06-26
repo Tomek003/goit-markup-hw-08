@@ -20,17 +20,17 @@
 .icon{display:flex;
     justify-content: center;
     fill: #AFB1B8;
-border: 1px solid #AFB1B8;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
-width: 170px;
+    width: 170px;
     height: 92px;
-margin: 0 auto;
-transition-property: fill, border;
+    margin: 0 auto;
+    transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.icon:hover:nth-child(-n + 6) {
+    &:hover:nth-child(-n + 6) {
     fill: var(--main-decoration-color);
     border: 1px solid var(--main-decoration-color);
     cursor: pointer;
-}
+     }
+    }

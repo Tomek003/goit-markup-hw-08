@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
 }
-.button1 {
+.portfolio-button {
     color: var(--font-brand-color);
     font-family: var(--main-font);
     font-size: 16px;
@@ -20,9 +20,7 @@
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button1:hover {
+    &:hover {
     background-color: var(--main-decoration-color);
     color: var(--font-secondary-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -30,5 +28,5 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
         cursor: pointer;
     text-decoration: none;
-
-}
+       }
+    }

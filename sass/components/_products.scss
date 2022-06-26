@@ -11,15 +11,14 @@
     color: var(--font-brand-color);
     line-height: 42px;
     text-align: center;
-}
-.product__list {display: flex;
+&__list {display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 padding-left: 0px;
 margin-bottom: 94px;}
-
-.product__image {
+&__image {
     display: flex;
     justify-content: space-between;
     padding-right: 30px;
+   }
 }

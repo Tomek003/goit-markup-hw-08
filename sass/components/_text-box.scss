@@ -10,24 +10,22 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--font-secondary-color);
-}
-.box__text-box1 {
+&__text-box1 {
     position: relative;
     bottom: 164px;
     left: 0px;
     text-indent: 90px;
 }
-
-.box__text-box2 {
+&__text-box2 {
     position: relative;
     bottom: 234px;
     left: 400px;
     text-indent: 113px;
 }
-
-.box__text-box3 {
+&__text-box3 {
     position: relative;
     bottom: 304px;
     left: 800px;
     text-indent: 94px;
+}
 }

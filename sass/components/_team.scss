@@ -6,22 +6,19 @@
     color: var(--font-brand-color);
 margin: 0 auto;
 padding-bottom: 50px;
-padding-top: 94px;}
-
-.team__list {display: flex;
+padding-top: 94px;
+&__list {display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 94px;
     padding-left: 0px;
     margin-bottom: 0px;
 list-style-type: none;}
-
-.team__card{
+&__card{
     border-radius: 0px 0px 4px 4px;
     background-color: var(--secondary-decoration-color);
-}
-
-.team__name {display: flex;
+   }
+&__name {display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     font-family: var(--main-font);
@@ -35,8 +32,7 @@ list-style-type: none;}
     padding: 30px 99px 20px 99px;
     color: var(--font-brand-color);
 }
-
-.team__job {
+&__job {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -51,7 +47,7 @@ list-style-type: none;}
     text-align: center;
     line-height: 19px;
 }
-.team__social-icons{
+&__social-icons{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -64,22 +60,18 @@ list-style-type: none;}
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.team__social-icons:hover{background-color: var(--main-decoration-color);
+&:hover{background-color: var(--main-decoration-color);
     fill: var(--secondary-decoration-color);
 cursor: pointer;}
-
-.team__social-icons:first-of-type {
-    margin-left: 20px;}
-
-.team__social-icons:not(:last-of-type) {margin-top: 16px;
+&:first-of-type {margin-left: 20px;}
+&:not(:last-of-type) {margin-top: 16px;
     margin-bottom: 15px;
-    margin-right: 10px;
-}
-.team__social-icons:last-of-type {margin-top: 16px;
+    margin-right: 10px;}
+&:last-of-type {margin-top: 16px;
     margin-right: 20px;
 margin-bottom: 15px;}
-
+}
+}
 .social-link-icon {
     width: 20px;
     height: 20px;
