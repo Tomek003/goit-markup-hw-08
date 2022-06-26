@@ -1,9 +1,9 @@
-.team{font-family: var(--main-font);
+.team{font-family: getFont('main-font');
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     font-weight: 700;
-    color: var(--font-brand-color);
+    color: getColor('font-brand-color');
 margin: 0 auto;
 padding-bottom: 50px;
 padding-top: 94px;
@@ -16,12 +16,12 @@ padding-top: 94px;
 list-style-type: none;}
 &__card{
     border-radius: 0px 0px 4px 4px;
-    background-color: var(--secondary-decoration-color);
+    background-color: getColor('secondary-decoration-color');
    }
 &__name {display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-family: var(--main-font);
+    font-family: getFont('main-font');
     text-align: center;
     font-size: 16px;
     line-height: 19px;
@@ -30,15 +30,15 @@ list-style-type: none;}
     height: 19px;
     margin: 0;
     padding: 30px 99px 20px 99px;
-    color: var(--font-brand-color);
+    color: getColor('font-brand-color');
 }
 &__job {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-family: var(--main-font);
+    font-family: getFont('main-font');
     font-weight: 400;
-    color: var(--font-fourth-color);
+    color: getColor('font-fourth-color');
     width: 270px;
     height: 19px;
     padding: 10px 61px 30px 62px;
@@ -54,14 +54,14 @@ list-style-type: none;}
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--secondary-decoration-color);
+    background-color: getColor('secondary-decoration-color');
     fill: #AFB1B8;
     border: none;
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover{background-color: var(--main-decoration-color);
-    fill: var(--secondary-decoration-color);
+&:hover{background-color: getColor('main-decoration-color');
+    fill: getColor('secondary-decoration-color');
 cursor: pointer;}
 &:first-of-type {margin-left: 20px;}
 &:not(:last-of-type) {margin-top: 16px;

@@ -1,4 +1,4 @@
-.body {font-family: var(--main-font), var(--secondary-font), sans-serif;
+.body {font-family: getFont('main-font'), getFont('secondary-font');
     font-weight: 400, 500, 700, 900;
     cursor:default;
     margin: 0px;

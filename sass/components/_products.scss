@@ -5,10 +5,10 @@
     margin: 0 auto;
     padding-bottom: 50px;
     padding-top: 94px;
-    font-family: var(--main-font);
+    font-family: getFont('main-font');
     font-size: 36px;
     font-weight: 700;
-    color: var(--font-brand-color);
+    color: getColor('font-brand-color');
     line-height: 42px;
     text-align: center;
 &__list {display: flex;

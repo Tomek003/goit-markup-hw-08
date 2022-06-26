@@ -3,9 +3,9 @@
     max-width: 1200px;
     }
 .clients__title {
-    font-family: var(--main-font);
+    font-family: getFont('main-font');
     font-weight: 700;
-    color: var(--font-brand-color);
+    color: getColor('font-brand-color');
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -29,8 +29,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover:nth-child(-n + 6) {
-    fill: var(--main-decoration-color);
-    border: 1px solid var(--main-decoration-color);
+    fill: getColor('main-decoration-color');
+    border: 1px solid getColor('main-decoration-color');
     cursor: pointer;
      }
     }

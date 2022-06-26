@@ -1,14 +1,16 @@
-.page-header__logo, .page-header__logo2{
-    font-family: var(--secondary-font);
+.page-header__logo{
+    font-family: getFont('secondary-font');
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    text-decoration: none;
+    color: getColor('font-third-color');}
+
+.page-header__logo2{
+    font-family: getFont('secondary-font');
+    color: getColor('font-brand-color');
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
     text-decoration: none;}
-
-.page-header__logo {
-    color: var(--font-third-color);
-}
-.page-header__logo2 {
-    color: var(--font-brand-color);
-}
 

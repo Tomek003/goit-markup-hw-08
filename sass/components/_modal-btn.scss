@@ -1,4 +1,4 @@
-.modal-btn {font-family: var(--main-font);
+.modal-btn {font-family: getFont('main-font');
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
@@ -6,8 +6,8 @@
     width: 200px;
     height: 50px;
     margin: 0 auto 210px auto;
-    background-color: var(--main-decoration-color);
-    color: var(--font-secondary-color);
+    background-color: getColor('main-decoration-color');
+    color: getColor('font-secondary-color');
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
