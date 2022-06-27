@@ -10,53 +10,6 @@ padding-left: 93px;
     padding-right: 46px;
 }
 }
-.icon-envelope-link{
-    font-family: getFont('main-font');
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 10px;
-    fill: getColor('secondary-decoration-color');
-    stroke-width: 2px;
-    color: getColor('font-fourth-color');
-    transition-property: text-decoration, color, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 16px;
-    height: 12px;
-    background-position: -528px 0;
-    &:hover{text-decoration: underline;
-        color: getColor('font-third-color');
-        stroke: getColor('main-decoration-color');
-        cursor: pointer;}
-}
-
-.icon-smartphone-link {
-    font-family: getFont('main-font');
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 10px;
-    fill: getColor('secondary-decoration-color');
-    stroke-width: 2px;
-    color: getColor('font-fourth-color');
-    transition-property: text-decoration, color, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 10px;
-    height: 16px;
-    background-position: -624px -48px;
-  &:hover{
-    text-decoration: underline;
-    color: getColor('font-third-color');
-    stroke: getColor('main-decoration-color');
-    cursor: pointer;
-}
-}
 .navi__menu-link{
     font-family: getFont('main-font');
     font-weight: 500;
@@ -68,16 +21,16 @@ padding-left: 93px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {color: getColor('font-third-color');}
- &--active::after {content: "";
-border-top: 4px solid getColor('main-decoration-color');
-position: relative;
-top: 29px;
-border-radius: 2px;}
+   &--active::after {content: "";
+    display: block;
+  border-top: 4px solid getColor('main-decoration-color');
+  position: relative;
+  top: 29px;
+  border-radius: 2px;}
 }
 .contact-menu{display: inline-flex;
     margin-right: -227px;
 margin-left: 220px;
-background-color: getColor('secondary-decoration-color');
 &__list {
     list-style-type: none;
     }
