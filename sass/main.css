@@ -16,7 +16,7 @@
 }
 
 .body {
-  font-family: "Roboto", "Raleway";
+  font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   font-weight: 400, 500, 700, 900;
   cursor: default;
   margin: 0px;
@@ -28,14 +28,6 @@
 }
 
 .container-card-set {
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
-.container__card-set {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
   margin-top: 94px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -45,28 +37,23 @@
   display: flex;
   align-items: center;
   height: 252px;
-  max-width: 1200px;
-  margin: 0px auto;
 }
 
 .container-main-section {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #FFFFFF;
 }
 
 .container-page-header {
   height: 80px;
   border-bottom: 1px solid #ECECEC;
-  max-width: 1200px;
-  margin: 0px auto;
 }
 .container-page-header__content {
   height: 100%;
@@ -77,13 +64,11 @@
 }
 
 .container-clients {
-  margin: 0 auto;
   padding-bottom: 94px;
-  max-width: 1200px;
 }
 
 .page-header__logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
@@ -92,7 +77,7 @@
 }
 
 .page-header__logo2 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   color: #212121;
   font-size: 26px;
   font-weight: 700;
@@ -117,7 +102,7 @@
 }
 
 .navi__menu-link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 16px;
   font-size: 14px;
@@ -160,6 +145,12 @@
   background-repeat: no-repeat;
 }
 
+.card-set {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
 .card-set__image {
   background: #F5F4FA;
   border-radius: 4px;
@@ -176,7 +167,7 @@
 }
 
 .card-set--title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #212121;
   font-size: 14px;
@@ -185,7 +176,7 @@
 }
 
 .card-set--text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -238,7 +229,7 @@
 }
 
 .icon-envelope-link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
@@ -263,7 +254,7 @@
 }
 
 .icon-smartphone-link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
@@ -294,7 +285,7 @@
   margin: 0 auto;
   padding-bottom: 50px;
   padding-top: 94px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #212121;
@@ -318,7 +309,7 @@
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -346,13 +337,13 @@
   text-indent: 94px;
 }
 
-.section-team {
+.team-section {
   background-color: #F5F4FA;
   margin-top: -200px;
 }
 
 .team {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
@@ -379,7 +370,7 @@
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 16px;
   line-height: 19px;
@@ -394,7 +385,7 @@
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #757575;
   width: 270px;
@@ -444,7 +435,7 @@
 }
 
 .clients__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #212121;
   font-size: 36px;
@@ -498,7 +489,7 @@
   margin-top: 10px;
   margin-bottom: -8px;
   text-indent: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
@@ -510,7 +501,7 @@
   position: relative;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #757575;
   line-height: 30px;
   text-decoration: none;
@@ -530,7 +521,7 @@
   height: 294px;
   padding: 49px 45px 49px 24px;
   color: #FFFFFF;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -550,7 +541,7 @@
 
 .portfolio-button {
   color: #212121;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -574,7 +565,7 @@
 }
 
 .modal-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -597,7 +588,7 @@
   background-color: #2F303A;
 }
 .footer__logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   color: #2196F3;
@@ -605,7 +596,7 @@
   text-decoration: none;
 }
 .footer__logo2 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 31px;
@@ -613,7 +604,7 @@
   color: #FFFFFF;
 }
 .footer__address {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 400;
@@ -622,14 +613,14 @@
   cursor: default;
 }
 .footer__mail {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 .footer__phone {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
@@ -663,7 +654,7 @@
   height: 80px;
 }
 .social-head__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -688,7 +679,7 @@
   height: 80px;
 }
 .newsletter__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -704,7 +695,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -729,7 +720,7 @@
   border: none;
   border-radius: 4px;
   color: #FFFFFF;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding-right: 35px;
@@ -776,7 +767,7 @@
 .modal__title {
   margin-top: 40px;
   margin-bottom: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -784,7 +775,7 @@
 }
 
 .modal__name {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -826,7 +817,7 @@
 .modal__phone {
   margin-top: 14px;
   margin-bottom: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -867,7 +858,7 @@
 
 .modal__mail {
   margin-bottom: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -907,7 +898,7 @@
 }
 
 .modal__comment {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -942,7 +933,7 @@
 }
 
 .modal__terms {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1008,7 +999,7 @@
   cursor: pointer;
 }
 .modal__submit-button--title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;

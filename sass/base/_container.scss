@@ -2,34 +2,21 @@
     max-width: 1200px;
     margin: 0px auto;
 }
-
-.container-card-set {
-    max-width: 1200px;
-    margin: 0px auto;
-}
-
-.container__card-set {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+.container-card-set{
     margin-top: 94px;
     margin-bottom: 0px;
-    padding-left: 0px;
-}
+    padding-left: 0px;}
 
 .container-footer {
     display: flex;
     align-items: center;
     height: 252px;
-    max-width: 1200px;
-    margin: 0px auto;
 }
 
 .container-main-section {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -41,19 +28,14 @@
 .container-page-header {
     height: 80px;
     border-bottom: 1px solid #ECECEC;
-    max-width: 1200px;
-    margin: 0px auto;
-
     &__content {
         height: 100%;
         display: flex;
         padding: 24px 227px 25px 0px;
         justify-content: space-between;
         align-items: center;
-    }
+       }  
 }
 .container-clients {
-    margin: 0 auto;
     padding-bottom: 94px;
-    max-width: 1200px;
 }

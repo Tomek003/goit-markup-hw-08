@@ -1,3 +1,9 @@
+.card-set {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
 .card-set__image{background: getColor('fifth-decoration-color');
     border-radius: 4px;
     display: flex;
