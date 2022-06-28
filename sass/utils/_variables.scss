@@ -17,8 +17,12 @@ $colors: (
     @return map-get($colors, $key);
   }
 
-$fonts: ('main-font':'Roboto',
-'secondary-font':'Raleway');
+$family-main: 'Roboto', sans-serif;
+$family-secondary: 'Raleway', sans-serif;
+$fonts: (
+  'main-font':$family-main,
+  'secondary-font':$family-secondary
+);
 
 @function getFont($key) {
     @return map-get($fonts, $key);
