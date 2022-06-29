@@ -11,59 +11,76 @@
 
     &__item {
         position: relative;
-        border: 1px solid #EEEEEE;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-bottom: 30px;
+        width: 370px;
+        height: 404px;
+        margin: 25px 15px 30px 15px;
+        overflow: hidden;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
         &:hover {
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12),
                 4px 4px 4px rgba(0, 0, 0, 0.06),
                 4px 4px 6px rgba(0, 0, 0, 0.16),
                 8px 0px 10px rgba(0, 0, 0, 0.30),
                 0px 8px 10px rgba(0, 0, 0, 0.30);
-            cursor: pointer;}
+            cursor: pointer;
+        }
     }
-}
-
-.portfolio {
+&__text-field {
     position: relative;
-    width: 370px;
-    height: 404px;
-    padding-top: 0px;
-    overflow: hidden;
-
-    &__site-nav {
-        position: relative;
-        margin-top: 10px;
-        margin-bottom: -8px;
-        text-indent: 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-top: 0;
+    padding-top: 20px;
+     }
+&__title {
+    position: relative;
+        margin: 0 24px 0 24px;
         font-family: getFont('main-font');
         font-size: 18px;
         font-weight: 700;
         line-height: 36px;
+        letter-spacing: 0.06em;
         text-transform: none;
         text-decoration: none;
         color: getColor('font-brand-color');
     }
-
-    &__site-nav1 {
+&__subtitle {
         position: relative;
+        margin: 4px 24px 20px 24px;
         font-size: 16px;
         font-weight: 400;
         font-family: getFont('main-font');
         color: getColor('font-fourth-color');
         line-height: 30px;
         text-decoration: none;
-        text-indent: 24px;
     }
+&__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    transform: translateY(120%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__overlay-text {
+        position: absolute;
+        padding: 49px 45px 49px 24px;
+    font-family: getFont('main-font');
+    color: getColor('font-secondary-color');
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
 }
 
-.portfolio:hover .overlay {
-    transform: translateY(-404px);
-    background-color: getColor('main-decoration-color');
-
+.grid__item:hover .grid__overlay {
+    transform: translateY(0);
+    background-color: rgba(33, 150, 243, 0.9);
 }
