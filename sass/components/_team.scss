@@ -13,12 +13,15 @@ padding-top: 94px;
 &__list {display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 0px;
     padding-bottom: 94px;
     padding-left: 0px;
+    margin-top: 0px;
     margin-bottom: 0px;
 list-style-type: none;}
 &__card{
     border-radius: 0px 0px 4px 4px;
+    gap: 15px;
     background-color: getColor('secondary-decoration-color');
    }
 &__name {display: flex;

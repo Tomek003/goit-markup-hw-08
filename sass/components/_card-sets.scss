@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    
-}
-.card-set__image{background: getColor('fifth-decoration-color');
+    padding-left: 0;
+&__image{background: getColor('fifth-decoration-color');
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -16,7 +15,7 @@ height: 120px;
 &__image:hover{cursor: pointer;
       }
     } 
-
+}
 .card-set--title {font-family: getFont('main-font');
     font-weight: 700;
         color: getColor('font-brand-color');
