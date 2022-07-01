@@ -25,16 +25,15 @@
     font-family: getFont('main-font');
     color: getColor('font-secondary-color');
 }
-
 .container-page-header {
     height: 80px;
     border-bottom: 1px solid #ECECEC;
-    &__content {
-        height: 100%;
-        display: flex;
-        padding: 24px 227px 25px 0px;
-        justify-content: space-between;
-        align-items: center;
+&__content {
+    height: 100%;
+    display: flex;
+    padding: 24px 227px 25px 0px;
+    justify-content: space-between;
+    align-items: center;
        }  
 }
 .container-clients {

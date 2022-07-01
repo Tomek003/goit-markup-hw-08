@@ -8,23 +8,22 @@
     margin-right: -8px;
     margin-bottom: 64px;
     margin-left: -8px;
-
-    &__item {
-        position: relative;
-        width: 370px;
-        height: 404px;
-        margin: 25px 15px 30px 15px;
-        overflow: hidden;
-        transition-property: box-shadow;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover {
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12),
-                4px 4px 4px rgba(0, 0, 0, 0.06),
-                4px 4px 6px rgba(0, 0, 0, 0.16),
-                8px 0px 10px rgba(0, 0, 0, 0.30),
-                0px 8px 10px rgba(0, 0, 0, 0.30);
-            cursor: pointer;
+&__item {
+    position: relative;
+    width: 370px;
+    height: 404px;
+    margin: 25px 15px 30px 15px;
+    overflow: hidden;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12),
+        4px 4px 4px rgba(0, 0, 0, 0.06),
+        4px 4px 6px rgba(0, 0, 0, 0.16),
+        8px 0px 10px rgba(0, 0, 0, 0.30),
+        0px 8px 10px rgba(0, 0, 0, 0.30);
+        cursor: pointer;
         }
     }
 &__text-field {position: relative;
@@ -36,25 +35,25 @@
      }
 &__title {
     position: relative;
-        margin: 0 24px 0 24px;
-        font-family: getFont('main-font');
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 36px;
-        letter-spacing: 0.06em;
-        text-transform: none;
-        text-decoration: none;
-        color: getColor('font-brand-color');
+    margin: 0 24px 0 24px;
+    font-family: getFont('main-font');
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    text-decoration: none;
+    color: getColor('font-brand-color');
     }
 &__subtitle {
-        position: relative;
-        margin: 4px 24px 20px 24px;
-        font-size: 16px;
-        font-weight: 400;
-        font-family: getFont('main-font');
-        color: getColor('font-fourth-color');
-        line-height: 30px;
-        text-decoration: none;
+    position: relative;
+    margin: 4px 24px 20px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: getFont('main-font');
+    color: getColor('font-fourth-color');
+    line-height: 30px;
+    text-decoration: none;
     }
 &__overlay {
     position: absolute;
@@ -68,14 +67,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 &__overlay-text {
-        padding: 49px 45px 49px 24px;
+    padding: 49px 45px 49px 24px;
     font-family: getFont('main-font');
     color: getColor('font-secondary-color');
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-}
+  }
 }
 .grid__item:hover .grid__overlay {
     transform: translateY(0);

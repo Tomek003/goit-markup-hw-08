@@ -1,27 +1,22 @@
+%icon{width: 70px;
+    height: 70px;}
+
 .icon-antenna-1 {
-    width: 70px;
-    height: 70px;
+    @extend %icon;
     background-position: 0 0;
 }
-
 .icon-clock-1 {
-    width: 70px;
-    height: 70px;
+    @extend %icon;
     background-position: -96px 0;
 }
-
 .icon-diagram-1 {
-    width: 70px;
-    height: 70px;
+    @extend %icon;
     background-position: -144px 0;
 }
-
 .icon-astronaut-1 {
-    width: 70px;
-    height: 70px;
+   @extend %icon;
     background-position: -48px 0;
 }
-
 .icon {
     display: flex;
     justify-content: center;
@@ -34,17 +29,15 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover:nth-child(-n + 6) {
-        fill: getColor('main-decoration-color');
-        border: 1px solid getColor('main-decoration-color');
-        cursor: pointer;
+&:hover:nth-child(-n + 6) {
+    fill: getColor('main-decoration-color');
+    border: 1px solid getColor('main-decoration-color');
+    cursor: pointer;
     }
 }
 
 .icon-envelope-link {
     font-family: getFont('main-font');
-    font-style: normal;
     font-weight: 500;
     line-height: 16px;
     font-size: 14px;
@@ -59,36 +52,17 @@
     width: 16px;
     height: 12px;
     background-position: -528px 0;
-
-    &:hover {
-        text-decoration: underline;
-        color: getColor('font-third-color');
-        stroke: getColor('main-decoration-color');
-        cursor: pointer;
+&:hover {
+    text-decoration: underline;
+    color: getColor('font-third-color');
+    stroke: getColor('main-decoration-color');
+    cursor: pointer;
     }
 }
 .icon-smartphone-link {
-    font-family: getFont('main-font');
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 10px;
-    fill: getColor('secondary-decoration-color');
-    stroke-width: 2px;
-    color: getColor('font-fourth-color');
-    transition-property: text-decoration, color, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend .icon-envelope-link;
     width: 10px;
     height: 16px;
     background-position: -624px -48px;
 
-    &:hover {
-        text-decoration: underline;
-        color: getColor('font-third-color');
-        stroke: getColor('main-decoration-color');
-        cursor: pointer;
-    }
 }

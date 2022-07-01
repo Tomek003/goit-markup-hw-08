@@ -10,24 +10,24 @@
     align-items: center;
     margin-bottom: 30px;
     padding: 25px 0;
-width:270px; 
-height: 120px;
+    width:270px; 
+    height: 120px;
 &__image:hover{cursor: pointer;
       }
     } 
 }
 .card-set--title {font-family: getFont('main-font');
+    color: getColor('font-brand-color');
     font-weight: 700;
-        color: getColor('font-brand-color');
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
 }
-.card-set--text {font-family: getFont('main-font');
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+.card-set--text {
+    @extend .card-set--title;
     color: getColor('font-fourth-color');
+    font-weight: 400;
+    line-height: 24px;
     text-transform: none;
     text-align: left;
 }

@@ -12,11 +12,11 @@ padding-left: 93px;
 }
 .navi__menu-link{
     font-family: getFont('main-font');
+    color: getColor('font-brand-color');
     font-weight: 500;
     line-height: 16px;
     font-size: 14px;
     text-decoration: none;
-    color: getColor('font-brand-color');
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
