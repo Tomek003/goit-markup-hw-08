@@ -1,33 +1,129 @@
 .card-set {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 15px;
+&__image{background: getColor('fifth-decoration-color');
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 450px; 
+    height: 120px;
+&__image:hover{cursor: pointer;
+      }
+    } 
+&__title {font-family: getFont('main-font');
+    color: getColor('font-brand-color');
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+&__text {
+    font-family: getFont('main-font');
+    color: getColor('font-fourth-color');
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    text-align: left;
+    padding-left: 15px;
+       }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .card-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     list-style-type: none;
     padding-left: 0;
-&__image{background: getColor('fifth-decoration-color');
+&__item {
+    max-width: 100%;
+    flex-basis: calc((100% - 30px) / 2);}
+
+&__image {
+    background: getColor('fifth-decoration-color');
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+&__image:hover {
+    cursor: pointer;
+        }
+    }
+&__title {
+    font-family: getFont('main-font');
+    color: getColor('font-brand-color');
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+            }
+&__text {
+    font-family: getFont('main-font');
+    color: getColor('font-fourth-color');
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    text-align: left;
+    padding-left: 0;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+.card-set {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 94px;
+&__image {
+    background: getColor('fifth-decoration-color');
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     padding: 25px 0;
-    width:270px; 
+    width: 270px;
     height: 120px;
-&__image:hover{cursor: pointer;
-      }
-    } 
-}
-.card-set--title {font-family: getFont('main-font');
-    color: getColor('font-brand-color');
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-}
-.card-set--text {
-    @extend .card-set--title;
+&__image:hover {
+    cursor: pointer;
+        }
+    }
+&__title {
+font-family: getFont('main-font');
+color: getColor('font-brand-color');
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: left;
+text-transform: uppercase;
+    }
+&__text {
+    font-family: getFont('main-font');
     color: getColor('font-fourth-color');
     font-weight: 400;
+    font-size: 14px;
     line-height: 24px;
+    letter-spacing: 0.03em;
     text-transform: none;
     text-align: left;
+    padding-left: 0;
+    }
+}
 }

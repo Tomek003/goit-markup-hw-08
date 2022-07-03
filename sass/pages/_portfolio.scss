@@ -8,12 +8,11 @@
     margin-right: -8px;
     margin-bottom: 64px;
     margin-left: -8px;
-&__item {
-    position: relative;
+&__item {position: relative;
+    overflow: hidden;
     width: 370px;
     height: 404px;
     margin: 25px 15px 30px 15px;
-    overflow: hidden;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,7 +25,11 @@
         cursor: pointer;
         }
     }
+&__image {position: relative;
+        }
+
 &__text-field {position: relative;
+    background-color: getColor('secondary-decoration-color');
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -60,7 +63,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 294px;
+    height: 100%;
     transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;

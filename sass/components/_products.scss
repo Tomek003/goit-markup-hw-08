@@ -1,5 +1,5 @@
 .product {
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     list-style-type: none;
     padding-bottom: 50px;
@@ -10,14 +10,53 @@
     color: getColor('font-brand-color');
     line-height: 42px;
     text-align: center;
-&__list {display: flex;
+&__list {display: none;
     justify-content: space-between;
     list-style-type: none;
 padding-left: 0px;
 margin-bottom: 94px;}
 &__image {
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-right: 30px;
    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .product {
+            display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .product {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .product {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding-bottom: 50px;
+        padding-top: 94px;
+        font-family: getFont('main-font');
+        font-size: 36px;
+        font-weight: 700;
+        color: getColor('font-brand-color');
+        line-height: 42px;
+        text-align: center;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: 0px;
+        margin-bottom: 94px;
+            }
+    &__image {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+            }
+        }
 }
