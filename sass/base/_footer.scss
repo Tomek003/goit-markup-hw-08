@@ -1,8 +1,7 @@
 .footer{background-color: getColor('fourth-decoration-color');
 &__logo-field {position: relative;
             top: 0;
-            left: 0;
-        }
+            left: 0;}
 &__logo{
     font-family: getFont('secondary-font');
     font-size: 24px;
@@ -137,7 +136,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 .footer {background-color: getColor('fourth-decoration-color');
-
     &__logo-field{position: relative;
         top: -140px;
         left: -200px;
@@ -145,314 +143,69 @@
         height: 79px;}
     &__logo {margin-top: 60px;
         padding-top: 60px;
-        font-family: getFont('secondary-font');
-        font-size: 24px;
-        font-weight: 700;
-        color: getColor('font-third-color');
-        line-height: 28px;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        text-align: center;
-    }
+            }
 &__logo2 {margin-top: 60px;
     padding-top: 60px;
-    font-family: getFont('secondary-font');
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    text-align: center;
-    color: getColor('font-secondary-color');
-            }
-&__address {
-    font-family: getFont('main-font');
-    color: getColor('font-secondary-color');
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-            }
-    &__mail {font-family: getFont('main-font');
-        color: getColor('font-secondary-color');
-        text-decoration: none;
-        text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        font-style: normal;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-            }
-    &__phone {font-family: getFont('main-font');
-        color: getColor('font-secondary-color');
-        text-decoration: none;
-        text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        font-style: normal;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-            }
-    &__icon {display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            fill: getColor('secondary-decoration-color');
-            transition-property: fill, background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,&:focus {background-color: getColor('main-decoration-color');
-                }
-            }
-    &__icon-link {width: 20px;
-                height: 20px;
             }
         }
 .social-head {position: relative;
     top: -115px;
     left: 233px;
-    width: 230px;
-    height: 80px;
-    &__title {
-        margin-bottom: 20px;
-            margin-left: 32px;
-            font-family: getFont('main-font');
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;                
-            text-align: center;
-            color: getColor('font-secondary-color');
-            padding-bottom: 10px;
-            }
-    &__links {
-             display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;               
-            margin-top: -2px;
-            gap: 10px;
-            }
         }
 .newsletter {margin-top: -25px;
-    &__title {
-            font-family: getFont('main-font');
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.03em;                
-            text-transform: uppercase;
-            text-align: center;
-            color: getColor('font-secondary-color');
-            padding-bottom: 10px;
-            }
     &__e-mail {
             position: relative;
             top: -40px;
             left: -125px;                
             transform: translate(50%, 50%);
-            width: 450px;
-            height: 50px;                
-            padding-bottom: 15px;
-            padding-left: 15px;
-            font-family: getFont('main-font');
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            background-color: getColor('fourth-decoration-color');
-            color: getColor('font-secondary-color');
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            }
-    &__icon {position: absolute;
-            top: 13px;
-            left: 148px;
-            height: 100px;
-            fill: getColor('secondary-decoration-color');
             }
     &__submit-button {
             position: relative;
             top: 30px;
             left: -345px;              
             transform: translate(50%, 50%);
-            background-color: getColor('main-decoration-color');
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border: none;                
-            border-radius: 4px;
-            color: getColor('font-secondary-color');
-            font-family: getFont('main-font');
-            font-weight: 700;
-            font-size: 16px;
-            padding-right: 35px;
-            line-height: 30px;
-            width: 200px;
-            height: 50px;
-    &:hover {cursor: pointer;
-                }
-            }
         }
     }
+}
 @media screen and (min-width: 1200px) {
-.footer {
-        background-color: getColor('fourth-decoration-color');
+.footer {background-color: getColor('fourth-decoration-color');
     &__logo-field {position: relative;
                 top: 0;
                 left: -150px;}
-    &__logo {font-family: getFont('secondary-font');
-                font-size: 26px;
-                font-weight: 700;
-                color: getColor('font-third-color');
-                line-height: 31px;
-                text-decoration: none;
-                text-align: left;
+    &__logo {font-size: 26px;
+            line-height: 31px;
+            text-align: left;
             }
-    &__logo2 {
-                font-family: getFont('secondary-font');
-                font-size: 26px;
-                font-weight: 700;
-                line-height: 31px;
-                text-decoration: none;
-                text-align: left;
-                color: getColor('font-secondary-color');
+    &__logo2 {font-size: 26px;
+            line-height: 31px;
+            text-decoration: none;
+            text-align: left;
+            color: getColor('font-secondary-color');
             }
-    
-    &__address {
-                font-family: getFont('main-font');
-                color: getColor('font-secondary-color');
-                text-decoration: none;
-                font-weight: 400;
-                font-size: 14px;
-                font-style: normal;
-                text-align: left;
-                cursor: default;
-            }
-    &__mail {
-                font-family: getFont('main-font');
-                font-weight: 400;
-                font-size: 14px;
-                color: rgba(255, 255, 255, 0.6);
-                text-decoration: none;
-            }
-    &__phone {
-                font-family: getFont('main-font');
-                font-weight: 400;
-                font-size: 14px;
-                color: rgba(255, 255, 255, 0.6);
-                text-decoration: none;
-            }
-    &__icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 44px;
-                height: 44px;
-                border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.1);
-                fill: getColor('secondary-decoration-color');
-                transition-property: fill, background-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     &:hover, &:focus {background-color: getColor('main-decoration-color');
-                }
-            }
-    &__icon-link {
-                width: 20px;
-                height: 20px;
+    &__address {text-align: left;
             }
         }
 .social-head {position: relative;
             top: -35px;
             left: -100px;
-            width: 230px;
-            height: 80px;
-    
-    &__title {
-                margin-left: -50px;
-                font-family: getFont('main-font');
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
-                color: getColor('font-secondary-color');
-                padding-bottom: 10px;
-            }
-    &__links {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                list-style-type: none;
-                margin-top: -2px;
-                gap: 10px;
+    &__title {margin-left: -50px;
             }
         }
     .newsletter {position: relative;
             top: -65px;
             left: -65px;
-            padding-left: 30px;
             width: 300px;
             height: 80px;
     &__title {
-                font-family: getFont('main-font');
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
-                color: getColor('font-secondary-color');
-                padding-bottom: 10px;
-                margin-left: -65px;
+              margin-left: -65px;
             }
-    &__e-mail {
-                width: 358px;
-                height: 50px;
-                margin-top: -5px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                padding-left: 15px;
-                font-family: getFont('main-font');
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                background-color: getColor('fourth-decoration-color');
-                color: getColor('font-secondary-color');
-                border: 1px solid rgba(255, 255, 255, 0.3);
-                border-radius: 4px;
-            }
-    &__icon {
-                position: absolute;
-                top: 13px;
-                left: 148px;
-                height: 100px;
-                fill: getColor('secondary-decoration-color');
+    &__e-mail {width: 358px;
             }
     &__submit-button {
                 position: relative;
                 top: -50px;
                 left: -30px;
                 transform: translate(185%);
-                background-color: getColor('main-decoration-color');
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                border: none;
-                border-radius: 4px;
-                color: getColor('font-secondary-color');
-                font-family: getFont('main-font');
-                font-weight: 700;
-                font-size: 16px;
-                padding-right: 35px;
-                line-height: 30px;
-                width: 200px;
-                height: 50px;
-    &:hover {cursor: pointer;}
-            }
         }
     }
+}

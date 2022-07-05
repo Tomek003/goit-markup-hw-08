@@ -1,5 +1,5 @@
 .product {
-    display: none;
+    display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     padding-bottom: 50px;
@@ -22,14 +22,12 @@ margin-bottom: 94px;}
    }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .product {
-            display: none;
+    .product {display: none;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .product {
-            display: none;
+    .product {display: none;
         }
 }
 

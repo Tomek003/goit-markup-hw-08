@@ -2,8 +2,9 @@
     font-family: getFont('main-font');
     color: getColor('font-brand-color');
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
     text-align: center;
     padding-top: 94px;
     margin: 0 auto;
@@ -16,35 +17,14 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-.clients__title {
-        font-family: getFont('main-font');
-        color: getColor('font-brand-color');
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        padding-top: 94px;
+.clients__title {padding-top: 94px;
         margin: 0 auto;
         }
-    
-.clients__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding-top: 50px;
-        }
 }
-
 @media screen and (min-width: 1200px) {
 .clients__title {
-    font-family: getFont('main-font');
-    color: getColor('font-brand-color');
-    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    text-align: center;
-    padding-top: 94px;
-    margin: 0 auto;
         }
     
 .clients__list {
