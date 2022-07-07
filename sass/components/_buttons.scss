@@ -1,20 +1,17 @@
 .buttons {
-    margin-top: 94px;
-    margin-bottom: 50px;
-    margin-left: 621px;
-    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .portfolio-button {
     color: getColor('font-brand-color');
     font-family: getFont('main-font');
     font-size: 16px;
     font-weight: 500;
-    border: none;
-    display: inline-flex;
-    justify-content: center;
     line-height: 26px;
+    border: none;
+    display: inline-block;
     padding: 6px 22px 6px 22px;
-    margin-left: 8px;
+    margin-left: 15px;
     border-radius: 4px;
     background-color: getColor('fifth-decoration-color');
     transition-property: background-color, color, box-shadow;
@@ -30,3 +27,22 @@
     text-decoration: none;
        }
     }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .buttons {
+            position: relative;
+                top: 0;
+                left: 0;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .buttons {position: relative;
+            top: 0;
+            left: 70px;
+            }
+}
+@media screen and (min-width: 1200px) {
+        .buttons {position: relative;
+            top: 0;
+            left: 290px;}
+            }

@@ -640,20 +640,21 @@
 .grid {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin-top: 0;
   margin-right: -8px;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
   margin-left: -8px;
 }
 .grid__item {
   position: relative;
   overflow: hidden;
-  width: 370px;
+  width: 450px;
   height: 404px;
-  margin: 25px 15px 30px 15px;
+  margin: 15px 15px 15px 15px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -694,6 +695,7 @@
   font-family: "Roboto", sans-serif;
   color: #757575;
   line-height: 30px;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .grid__overlay {
@@ -708,7 +710,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grid__overlay-text {
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px 77px 24px;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
@@ -722,6 +724,71 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  .grid__item {
+    overflow: hidden;
+    width: 354px;
+    height: 404px;
+  }
+  .grid__title {
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    text-decoration: none;
+    color: #212121;
+  }
+  .grid__subtitle {
+    position: relative;
+    margin: 4px 24px 20px 24px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #757575;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  .grid__overlay-text {
+    padding: 49px 24px 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-right: -8px;
+    margin-bottom: 64px;
+    margin-left: -8px;
+  }
+  .grid__item {
+    position: relative;
+    overflow: hidden;
+    width: 370px;
+    height: 404px;
+    margin: 25px 15px 30px 15px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .grid__overlay-text {
+    padding: 49px 24px 49px 24px;
+  }
+}
 .overlay {
   position: absolute;
   bottom: -294px;
@@ -742,10 +809,8 @@
 }
 
 .buttons {
-  margin-top: 94px;
-  margin-bottom: 50px;
-  margin-left: 621px;
-  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .portfolio-button {
@@ -753,12 +818,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  border: none;
-  display: inline-flex;
-  justify-content: center;
   line-height: 26px;
+  border: none;
+  display: inline-block;
   padding: 6px 22px 6px 22px;
-  margin-left: 8px;
+  margin-left: 15px;
   border-radius: 4px;
   background-color: #F5F4FA;
   transition-property: background-color, color, box-shadow;
@@ -773,6 +837,27 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .buttons {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .buttons {
+    position: relative;
+    top: 0;
+    left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    position: relative;
+    top: 0;
+    left: 290px;
+  }
+}
 .modal-btn {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
@@ -1225,6 +1310,27 @@
   transform: rotate(360deg);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal__mail, .modal__phone, .modal__name, .modal__comment {
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__mail:focus-within, .modal__phone:focus-within, .modal__name:focus-within, .modal__comment:focus-within {
+    fill: #2196F3;
+    color: #2196F3;
+  }
+
+  .modal__close-btn {
+    transition-property: transform, fill;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__close-btn:hover {
+    transform: rotate(360deg);
+    fill: #2196F3;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .modal {
     position: absolute;
@@ -1241,6 +1347,26 @@
     height: 128px;
     padding-top: 12px;
     text-indent: 16px;
+  }
+
+  .modal__mail, .modal__phone, .modal__name, .modal__comment {
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__mail:focus-within, .modal__phone:focus-within, .modal__name:focus-within, .modal__comment:focus-within {
+    fill: #2196F3;
+    color: #2196F3;
+  }
+
+  .modal__close-btn {
+    transition-property: transform, fill;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__close-btn:hover {
+    transform: rotate(360deg);
+    fill: #2196F3;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1262,6 +1388,14 @@
     height: 128px;
     padding-top: 12px;
     text-indent: 16px;
+  }
+  .modal__mail, .modal__phone, .modal__name, .modal__comment {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__mail:focus-within, .modal__phone:focus-within, .modal__name:focus-within, .modal__comment:focus-within {
+    fill: #2196F3;
   }
   .modal__terms {
     font-size: 14px;

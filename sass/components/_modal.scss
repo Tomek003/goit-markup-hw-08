@@ -74,6 +74,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:focus-within{fill: getColor('main-decoration-color');}
 }
+
 &__phone {
     @extend .modal__mail;
 }
@@ -162,6 +163,23 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .modal__mail {transition-property: fill, color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus-within {fill: getColor('main-decoration-color');
+                color: getColor('main-decoration-color');
+            }
+        }
+.modal__close-btn {
+                transition-property: transform, fill;
+                transition-duration: 2s;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {transform: rotate(360deg);
+            fill: getColor('main-decoration-color');
+                    }
+                }
+    }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .modal {position: absolute;
             top: 50%;
@@ -180,6 +198,20 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         padding-top: 12px;
         text-indent: 16px;
       }
+}
+.modal__mail {
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:focus-within {fill: getColor('main-decoration-color');
+        color: getColor('main-decoration-color');}
+}
+.modal__close-btn {
+    transition-property: transform, fill;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {transform: rotate(360deg);
+        fill: getColor('main-decoration-color');}
 }
 }
 @media screen and (min-width: 1200px) {
@@ -200,6 +232,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 12px;
     text-indent: 16px;
           }
+&__mail {transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus-within {fill: getColor('main-decoration-color');}
+                  }
 &__terms {font-size: 14px;
           line-height: 24px;
     }
