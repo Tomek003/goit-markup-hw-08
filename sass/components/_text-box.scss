@@ -28,6 +28,11 @@
     text-indent: 94px;
 }
 }
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .box {
+        visibility: hidden;
+    }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .box {visibility: hidden;}
 }

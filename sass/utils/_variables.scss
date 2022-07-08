@@ -27,3 +27,11 @@ $fonts: (
 @function getFont($key) {
     @return map-get($fonts, $key);
   }
+
+@mixin bg-image {
+    @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+     @content;
+   }
+ }

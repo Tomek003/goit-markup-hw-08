@@ -21,6 +21,10 @@ margin-bottom: 94px;}
     padding-right: 30px;
    }
 }
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    .product {
+        display: none;}
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .product {display: none;
     }
