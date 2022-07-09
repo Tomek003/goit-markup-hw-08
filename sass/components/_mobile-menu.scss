@@ -1,0 +1,87 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+.mobile-menu{
+    width: 100vw;
+    height: 100vh;
+    background-color:chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(100%);
+
+&__link {
+    text-decoration: none;
+    font-family: getFont('main-font');
+    color: getColor('font-brand-color');
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    &--active:hover{color: getColor('font-third-color');}
+    &--email {font-family: getFont('main-font');
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: getColor('font-fourth-color');
+        text-decoration: none;}
+    &--phone {font-family: getFont('main-font');
+        color: getColor('font-third-color');
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-decoration: none;}
+}
+&__list{list-style-type: none;
+    margin-bottom: 36px;
+    }
+&__social-links{display: flex;
+    flex-direction: row;
+    
+} 
+&__social-item {
+    list-style-type: none;
+    margin-right: 20px;
+    margin-bottom: 48px;}
+
+&__social-type {font-family: getFont('main-font');
+    color: getColor('font-third-color');
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-decoration: none;}
+
+&__close-btn {position: sticky;
+    top: 100px;
+    left: 420px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: getColor('secondary-decoration-color');
+    cursor: pointer;
+    transition-property: transform, fill;
+    transition-duration: 2s; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover{transform: rotate(360deg);
+     fill: getColor('main-decoration-color');}
+}
+}
+}
+.mobile-menu--active {transform: translate(0%);}
+
+.line{position: absolute;
+    display:block;
+    width: 22px;
+height: 0px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg) translateY(1000%) translateX(-60%);}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .mobile-menu {visibility: hidden;}
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-menu {visibility: hidden;}
+}

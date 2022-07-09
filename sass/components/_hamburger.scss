@@ -1,0 +1,42 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+.hamburger {
+    position: relative;
+    top: -40px;
+    left: 420px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height: 4px;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+.hamburger::before {
+    transform: translateY(-16px);
+}
+.hamburger::after {
+    transform: translateY(16px);
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .hamburger {
+      display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hamburger {
+      display: none;
+    }
+}

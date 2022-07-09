@@ -19,9 +19,9 @@
         <!-- Zawartość strony-->
         <header class="container-page-header">
             <div class="container">
+                <nav class="navi">
                 <a class="page-header__logo" href="text">
                     <h2 class="page-header__logo">Web<span class="page-header__logo2">Studio</span></h2></a>
-                    <nav class="navi">
                         <ul class="navi__menu">
                             <li class="navi__menu-list"><a class="navi__menu-link navi__menu-link--active" href="index.html">Agencja</a></li>
                             <li class="navi__menu-list"><a class="navi__menu-link" href="portfolio.html">Portfolio</a></li>
@@ -32,19 +32,39 @@
                         <li class="contact-menu__list"><a href="mailto:info@devstudio.com" class="contact-menu__link">
                             <svg class= "icon-envelope-link" id="icon-envelope" viewBox="0 0 43 32" x="528" y="0">
                         <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@example.com</a></li>
+                        </svg>info@devstudio.com</a></li>
 
                         <li class="contact-menu__list"><a href="tel:+48111111111" class="contact-menu__link">
                             <svg class="icon-smartphone-link" id="icon-smartphone" viewBox="0 0 20 32" x="624" y="48">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>+48 111 111 111</a></li>
                         </ul>
-                        <button class="hamburger">  
+                        <button class="hamburger" id="hamburger" js-open-menu> 
                         </button>
-                        <!--button type="button" class="navi__close-btn" js-close-menu>
+<!--MOBILE MENU START-->
+    <div class="mobile-menu mobile-menu--active" id="mobile-menu" js-menu-container>
+        <button type="button" class="mobile-menu__close-btn" js-close-menu>
                         <svg class="icon-X" width="11" height="11">
                         <use href="./images/icons.svg#icon-X"></use>
-                        </svg></button-->
+                        </svg></button>
+    <ul class="mobile-menu__nav">
+        <li class="mobile-menu__list"><a class="mobile-menu__link mobile-menu__link--active" href="index.html">Agencja</a></li>
+        <li class="mobile-menu__list"><a class="mobile-menu__link" href="portfolio.html">Portfolio</a></li>
+        <li class="mobile-menu__list"><a class="mobile-menu__link" href="text">Kontakt</a></li>
+            </ul>
+    <ul class="mobile-menu__contact">
+        <li class="mobile-menu__list"><a href="tel:+48111111111" class="mobile-menu__link--phone">
+                            +48 111 111 111</a></li>
+        <li class="mobile-menu__list"><a href="mailto:info@devstudio.com" class="mobile-menu__link--email">
+                                info@devstudio.com</a></li>
+        </ul>    
+<ul class="mobile-menu__social-links">
+<li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-type">Instagram</a></li>
+<li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-type">Twitter</a><div class="line"></div></li>
+<li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-type">Facebook</a><div class="line"></div></li>
+<li class="mobile-menu__social-item"><a href="#" class="mobile-menu__social-type">LinkedIn</a><div class="line"></div></li>
+</ul>
+        <!--MOBILE MENU END-->
             </div>
         </header>
         <main>
@@ -308,6 +328,7 @@
             </div>
         </div>
     </footer>
+    <!--MODAL WINDOW START-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="modal__form" name="data-form" autocomplete="on">
@@ -350,8 +371,9 @@
             </svg></button>
         </div>
     </div>
+    <!--MODAL WINDOW END-->
+    
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
