@@ -50,24 +50,13 @@
 }
 
 .icon-envelope-link {
-  font-family: getFont("main-font");
-  font-weight: 500;
-  line-height: 16px;
-  font-size: 14px;
-  text-decoration: none;
   margin-right: 10px;
   fill: getColor("secondary-decoration-color");
   stroke-width: 2px;
-  color: getColor("font-fourth-color");
-  transition-property: text-decoration, color, stroke;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 12px;
   background-position: -528px 0;
   &:hover {
-    text-decoration: underline;
-    color: getColor("font-third-color");
     stroke: getColor("main-decoration-color");
     cursor: pointer;
   }

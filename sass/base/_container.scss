@@ -40,7 +40,8 @@
 @media screen and (min-width: 1200px) {
   .container-footer {
     flex-direction: row;
-    height: 252px;
+    height: 290px;
+    
   }
 }
 .container-main-section {
@@ -79,11 +80,13 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-page-header {
     min-width: 768px;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-page-header {
     min-width: 1200px;
+    height: 80px;
   }
 }
 .container-clients {
