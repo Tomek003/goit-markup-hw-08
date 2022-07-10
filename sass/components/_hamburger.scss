@@ -5,31 +5,29 @@
     left: 420px; 
     display: flex;
     justify-content: center;
-    align-items: center;
     width:30px;
     height: 4px;
   background-color: black;
   border: none;
   border-radius: 2px;
-  transition: 0.3s ease-in-out;
   cursor: pointer;
-}
-.hamburger::before, .hamburger::after{
+&::before, &::after{
     content: '';
     position: absolute;
     width: 30px;
     height: 4px;
     background-color: black;
     border-radius: 2px;
-    transition: 0.3s ease-in-out;
 }
-.hamburger::before {
+&::before {
     transform: translateY(-16px);
 }
-.hamburger::after {
+&::after {
     transform: translateY(16px);
 }
 }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .hamburger {
       display: none;

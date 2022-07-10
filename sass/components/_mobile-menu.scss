@@ -1,12 +1,13 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
-.mobile-menu{
+.mobile-menu{position: fixed;
     width: 100vw;
+    max-width: 480px;
     height: 100vh;
     background-color:chartreuse;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transform: translate(100%);
+    transition: 0.3s ease-in-out;
 
 &__link {
     text-decoration: none;
@@ -52,8 +53,8 @@
     letter-spacing: 0.02em;
     text-decoration: none;}
 
-&__close-btn {position: sticky;
-    top: 100px;
+&__close-btn {position: relative;
+    top: 30px;
     left: 420px;
     width: 30px;
     height: 30px;
@@ -69,8 +70,6 @@
 }
 }
 }
-.mobile-menu--active {transform: translate(0%);}
-
 .line{position: absolute;
     display:block;
     width: 22px;
