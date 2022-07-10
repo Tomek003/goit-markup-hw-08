@@ -1,17 +1,32 @@
 .main-section-heading {
     background-color: getColor('main-decoration-color');
     background-image: url("../images/header-mobile.jpg");
-    width: 480px;
+    width: 320px;
     height: 400px;
     margin: 0 auto;
-    background-size: 480px 400px;
+    background-size: 320px 400px;
     background-repeat: no-repeat;
     @include bg-image {background-image: url("../images/header-mobile@2x.jpg");
-    background-size: 480px 400px;
+    background-size: 320px 400px;
     background-repeat: no-repeat;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .main-section-heading {
+        background-color: getColor('main-decoration-color');
+        background-image: url("../images/header-mobile.jpg");
+        width: 480px;
+        height: 400px;
+        margin: 0 auto;
+        background-size: 480px 400px;
+        background-repeat: no-repeat;
+        @include bg-image {background-image: url("../images/header-mobile@2x.jpg");
+        background-size: 480px 400px;
+        background-repeat: no-repeat;}
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
     .main-section-heading {background-image: url("../images/header-tablet.jpg");
             width: 768px;
             height: 400px;

@@ -11,9 +11,18 @@
     @extend .page-header__logo;
     color: getColor('font-brand-color');
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px){
+.page-header__logo {position: relative;
+        top: 15px;
+    left:10px;}
+.page-header__logo2 {position: relative;
+        top: 0;
+    left:0;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .page-header__logo {position: relative;
-    top: 0;
+    top: 15px;
 left:10px;}
 .page-header__logo2 {position: relative;
     top: 0;

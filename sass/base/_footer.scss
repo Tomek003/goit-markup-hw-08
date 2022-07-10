@@ -53,7 +53,7 @@
 }
 .social-head {position: relative;
     top: 0;
-    left: -15px;
+    left: 0;
     width: 230px;
     height: 80px;
     &__title{
@@ -93,9 +93,8 @@
     &__e-mail {position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200px;
     height: 50px;
-    margin-top: -5px;
     margin-left: -15px;
     padding-top: 15px;
     padding-right: 0px;
@@ -116,7 +115,7 @@
         fill: getColor('secondary-decoration-color');}
 &__submit-button {position: relative;
         top: 0;
-        left: -20px;
+        left: 0;
         transform: translate(50%, 50%);
         background-color: getColor('main-decoration-color');
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -135,8 +134,120 @@
     &:hover{cursor: pointer;}
     }
 }
+@media screen and (min-width: 320px) and (max-width: 480px){
+.footer{background-color: getColor('fourth-decoration-color');
+    &__logo-field {position: relative;
+                    top: 0;
+                    left: 0;}
+    &__logo{color: getColor('font-third-color');}
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+    &__logo2 {color: getColor('font-secondary-color');}
+        
+    &__address {
+            margin-right: 0px;
+        }
+        }
+.social-head {position: relative;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 80px;
+    &__title{
+            margin-bottom: 20px;
+            margin-left: 0px;
+            color: getColor('font-secondary-color');
+            padding-bottom: 10px;}
+    &__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin-top: -2px;
+            margin-right: 40px;
+            gap: 10px;
+            }
+        }
+.newsletter {margin-top: 60px;
+        padding-left: 0px;
+    &__title {margin-right: 0px;}
+    &__e-mail {position: relative;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 50px;
+        margin-top: -5px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    transform: translateX(35%);}
+    &__icon {position: absolute;
+            top: 13px;
+            left: 148px;
+            height: 100px;
+            fill: getColor('secondary-decoration-color');}
+    &__submit-button {position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(13%, 50%);
+        &:hover{cursor: pointer;}
+        }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .social-head {position: relative;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: 80px;
+        &__title{
+        margin-bottom: 20px;
+        margin-left: 0px;
+        padding-bottom: 10px;}
+        &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-top: -2px;
+        margin-right: 40px;
+        }
+    }
+    .newsletter {margin-top: 60px;
+        padding-left: 0px;
+        &__title {margin-right: 0px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        &__e-mail {position: relative;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 50px;
+        margin-top: -5px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        transform: translateX(35%);}
+    &__icon {position: absolute;
+            top: 13px;
+            left: 148px;
+            height: 100px;
+            fill: getColor('secondary-decoration-color');}
+    &__submit-button {position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(55%, 35%);
+        &:hover{cursor: pointer;}
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
 .footer {background-color: getColor('fourth-decoration-color');
     &__logo-field{position: relative;
         top: -140px;
@@ -155,17 +266,20 @@
     left: 233px;
         }
 .newsletter {margin-top: -25px;
+    &__title {
+        padding-bottom: 0px;
+        margin-bottom: -5px;
+    }
     &__e-mail {
             position: relative;
             top: 0;
-            left: -50%;                
+            left: -25px;          
             transform: translate(50%, 50%);
-            margin-left: 0px;
             }
     &__submit-button {
             position: relative;
-            top: 20px;
-            left: 0;              
+            top: 65px;
+            left: -50%;              
             transform: translate(50%, 50%);
         }
     }
@@ -173,7 +287,7 @@
 @media screen and (min-width: 1200px) {
 .footer {background-color: getColor('fourth-decoration-color');
     &__logo-field {position: relative;
-                top: 0;
+                top: -20px;
                 left: -150px;}
     &__logo {font-size: 26px;
             line-height: 31px;
@@ -189,26 +303,30 @@
             }
         }
 .social-head {position: relative;
-            top: -35px;
+            top: -30px;
             left: -100px;
     &__title {margin-left: -50px;
             }
         }
     .newsletter {position: relative;
-            top: -65px;
+            top: -60px;
             left: -65px;
             width: 300px;
             height: 80px;
     &__title {
-              margin-left: -65px;
+              margin-left: -58px;
             }
-    &__e-mail {width: 358px;
+    &__e-mail {position: relative;
+        top: 15px;
+        left: 0;
+        width: 358px;
+        margin-top: -20px;
         margin-left: 0px;
             }
     &__submit-button {
                 position: relative;
-                top: -50px;
-                left: -30px;
+                top: -35px;
+                left: 5px;
                 transform: translate(185%);
         }
     }

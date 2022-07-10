@@ -1,4 +1,11 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .navi__menu {
+    display: none;}
+    .contact-menu{
+    display: none;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .navi__menu {
   display: none;}
   .contact-menu{
@@ -50,7 +57,7 @@
 }
   .contact-menu {position: relative;
     top:-70px;
-    right: -550px;
+    right: -600px;
     padding-left: 0px;
   &__list {
     list-style-type: none;
