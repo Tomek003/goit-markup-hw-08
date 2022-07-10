@@ -1,14 +1,17 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
-.mobile-menu{position: fixed;
+.mobile-menu{
     width: 100vw;
-    max-width: 480px;
     height: 100vh;
-    background-color:chartreuse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: getColor('secondary-decoration-color');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.3s ease-in-out;
-
+    transform: translate(100vw);
+    transition: .3s .1s ease-in-out;
+    &--active{transform: translate(0vw);}
 &__link {
     text-decoration: none;
     font-family: getFont('main-font');

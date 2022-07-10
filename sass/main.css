@@ -140,7 +140,6 @@
     top: 0;
     left: 10px;
   }
-
   .page-header__logo2 {
     position: relative;
     top: 0;
@@ -154,7 +153,6 @@
     left: 15px;
     margin-right: 93px;
   }
-
   .page-header__logo2 {
     position: relative;
     top: 0;
@@ -167,7 +165,6 @@
     top: 0;
     left: 0;
   }
-
   .page-header__logo2 {
     position: relative;
     top: 0;
@@ -178,7 +175,6 @@
   .navi__menu {
     display: none;
   }
-
   .contact-menu {
     display: none;
   }
@@ -229,7 +225,6 @@
     top: 29px;
     border-radius: 2px;
   }
-
   .contact-menu {
     position: relative;
     top: -70px;
@@ -305,7 +300,6 @@
     top: 29px;
     border-radius: 2px;
   }
-
   .contact-menu {
     position: relative;
     display: flex;
@@ -341,31 +335,50 @@
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hamburger {
+    padding: 0;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
     position: relative;
-    top: -40px;
-    left: 420px;
-    display: flex;
-    justify-content: center;
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    border: none;
-    border-radius: 2px;
+    top: -30px;
+    left: 400px;
     cursor: pointer;
+    transition: 0.3s 0.1s ease-in-out;
   }
-  .hamburger::before, .hamburger::after {
-    content: "";
-    position: absolute;
-    width: 30px;
+  .hamburger__box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hamburger__inner {
+    width: 100%;
     height: 4px;
     background-color: black;
-    border-radius: 2px;
+    position: absolute;
+    transition: background-color 0.3s 0.1s ease-in-out;
   }
-  .hamburger::before {
-    transform: translateY(-16px);
+  .hamburger__inner::before, .hamburger__inner::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s 0.2s ease-in-out;
   }
-  .hamburger::after {
-    transform: translateY(16px);
+  .hamburger__inner::before {
+    top: -10px;
+  }
+  .hamburger__inner::after {
+    top: 10px;
+  }
+  .hamburger .hamburger--active .hamburger__inner {
+    background-color: black;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -850,7 +863,6 @@
     font-size: 36px;
     line-height: 42px;
   }
-
   .clients__list {
     display: flex;
     padding-top: 50px;
@@ -1272,13 +1284,11 @@
     margin-top: 60px;
     padding-top: 60px;
   }
-
   .social-head {
     position: relative;
     top: -115px;
     left: 233px;
   }
-
   .newsletter {
     margin-top: -25px;
   }
@@ -1320,7 +1330,6 @@
   .footer__address, .footer__mail, .footer__phone {
     text-align: left;
   }
-
   .social-head {
     position: relative;
     top: -35px;
@@ -1329,7 +1338,6 @@
   .social-head__title {
     margin-left: -50px;
   }
-
   .newsletter {
     position: relative;
     top: -65px;
@@ -1543,7 +1551,6 @@
     fill: #2196F3;
     color: #2196F3;
   }
-
   .modal__close-btn {
     transition-property: transform, fill;
     transition-duration: 2s;
@@ -1571,7 +1578,6 @@
     padding-top: 12px;
     text-indent: 16px;
   }
-
   .modal__mail, .modal__phone, .modal__name, .modal__comment {
     transition-property: fill, color;
     transition-duration: 250ms;
@@ -1581,7 +1587,6 @@
     fill: #2196F3;
     color: #2196F3;
   }
-
   .modal__close-btn {
     transition-property: transform, fill;
     transition-duration: 2s;
@@ -1632,15 +1637,20 @@
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu {
-    position: fixed;
     width: 100vw;
-    max-width: 480px;
     height: 100vh;
-    background-color: chartreuse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.3s ease-in-out;
+    transform: translate(100vw);
+    transition: 0.3s 0.1s ease-in-out;
+  }
+  .mobile-menu--active {
+    transform: translate(0vw);
   }
   .mobile-menu__link {
     text-decoration: none;
