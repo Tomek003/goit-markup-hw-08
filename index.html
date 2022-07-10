@@ -20,12 +20,11 @@
         <header class="container-page-header">
             <div class="container">
                 <nav class="navi">
-                <a class="page-header__logo" href="text">
-                    <h2 class="page-header__logo">Web<span class="page-header__logo2">Studio</span></h2></a>
+                    <h2><a class="page-header__logo" href="#">Web<span class="page-header__logo2">Studio</span></a></h2>
                         <ul class="navi__menu">
                             <li class="navi__menu-list"><a class="navi__menu-link navi__menu-link--active" href="index.html">Agencja</a></li>
                             <li class="navi__menu-list"><a class="navi__menu-link" href="portfolio.html">Portfolio</a></li>
-                            <li class="navi__menu-list"><a class="navi__menu-link" href="text">Kontakt</a></li>
+                            <li class="navi__menu-list"><a class="navi__menu-link" href="#">Kontakt</a></li>
                         </ul>
                     </nav>
                     <ul class="contact-menu">
@@ -39,11 +38,13 @@
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>+48 111 111 111</a></li>
                         </ul>
-                        <button class="hamburger" id="hamburger" js-open-menu> 
-                        </button>
+                        </div>
+                        
 <!--MOBILE MENU START-->
-    <div class="mobile-menu mobile-menu--active" id="mobile-menu" js-menu-container>
-        <button type="button" class="mobile-menu__close-btn" js-close-menu>
+<button class="hamburger" id="hamburger"> 
+</button>
+    <div class="mobile-menu" id="mobile-menu">
+        <button type="button" class="mobile-menu__close-btn" id="close-btn">
                         <svg class="icon-X" width="11" height="11">
                         <use href="./images/icons.svg#icon-X"></use>
                         </svg></button>
@@ -212,6 +213,7 @@
                     <source srcset="./images/johndoe3-450.jpg 450w, ./images/johndoe3-450@2x.jpg 900w" media="(min-width: 480px) and (max-width: 767px)" sizes="(min-width: 480px) 450px, 900px 100vw" />
                     <source srcset="./images/johndoe3-354.jpg 354w, ./images/johndoe3-354@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1200px)" sizes="(min-width: 768px) 354px, 708px 100vw" />
             <img class="team__card-image--no-gap" src="./images/JohnDoe3.jpg" alt="John Doe3" width="270" height="260">
+            </picture>
                 <p class="team__name"><b>John Doe</b></p>
                 <p class="team__job">UI Designer</p>
                 <a href="" class="team__social-icons">
@@ -274,7 +276,7 @@
     <footer class="footer">
         <div class="container container-footer">
             <div class="footer__logo-field">
-                <a class="footer__logo" href="text">
+                <a class="footer__logo" href="#">
                     <h2 class="footer__logo">Web<span class="footer__logo2">Studio</span></h2>
                 </a>
                 <address class="footer__address"><b>m. Warszawa, al. Jerozolimskie 21</b>
@@ -374,7 +376,7 @@
     <!--MODAL WINDOW END-->
     
     <script src="./js/modal.js"></script>
-    <script src="js/mobile-menu.js"></script>
+    <script src="js/mobile.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
