@@ -1,6 +1,8 @@
 .buttons {
     margin-top: 60px;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .portfolio-button {
     color: getColor('font-brand-color');
@@ -9,7 +11,7 @@
     font-weight: 500;
     line-height: 26px;
     border: none;
-    display: inline-block;
+    display: inline-flex;
     padding: 6px 22px 6px 22px;
     margin-left: 15px;
     border-radius: 4px;

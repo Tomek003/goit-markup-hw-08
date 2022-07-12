@@ -1,7 +1,7 @@
 .grid {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     padding: 0;
@@ -86,18 +86,24 @@
     background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px){
+.grid {
+    &__title {font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.06em;
+            text-transform: none;
+            text-decoration: none;
+            color: getColor('font-brand-color');
+            }
+}
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .grid {display: flex;
-           flex-direction: row;
-            flex-wrap: wrap;
-            list-style-type: none;
-            padding: 0;
+    .grid {padding: 0;
      &__item {overflow: hidden;
         width: 354px;
         height: 404px;
      }
 &__title {position: relative;
-          
              font-size: 17px;
              font-weight: 700;
              line-height: 36px;
@@ -118,17 +124,12 @@
              letter-spacing: 0.03em;
              text-decoration: none;
          }
-    &__overlay-text {
-                     padding: 49px 24px 49px 24px;
+    &__overlay-text {padding: 49px 24px 49px 24px;
                  }
     }
 }
 @media screen and (min-width: 1200px) {
-.grid {display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-            list-style-type: none;
+.grid {
             padding: 0;
             margin-top: 0;
             margin-right: -8px;

@@ -1,7 +1,6 @@
 .modal{position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
         width: 450px;
         min-height: 609px;
         background-color: getColor('secondary-decoration-color');
@@ -164,28 +163,42 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
 .modal {position: absolute;
-        top: 25%;
-        left: 232px;
-        width: 100vw;
+        top: 0;
+        left: 0;
+        transform: translateY(25%);
+        width: 380px;
         min-height: 609px;
+    &__title {
+            font-size: 17px;
+            line-height: 15px;}
+    &__field {
+        width: 340px;
+    margin-left: -15px;}
     &__icon--name {position: absolute;
-            top: 109px;
-            left: 58px;
+            top: 105px;
+            left: 28px;
         }
     &__icon--phone{position: absolute;
-            top: 180px;
-            left: 60px;}
+            top: 175px;
+            left: 30px;}
         
     &__icon--envelope-modal {position: absolute;
-            bottom: 340px;
-            left: 58px;
+            bottom: 350px;
+            left: 28px;
         }
+    &__close-btn {position: absolute;
+            top: 12px;
+            right: 30px;
+            width: 20px;
+        height: 20px;}
 }
 }
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .modal {position: absolute;
-        top: 25%;
-        left: 25%;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 25%);
 }
 }
 
@@ -193,7 +206,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     .modal {position: absolute;
             top: 400px;
             left: 25%;
-            transform: translate(-50%, -50%);
+            transform: translate(0%, -50%);
             width: 450px;
             min-height: 609px;
 
@@ -220,11 +233,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
     .modal {position: absolute;
-        top: 25%;
+        top: 0;
         left: 25%;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, 50%);
         width: 528px;
-            min-height: 581px;
+        min-height: 581px;
 &__field {
         width: 448px;}
 

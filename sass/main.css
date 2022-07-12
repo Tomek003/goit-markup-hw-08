@@ -44,7 +44,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 .container-card-set {
@@ -53,6 +53,11 @@
   padding-left: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .container-card-set {
+    max-width: 1200px;
+  }
+}
 .container-footer {
   display: flex;
   flex-direction: column;
@@ -73,7 +78,8 @@
 @media screen and (min-width: 1200px) {
   .container-footer {
     flex-direction: row;
-    height: 252px;
+    min-height: 252px;
+    max-width: 1200px;
   }
 }
 .container-main-section {
@@ -99,7 +105,8 @@
     font-size: 44px;
     line-height: 60px;
     padding-top: 100px;
-    transform: translateX(-4%);
+    transform: translateX(0%);
+    max-width: 1200px;
   }
 }
 .container-page-header {
@@ -109,13 +116,11 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .container-page-header {
     min-width: 480px;
-    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-page-header {
     min-width: 768px;
-    max-width: 1199px;
     height: 80px;
   }
 }
@@ -123,6 +128,7 @@
   .container-page-header {
     min-width: 1200px;
     height: 80px;
+    max-width: 1600px;
   }
 }
 .container-clients {
@@ -412,14 +418,14 @@
   .hamburger {
     position: relative;
     top: -10px;
-    left: 320px;
+    left: 280px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hamburger {
     position: relative;
     top: -15px;
-    left: 450px;
+    left: 420px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -953,7 +959,7 @@
 .grid {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -1037,12 +1043,18 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .grid__title {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    text-decoration: none;
+    color: #212121;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
     padding: 0;
   }
   .grid__item {
@@ -1077,11 +1089,6 @@
 }
 @media screen and (min-width: 1200px) {
   .grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style-type: none;
     padding: 0;
     margin-top: 0;
     margin-right: -8px;
@@ -1124,6 +1131,8 @@
 .buttons {
   margin-top: 60px;
   margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-button {
@@ -1133,7 +1142,7 @@
   font-weight: 500;
   line-height: 26px;
   border: none;
-  display: inline-block;
+  display: inline-flex;
   padding: 6px 22px 6px 22px;
   margin-left: 15px;
   border-radius: 4px;
@@ -1299,7 +1308,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 100%;
   height: 50px;
   margin-left: -15px;
   padding-top: 15px;
@@ -1397,7 +1406,6 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 200px;
     height: 50px;
     margin-top: -5px;
     padding-top: 15px;
@@ -1406,7 +1414,7 @@
     padding-left: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    transform: translateX(35%);
+    transform: translateX(5%);
   }
   .newsletter__icon {
     position: absolute;
@@ -1513,21 +1521,24 @@
   }
   .newsletter {
     margin-top: -25px;
+    padding-left: 0px;
   }
   .newsletter__title {
     padding-bottom: 0px;
     margin-bottom: -5px;
+    margin-left: 30px;
   }
   .newsletter__e-mail {
     position: relative;
     top: 0;
-    left: -25px;
-    transform: translate(50%, 50%);
+    left: 0;
+    transform: translate(5%, 50%);
+    height: 50px;
   }
   .newsletter__submit-button {
     position: relative;
-    top: 65px;
-    left: -50%;
+    top: 35px;
+    left: 0;
     transform: translate(50%, 50%);
   }
 }
@@ -1557,7 +1568,7 @@
   }
   .social-head {
     position: relative;
-    top: -30px;
+    top: -40px;
     left: -100px;
   }
   .social-head__title {
@@ -1565,7 +1576,7 @@
   }
   .newsletter {
     position: relative;
-    top: -60px;
+    top: -75px;
     left: -65px;
     width: 300px;
     height: 80px;
@@ -1605,9 +1616,8 @@
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 450px;
   min-height: 609px;
   background-color: #FFFFFF;
@@ -1773,32 +1783,49 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .modal {
     position: absolute;
-    top: 25%;
-    left: 232px;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: translateY(25%);
+    width: 380px;
     min-height: 609px;
+  }
+  .modal__title {
+    font-size: 17px;
+    line-height: 15px;
+  }
+  .modal__field, .modal__field1, .modal__field2, .modal__field3 {
+    width: 340px;
+    margin-left: -15px;
   }
   .modal__icon--name {
     position: absolute;
-    top: 109px;
-    left: 58px;
+    top: 105px;
+    left: 28px;
   }
   .modal__icon--phone {
     position: absolute;
-    top: 180px;
-    left: 60px;
+    top: 175px;
+    left: 30px;
   }
   .modal__icon--envelope-modal {
     position: absolute;
-    bottom: 340px;
-    left: 58px;
+    bottom: 350px;
+    left: 28px;
+  }
+  .modal__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .modal {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 25%);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1806,7 +1833,7 @@
     position: absolute;
     top: 400px;
     left: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     width: 450px;
     min-height: 609px;
   }
@@ -1837,9 +1864,9 @@
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
-    top: 25%;
+    top: 0;
     left: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, 50%);
     width: 528px;
     min-height: 581px;
   }
@@ -2005,7 +2032,7 @@
   .mobile-menu__close-btn {
     position: relative;
     top: 20px;
-    left: 380px;
+    left: 280px;
   }
 }
 .line {
@@ -2015,13 +2042,13 @@
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .mobile-menu {
-    width: 100%;
+    width: 100vw;
     height: 100%;
   }
   .mobile-menu__close-btn {
     position: relative;
     top: 30px;
-    left: 580px;
+    left: 450px;
   }
   .line {
     position: absolute;

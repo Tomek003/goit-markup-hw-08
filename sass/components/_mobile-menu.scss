@@ -107,7 +107,7 @@ transform: rotate(90deg) translateY(1000%) translateX(-60%);}
             }
     &__close-btn {position: relative;
                 top: 20px;
-                left: 380px;}
+                left: 280px;}
 }
 }
 .line{position: absolute;
@@ -116,11 +116,11 @@ transform: rotate(90deg) translateY(800%) translateX(-50%);}
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
 .mobile-menu {
-        width: 100%;
+        width: 100vw;
         height: 100%;
     &__close-btn {position: relative;
         top: 30px;
-        left: 580px;
+        left: 450px;
     }
 }
 .line{position: absolute;
