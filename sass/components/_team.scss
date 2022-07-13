@@ -1,5 +1,6 @@
 .team-section {background-color: getColor('fifth-decoration-color');
-    margin-top: -200px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .team{font-family: getFont('main-font');
     color: getColor('font-brand-color');

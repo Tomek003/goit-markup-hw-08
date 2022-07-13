@@ -15,15 +15,13 @@
   
   .navi {display: flex;
     justify-content: space-between;
-    position: relative;
     padding: 0px;
   &__menu {width: 0px;
     height: 0px;
     display: flex;
-    position: relative;
-    top: 12px;
-    left: -500px;
-    padding: 0px;
+    justify-content: center;
+    padding-right: 150px;
+    margin-top: 29px;
     list-style-type: none;
   }
   &__menu-list {
@@ -55,9 +53,9 @@
     border-radius: 2px;
   }
 }
-  .contact-menu {position: relative;
-    top:-70px;
-    right: -600px;
+  .contact-menu {display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding-left: 0px;
   &__list {
     list-style-type: none;
@@ -90,20 +88,19 @@
   
   .navi {display: flex;
     justify-content: space-between;
-    position: relative;
+    
     padding: 0px;
+    width: 100%;
     
   &__menu {display: flex;
-    position: relative;
+    margin-top: 29px;
     padding-left: 0px;
     list-style-type: none;
   }
   &__menu-list:not(:last-child) {
     padding-right: 46px;
   }
-  &__menu-link {position: relative;
-    top: 12px;
-    left: -600px;
+  &__menu-link {
     font-family: getFont("main-font");
     color: getColor("font-brand-color");
     font-weight: 500;
@@ -127,11 +124,10 @@
     border-radius: 2px;
   }
 }
-  .contact-menu {position: relative;
+  .contact-menu {
     display: flex;
-    top: -60px;
-    left: 900px;
     padding-left: 0px;
+    margin-top: 29px;
   &__list {
     list-style-type: none;
   }
