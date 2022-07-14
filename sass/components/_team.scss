@@ -1,5 +1,4 @@
 .team-section {background-color: getColor('fifth-decoration-color');
-    max-width: 1200px;
     margin: 0 auto;
 }
 .team{font-family: getFont('main-font');
@@ -13,8 +12,9 @@
     padding-bottom: 50px;
     padding-top: 94px;
 &__list {display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding-right: 0px;
     padding-bottom: 94px;
     padding-left: 0px;
@@ -27,7 +27,6 @@
    }
 &__name {display: flex;
     justify-content: space-evenly;
-    width: 270px;
     height: 19px;
     margin: 0;
     padding: 30px 99px 20px 99px;
@@ -73,22 +72,24 @@ margin-bottom: 15px;}
     width: 20px;
     height: 20px;
 }
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .team__list{
+    flex-direction: column;}
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .team-section {max-width: 1200px;}
     .team {font-size: 28px;
     line-height: 33px;
 &__list {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap:wrap;
     gap: 30px;
     margin-bottom: 0px;
+    justify-content: center;
+    flex-basis: calc((100% - 30px) / 2);
         }
 &__card {
     border-radius: 0px 0px 4px 4px;
-    background-color: getColor('secondary-decoration-color');
-            }
+    background-color: getColor('secondary-decoration-color');}
     }
 }
 @media screen and (min-width: 1200px) {

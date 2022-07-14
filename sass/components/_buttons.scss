@@ -1,8 +1,6 @@
 .buttons {
     margin-top: 60px;
     margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
 }
 .portfolio-button {
     color: getColor('font-brand-color');
@@ -12,6 +10,8 @@
     line-height: 26px;
     border: none;
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 6px 22px 6px 22px;
     margin-left: 15px;
     border-radius: 4px;
@@ -35,13 +35,6 @@
                 top: 0;
                 left: 0;
         }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px){
-    .buttons {position: relative;
-            top: 0;
-            left: 70px;
-            }
 }
 @media screen and (min-width: 1200px) {
         .buttons {position: relative;

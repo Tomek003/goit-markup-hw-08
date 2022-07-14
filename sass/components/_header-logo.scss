@@ -1,4 +1,4 @@
-.page-header__logo{
+.page-header-logo{
     font-family: getFont('secondary-font');
     color: getColor('font-third-color');
     font-size: 26px;
@@ -7,49 +7,41 @@
     text-decoration: none;
     }
 
-.page-header__logo2{
-    @extend .page-header__logo;
+.page-header-logo--right{
+    @extend .page-header-logo;
     color: getColor('font-brand-color');
 }
 @media screen and (min-width: 320px) and (max-width: 480px){
-.page-header__logo {position: relative;
+.page-header-logo {position: relative;
         top: 15px;
     left:10px;}
-.page-header__logo2 {position: relative;
+.page-header-logo--right {position: relative;
         top: 0;
     left:0;}
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-    .page-header__logo {position: relative;
-    top: 15px;
-left:10px;}
-.page-header__logo2 {position: relative;
-    top: 0;
-left:0;}
+    .page-header-logo {display: flex;
+    justify-content: flex-start;
+margin-left: 10px;
+  &--right {margin-left: 0px;}
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {    
-    .page-header__logo{position: relative;
-        top: 0;
-        left: 15px;
+    .page-header-logo{display: flex;
         margin-right: 93px;
-        
+        padding-left: 15px;
+        &--right {padding-left: 0px;}
     }
-    .page-header__logo2 {position: relative;
-        top: 0;
-        left: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
-    .page-header__logo{position: relative;
+.page-header-logo{position: relative;
         top: 0;
         left: 0;
-        
-    }
-    .page-header__logo2 {position: relative;
+    &--right {position: relative;
         top: 0;
-        left: 0;
+        left: 0;}
   }
 }
     

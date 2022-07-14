@@ -28,11 +28,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
     .main-section-heading {background-image: url("../images/header-tablet.jpg");
-            width: 768px;
-            height: 400px;
+            max-width: 1200px;
+            min-width: 768px;
+            min-height: 400px;
             background-size: 768px 400px;
             @include bg-image {background-image: url("../images/header-tablet@2x.jpg");
-            background-size: 768px 400px;}
+            }
 }
 }
 @media screen and (min-width: 1200px){

@@ -16,12 +16,13 @@
   .navi {display: flex;
     justify-content: space-between;
     padding: 0px;
+    width: 100%;
   &__menu {width: 0px;
     height: 0px;
     display: flex;
     justify-content: center;
-    padding-right: 150px;
     margin-top: 29px;
+    margin-right: 50px;
     list-style-type: none;
   }
   &__menu-list {
@@ -55,13 +56,11 @@
 }
   .contact-menu {display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     padding-left: 0px;
   &__list {
     list-style-type: none;
   }
   &__list:not(:last-child) {
-    padding-right: 50px;
     padding-bottom: 10px;
   }
   &__link{font-family: getFont('main-font');
@@ -88,7 +87,6 @@
   
   .navi {display: flex;
     justify-content: space-between;
-    
     padding: 0px;
     width: 100%;
     

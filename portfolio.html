@@ -4,7 +4,7 @@
     <!-- Metadane -->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="./CSS/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +27,7 @@
     <header class="container-page-header">
       <div class="container">
           <nav class="navi">
-              <h2><a class="page-header__logo" href="#">Web<span class="page-header__logo2">Studio</span></a></h2>
+              <h2><a class="page-header-logo" href="#">Web<span class="page-header-logo--right">Studio</span></a></h2>
                   <ul class="navi__menu">
                       <li class="navi__menu-list"><a class="navi__menu-link" href="index.html">Agencja</a></li>
                       <li class="navi__menu-list"><a class="navi__menu-link navi__menu-link--active" href="portfolio.html">Portfolio</a></li>
@@ -44,17 +44,17 @@
                           <use href="./images/icons.svg#icon-smartphone"></use>
                       </svg>+48 111 111 111</a></li>
                   </ul>
-        </nav>
+                  </nav>
     </div>
-    <button class="hamburger hamburger--active" mobile-menu-open> 
+    <button class="hamburger hamburger--active"> 
       <span class="hamburger__box">
           <span class="hamburger__inner"></span>
       </span>
   </button>
         </header>
     <main>
-      <section class="buttons">
-        <div class="container">
+      <section>
+        <div class="container buttons">
           <h2 hidden>Buttony</h2>
           <button type="button" class="portfolio-button">Wszystkie</button>
           <button type="button" class="portfolio-button">Strony</button>
@@ -334,12 +334,7 @@
             </label>
             <button type="submit" class="newsletter__submit-button">
               <svg class="newsletter__icon">
-                <use
-                  href="./images/icons.svg#icon-send"
-                  width="24"
-                  height="24"
-                ></use></svg
-              >Zapisz się
+                <use href="./images/icons.svg#icon-send" width="24" height="24"></use></svg>Zapisz się
             </button>
           </form>
         </div>
@@ -371,8 +366,5 @@
 </div>
         <!--MOBILE MENU END-->
     <script src="./js/mobile-menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
   </body>
 </html>
