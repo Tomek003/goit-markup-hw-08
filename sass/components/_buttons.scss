@@ -1,4 +1,6 @@
 .portfolio-button {
+  display: inline-flex;
+  justify-content: center;
   color: getColor("font-brand-color");
   font-family: getFont("main-font");
   font-size: 16px;

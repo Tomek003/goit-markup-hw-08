@@ -80,10 +80,6 @@
     max-width: 1600px;
   }
 }
-.container-clients {
-  padding-bottom: 94px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-clients {
     max-width: 1200px;
@@ -446,6 +442,12 @@
   margin: 0 auto;
   padding: 0;
 }
+.card-set__item {
+  width: 100%;
+}
+.card-set__item:last-child {
+  padding-bottom: 60px;
+}
 .card-set__image {
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -482,10 +484,12 @@
   text-transform: none;
   text-align: left;
   padding-left: 0;
-  max-width: 480px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .card-set__item {
+    width: 100%;
+  }
   .card-set__image {
     margin-bottom: 30px;
   }
@@ -497,6 +501,9 @@
   }
   .card-set__item {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .card-set__item:last-child {
+    padding-bottom: 0px;
   }
   .card-set__image {
     max-width: 768px;
@@ -514,6 +521,9 @@
     padding-left: 0;
     margin-top: 94px;
     flex-wrap: nowrap;
+  }
+  .card-set__item:last-child {
+    padding-bottom: 0px;
   }
   .card-set__image {
     padding: 0;
@@ -553,6 +563,7 @@
 .icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -748,7 +759,7 @@
 }
 .team__card {
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background-color: #FFFFFF;
 }
 .team__name, .team__job {
@@ -862,6 +873,9 @@
     margin-bottom: 15px;
   }
 }
+.clients {
+  padding-bottom: 94px;
+}
 .clients__title {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -873,19 +887,21 @@
   padding-top: 94px;
   margin: 0 auto;
 }
-
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 30px;
   padding-top: 50px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients__title {
     padding-top: 94px;
     margin: 0 auto;
+  }
+  .clients__list {
+    flex-basis: calc((33.3% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -996,6 +1012,7 @@
     width: 100%;
     max-width: 354px;
     height: 100%;
+    max-height: 404px;
   }
   .grid__subtitle {
     position: relative;
@@ -1007,9 +1024,9 @@
 }
 @media screen and (min-width: 1200px) {
   .grid {
+    display: flex;
+    gap: 30px;
     padding: 0;
-    margin-left: 215px;
-    margin-right: 215px;
   }
   .grid__item {
     position: relative;
@@ -1047,6 +1064,8 @@
 }
 
 .portfolio-button {
+  display: inline-flex;
+  justify-content: center;
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1282,6 +1301,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
+    max-width: 1200px;
     background-color: #2F303A;
   }
   .footer__logo-field {

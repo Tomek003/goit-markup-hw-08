@@ -1,6 +1,8 @@
-.clients__title {
-    font-family: getFont('main-font');
-    color: getColor('font-brand-color');
+.clients {
+  padding-bottom: 94px;
+  &__title {
+    font-family: getFont("main-font");
+    color: getColor("font-brand-color");
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
@@ -8,28 +10,33 @@
     text-align: center;
     padding-top: 94px;
     margin: 0 auto;
-}
-.clients__list {
+  }
+  &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 30px;
     padding-top: 50px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-.clients__title {padding-top: 94px;
-        margin: 0 auto;
-        }
+  .clients__title {
+    padding-top: 94px;
+    margin: 0 auto;
+  }
+  .clients__list {
+    flex-basis: calc((33.3% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
-.clients__title {
+  .clients__title {
     font-size: 36px;
     line-height: 42px;
-        }
-    
-.clients__list {
+  }
+
+  .clients__list {
     display: flex;
     padding-top: 50px;
-        }
+  }
 }

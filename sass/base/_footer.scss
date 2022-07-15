@@ -212,6 +212,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
+    max-width: 1200px;
     background-color: getColor("fourth-decoration-color");
     &__logo-field {
       position: relative;
