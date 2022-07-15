@@ -1,43 +1,23 @@
-.buttons {
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
 .portfolio-button {
-    color: getColor('font-brand-color');
-    font-family: getFont('main-font');
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    border: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 6px 22px 6px 22px;
-    margin-left: 15px;
-    border-radius: 4px;
-    background-color: getColor('fifth-decoration-color');
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-    background-color: getColor('main-decoration-color');
-    color: getColor('font-secondary-color');
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-        cursor: pointer;
+  color: getColor("font-brand-color");
+  font-family: getFont("main-font");
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border: none;
+  padding: 6px 22px 6px 22px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: getColor("fifth-decoration-color");
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: getColor("main-decoration-color");
+    color: getColor("font-secondary-color");
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
     text-decoration: none;
-       }
-    }
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .buttons {
-            position: relative;
-                top: 0;
-                left: 0;
-        }
+  }
 }
-@media screen and (min-width: 1200px) {
-        .buttons {position: relative;
-            top: 0;
-            left: 290px;}
-            }

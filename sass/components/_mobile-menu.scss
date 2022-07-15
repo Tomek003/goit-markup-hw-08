@@ -1,141 +1,167 @@
-.mobile-menu{
-    width: 0px;
-    height: 0px;
-    display: none;
-    visibility: hidden;
-    transform: translate(100%);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &--active{transform: translate(0%);
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: getColor('secondary-decoration-color');
-        }
-&__link {
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  transform: translate(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--active {
+    transform: translate(0%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: getColor("secondary-decoration-color");
+  }
+  &__link {
     text-decoration: none;
-    font-family: getFont('main-font');
-    color: getColor('font-brand-color');
+    font-family: getFont("main-font");
+    color: getColor("font-brand-color");
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-    &--active:hover{color: getColor('font-third-color');}
-    &--email {font-family: getFont('main-font');
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        color: getColor('font-fourth-color');
-        text-decoration: none;}
-    &--phone {font-family: getFont('main-font');
-        color: getColor('font-third-color');
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 40px;
-        letter-spacing: 0.02em;
-        text-decoration: none;}
-}
-&__list{list-style-type: none;
-    margin-bottom: 36px;
+    &--active:hover {
+      color: getColor("font-third-color");
     }
-&__social-links{display: flex;
+    &--email {
+      font-family: getFont("main-font");
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: getColor("font-fourth-color");
+      text-decoration: none;
+    }
+    &--phone {
+      font-family: getFont("main-font");
+      color: getColor("font-third-color");
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    margin-bottom: 36px;
+  }
+  &__social-links {
+    display: flex;
     flex-direction: row;
-} 
-&__social-item {
+  }
+  &__social-item {
     list-style-type: none;
     margin-right: 20px;
-    margin-bottom: 48px;}
+    margin-bottom: 48px;
+  }
 
-&__social-type {font-family: getFont('main-font');
-    color: getColor('font-third-color');
+  &__social-type {
+    font-family: getFont("main-font");
+    color: getColor("font-third-color");
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
-    text-decoration: none;}
+    text-decoration: none;
+  }
 
-&__close-btn {position: relative;
+  &__close-btn {
+    position: relative;
     top: 0;
     left: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: transparent;
-    background-color: getColor('secondary-decoration-color');
+    background-color: getColor("secondary-decoration-color");
     cursor: pointer;
     transition-property: transform, fill;
-    transition-duration: 2s; 
+    transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover{transform: rotate(360deg);
-     fill: getColor('main-decoration-color');}
-}
+    &:hover {
+      transform: rotate(360deg);
+      fill: getColor("main-decoration-color");
+    }
+  }
 }
 
-.line{position: absolute;
-    display:block;
-    width: 22px;
-height: 0px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-transform: rotate(90deg) translateY(1000%) translateX(-60%);}
+.line {
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg) translateY(1000%) translateX(-60%);
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-.mobile-menu{
-        width: 100%;
-        height: 100vh;
+  .mobile-menu {
+    width: 100%;
+    height: 100vh;
     &__link {
-            font-size: 30px;
-            line-height: 35px;
-        &--email {
-                font-size: 24px;
-                line-height: 28px;
-                }
-        &--phone {font-size: 30px;
-                  line-height: 35px;
-                    }
-            }
-    &__social-links{
-            margin-left: -15px;}
-                
-    &__social-item {
-                margin-right: 10px;
-                margin-bottom: 10px;
-            }
-    &__social-type {
-                font-size: 15px;
-                line-height: 16px;
-            }
-    &__close-btn {position: relative;
-                top: 20px;
-                left: 280px;}
-}
-}
-.line{position: absolute;
-transform: rotate(90deg) translateY(800%) translateX(-50%);}
+      font-size: 30px;
+      line-height: 35px;
+      &--email {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      &--phone {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+    &__social-links {
+      margin-left: -15px;
+    }
 
+    &__social-item {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    &__social-type {
+      font-size: 15px;
+      line-height: 16px;
+    }
+    &__close-btn {
+      position: relative;
+      top: 20px;
+      left: 280px;
+    }
+  }
+}
+.line {
+  position: absolute;
+  transform: rotate(90deg) translateY(800%) translateX(-50%);
+}
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-.mobile-menu {
-        width: 100%;
-        height: 100%;
-    &__close-btn {position: relative;
-        top: 30px;
-        left: 450px;
+  .mobile-menu {
+    width: 100%;
+    height: 100%;
+    &__close-btn {
+      position: relative;
+      top: 30px;
+      left: 450px;
     }
-}
-.line{position: absolute;
-    transform: rotate(90deg) translateY(1000%) translateX(-60%);}
+  }
+  .line {
+    position: absolute;
+    transform: rotate(90deg) translateY(1000%) translateX(-60%);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .mobile-menu {display: none;}
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .mobile-menu {display: none;}
+  .mobile-menu {
+    display: none;
+  }
 }

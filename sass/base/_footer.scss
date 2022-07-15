@@ -1,23 +1,27 @@
-.footer{background-color: getColor('fourth-decoration-color');
-&__logo-field {position: relative;
-            top: 0;
-            left: 0;}
-&__logo{
-    font-family: getFont('secondary-font');
+.footer {
+  background-color: getColor("fourth-decoration-color");
+  &__logo-field {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  &__logo {
+    font-family: getFont("secondary-font");
     font-size: 24px;
     font-weight: 700;
-    color: getColor('font-third-color');
+    color: getColor("font-third-color");
     line-height: 28px;
     letter-spacing: 0.03em;
     text-decoration: none;
     text-align: center;
-}
-&__logo2 {@extend .footer__logo;
-    color: getColor('font-secondary-color');
-}
-&__address {
-    font-family: getFont('main-font');
-    color: getColor('font-secondary-color');
+  }
+  &__logo2 {
+    @extend .footer__logo;
+    color: getColor("font-secondary-color");
+  }
+  &__address {
+    font-family: getFont("main-font");
+    color: getColor("font-secondary-color");
     text-decoration: none;
     text-align: center;
     font-weight: 400;
@@ -25,14 +29,16 @@
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0.03em;
-}
-&__mail {@extend .footer__address;
+  }
+  &__mail {
+    @extend .footer__address;
     color: rgba(255, 255, 255, 0.6);
-      }
-&__phone{@extend .footer__address;
+  }
+  &__phone {
+    @extend .footer__address;
     color: rgba(255, 255, 255, 0.6);
-    }
-&__icon {
+  }
+  &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,56 +46,63 @@
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: getColor('secondary-decoration-color');
+    fill: getColor("secondary-decoration-color");
     transition-property: fill, background-color;
-    transition-duration: 250ms; 
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-    background-color: getColor('main-decoration-color');
-        }
+    &:hover,
+    &:focus {
+      background-color: getColor("main-decoration-color");
     }
-    &__icon-link {width:20px;
-        height: 20px;}
+  }
+  &__icon-link {
+    width: 20px;
+    height: 20px;
+  }
 }
-.social-head {position: relative;
-    top: 0;
-    left: 0;
-    height: 80px;
-    &__title{
+.social-head {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 80px;
+  &__title {
     margin-bottom: 20px;
     margin-left: 32px;
-    font-family: getFont('main-font');
+    font-family: getFont("main-font");
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: getColor('font-secondary-color');
-    padding-bottom: 10px;}
-    &__links {
+    color: getColor("font-secondary-color");
+    padding-bottom: 10px;
+  }
+  &__links {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     margin-top: -2px;
     gap: 10px;
-    }
+  }
 }
-.newsletter {margin-top: 60px;
-    padding-left: 30px;
-    &__title {
-    font-family: getFont('main-font');
+.newsletter {
+  margin-top: 60px;
+  padding-left: 30px;
+  &__title {
+    font-family: getFont("main-font");
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: getColor('font-secondary-color');
+    color: getColor("font-secondary-color");
     padding-bottom: 10px;
-}
-    &__e-mail {position: relative;
+  }
+  &__e-mail {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -99,171 +112,205 @@
     padding-right: 0px;
     padding-bottom: 15px;
     padding-left: 15px;
-    font-family: getFont('main-font');
+    font-family: getFont("main-font");
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    background-color: getColor('fourth-decoration-color');
-    color: getColor('font-secondary-color');
+    background-color: getColor("fourth-decoration-color");
+    color: getColor("font-secondary-color");
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;}
-&__icon {position: absolute;
-        top: 13px;
-        left: 148px;
-        height: 100px;
-        fill: getColor('secondary-decoration-color');}
-&__submit-button {position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(50%, 50%);
-        background-color: getColor('main-decoration-color');
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border: none;
-        border-radius: 4px;
-        color: getColor('font-secondary-color');
-        font-family: getFont('main-font');
-        font-weight: 700;
-        font-size: 16px;
-        padding-right: 35px;
-        margin-bottom: 60px;
-        line-height: 30px;
-        width: 200px;
-        height: 50px;
-    &:hover{cursor: pointer;}
+    border-radius: 4px;
+  }
+  &__icon {
+    position: absolute;
+    top: 13px;
+    left: 148px;
+    height: 100px;
+    fill: getColor("secondary-decoration-color");
+  }
+  &__submit-button {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(15%, 50%);
+    background-color: getColor("main-decoration-color");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    color: getColor("font-secondary-color");
+    font-family: getFont("main-font");
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 35px;
+    margin-bottom: 60px;
+    line-height: 30px;
+    width: 200px;
+    height: 50px;
+    &:hover {
+      cursor: pointer;
     }
+  }
 }
-@media screen and (min-width: 480px) and (max-width: 768px){
-    .social-head {position: relative;
-        top: 0;
-        left: 0;
-        height: 80px;
-        &__title{
-        margin-bottom: 20px;
-        margin-left: 0px;
-        padding-bottom: 10px;}
-        &__links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
-        margin-top: -2px;
-        margin-right: 40px;
-        }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .social-head {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+    &__title {
+      margin-bottom: 20px;
+      margin-left: 0px;
+      padding-bottom: 10px;
     }
-    .newsletter {margin-top: 60px;
-        padding-left: 0px;
-        &__title {margin-right: 0px;
-            text-align: center;
-            padding-bottom: 10px;
-        }
-        &__e-mail {position: relative;
-        top: 0;
-        left: 0;
-        height: 50px;
-        margin-top: -5px;
-        padding-top: 15px;
-        padding-right: 0px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 4px;}
-    &__icon {position: absolute;
-            top: 13px;
-            left: 148px;
-            height: 100px;
-            fill: getColor('secondary-decoration-color');}
-    &__submit-button {position: relative;
-            top: 0;
-            left: 0;
-            transform: translate(50%, 50%);
-        &:hover{cursor: pointer;}
-        }
+    &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      margin-top: -2px;
+      margin-right: 40px;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px){
-.footer {background-color: getColor('fourth-decoration-color');
-    &__logo-field{position: relative;
-        top: -140px;
-        left: -200px;
-        width: 253px;
-        height: 79px;}
-    &__logo {margin-top: 60px;
-        padding-top: 60px;
-            }
-&__logo2 {margin-top: 60px;
-    padding-top: 60px;
-            }
-        }
-.social-head {position: relative;
-    top: -115px;
-    left: 233px;
-        }
-.newsletter {margin-top: -25px;
+  }
+  .newsletter {
+    margin-top: 60px;
     padding-left: 0px;
     &__title {
-        padding-bottom: 0px;
-        margin-bottom: -5px;
-        margin-left: 30px;
+      margin-right: 0px;
+      text-align: center;
+      padding-bottom: 10px;
     }
     &__e-mail {
-            position: relative;
-            top: 0;
-            left: 0;          
-            transform: translate(5%, 50%);
-            height: 50px;
-            }
-    &__submit-button {
-            position: relative;
-            top: 35px;
-            left: 0;              
-            transform: translate(50%, 50%);
-        }
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 50px;
+      margin-top: -5px;
+      padding-top: 15px;
+      padding-right: 0px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
     }
+    &__icon {
+      position: absolute;
+      top: 13px;
+      left: 148px;
+      height: 100px;
+      fill: getColor("secondary-decoration-color");
+    }
+    &__submit-button {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    background-color: getColor("fourth-decoration-color");
+    &__logo-field {
+      position: relative;
+      top: -140px;
+      left: -200px;
+      width: 253px;
+      height: 79px;
+    }
+    &__logo {
+      margin-top: 60px;
+      padding-top: 60px;
+    }
+    &__logo2 {
+      margin-top: 60px;
+      padding-top: 60px;
+    }
+  }
+  .social-head {
+    position: relative;
+    top: -115px;
+    left: 233px;
+  }
+  .newsletter {
+    margin-top: 0px;
+    padding-left: 0px;
+    &__title {
+      padding-bottom: 0px;
+      margin-bottom: -5px;
+      margin-left: 0px;
+    }
+    &__e-mail {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0%, 50%);
+      height: 50px;
+    }
+    &__submit-button {
+      position: relative;
+      top: 35px;
+      left: 0;
+      transform: translate(50%, 50%);
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
-.footer {background-color: getColor('fourth-decoration-color');
-    &__logo-field {position: relative;
-                top: -20px;
-                left: -150px;}
-    &__logo {font-size: 26px;
-            line-height: 31px;
-            text-align: left;
-            }
-    &__logo2 {font-size: 26px;
-            line-height: 31px;
-            text-decoration: none;
-            text-align: left;
-            color: getColor('font-secondary-color');
-            }
-    &__address {text-align: left;
-            }
-        }
-.social-head {position: relative;
-            top: -40px;
-            left: -100px;
-    &__title {margin-left: -50px;
-            }
-        }
-    .newsletter {position: relative;
-            top: -75px;
-            left: -65px;
-            width: 300px;
-            height: 80px;
-    &__title {
-              margin-left: -58px;
-            }
-    &__e-mail {position: relative;
-        top: 15px;
-        left: 0;
-        width: 358px;
-        margin-top: -20px;
-        margin-left: 0px;
-            }
-    &__submit-button {
-                position: relative;
-                top: -35px;
-                left: 5px;
-                transform: translate(185%);
-        }
+  .footer {
+    background-color: getColor("fourth-decoration-color");
+    &__logo-field {
+      position: relative;
+      top: -20px;
+      left: -150px;
     }
+    &__logo {
+      font-size: 26px;
+      line-height: 31px;
+      text-align: left;
+    }
+    &__logo2 {
+      font-size: 26px;
+      line-height: 31px;
+      text-decoration: none;
+      text-align: left;
+      color: getColor("font-secondary-color");
+    }
+    &__address {
+      text-align: left;
+    }
+  }
+  .social-head {
+    position: relative;
+    top: -40px;
+    left: -100px;
+    &__title {
+      margin-left: -50px;
+    }
+  }
+  .newsletter {
+    position: relative;
+    top: -75px;
+    left: -65px;
+    width: 300px;
+    height: 80px;
+    &__title {
+      margin-left: -58px;
+    }
+    &__e-mail {
+      position: relative;
+      top: 15px;
+      left: 0;
+      width: 358px;
+      margin-top: -20px;
+      margin-left: 0px;
+    }
+    &__submit-button {
+      position: relative;
+      top: -35px;
+      left: 5px;
+      transform: translate(185%);
+    }
+  }
 }
