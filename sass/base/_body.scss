@@ -1,5 +1,16 @@
-.body {font-family: getFont('main-font'), getFont('secondary-font');
-    font-weight: 400, 500, 700, 900;
-    cursor:default;
-    margin: 0px;
+.body {
+  font-family: getFont("main-font"), getFont("secondary-font");
+  font-weight: 400, 500, 700, 900;
+  cursor: default;
+  margin: 0px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }

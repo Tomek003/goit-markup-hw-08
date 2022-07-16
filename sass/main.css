@@ -16,6 +16,15 @@
   margin: 0px;
 }
 
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -24,8 +33,7 @@
 }
 
 .container-card-set {
-  margin-top: 94px;
-  margin-bottom: 0px;
+  margin-bottom: 94px;
   padding: 0 15px;
 }
 
@@ -519,7 +527,6 @@
 @media screen and (min-width: 1200px) {
   .card-set {
     padding-left: 0;
-    margin-top: 94px;
     flex-wrap: nowrap;
   }
   .card-set__item:last-child {
@@ -613,8 +620,6 @@
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  padding-bottom: 50px;
-  padding-top: 94px;
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -627,7 +632,6 @@
   justify-content: space-between;
   list-style-type: none;
   padding-left: 0px;
-  margin-bottom: 94px;
 }
 .product__image {
   display: none;
@@ -655,7 +659,7 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
     padding-top: 94px;
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -731,9 +735,14 @@
 }
 .team-section {
   background-color: #F5F4FA;
-  margin: 0 auto;
+  padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding: 94px 0;
+  }
+}
 .team {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -752,7 +761,6 @@
   align-items: center;
   justify-content: center;
   padding-right: 0px;
-  padding-bottom: 94px;
   padding-left: 0px;
   margin-top: 0px;
   list-style-type: none;
@@ -874,7 +882,7 @@
   }
 }
 .clients {
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 .clients__title {
   font-family: "Roboto", sans-serif;
@@ -884,7 +892,6 @@
   line-height: 33px;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   margin: 0 auto;
 }
 .clients__list {
@@ -905,6 +912,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
   .clients__title {
     font-size: 36px;
     line-height: 42px;
@@ -930,10 +940,8 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 450px;
   height: 100%;
   max-height: 404px;
-  margin: 15px 15px 15px 15px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1221,7 +1229,7 @@
   position: relative;
   top: 0;
   left: 0;
-  transform: translate(15%, 50%);
+  transform: translate(50%, 50%);
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -1258,7 +1266,7 @@
     align-items: center;
     list-style-type: none;
     margin-top: -2px;
-    margin-right: 40px;
+    margin-right: 0px;
   }
   .newsletter {
     margin-top: 60px;

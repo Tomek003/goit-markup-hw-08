@@ -1,5 +1,6 @@
 .clients {
-  padding-bottom: 94px;
+  padding: 60px 0;
+
   &__title {
     font-family: getFont("main-font");
     color: getColor("font-brand-color");
@@ -8,7 +9,6 @@
     line-height: 33px;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 94px;
     margin: 0 auto;
   }
   &__list {
@@ -30,6 +30,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
   .clients__title {
     font-size: 36px;
     line-height: 42px;

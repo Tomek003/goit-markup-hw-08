@@ -1,7 +1,13 @@
 .team-section {
   background-color: getColor("fifth-decoration-color");
-  margin: 0 auto;
+  padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding: 94px 0;
+  }
+}
+
 .team {
   font-family: getFont("main-font");
   color: getColor("font-brand-color");
@@ -19,7 +25,6 @@
     align-items: center;
     justify-content: center;
     padding-right: 0px;
-    padding-bottom: 94px;
     padding-left: 0px;
     margin-top: 0px;
     list-style-type: none;
