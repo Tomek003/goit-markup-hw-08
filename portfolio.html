@@ -468,22 +468,25 @@
       </div>
     </footer>
     <!--MOBILE MENU START-->
-    <div class="mobile-menu" mobile-menu>
-      <button type="button" class="mobile-menu__close-btn" mobile-menu-close>
+    <div class="mobile-menu mobile-menu--active">
+      <button
+        type="button"
+        class="mobile-menu__close-btn mobile-menu__close-btn--active"
+      >
         <svg class="icon-X" width="11" height="11">
           <use href="./images/icons.svg#icon-X"></use>
         </svg>
       </button>
       <ul class="mobile-menu__nav">
         <li class="mobile-menu__list">
-          <a class="mobile-menu__link" href="index.html">Agencja</a>
-        </li>
-        <li class="mobile-menu__list">
           <a
             class="mobile-menu__link mobile-menu__link--active"
-            href="portfolio.html"
-            >Portfolio</a
+            href="index.html"
+            >Agencja</a
           >
+        </li>
+        <li class="mobile-menu__list">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="mobile-menu__list">
           <a class="mobile-menu__link" href="text">Kontakt</a>
