@@ -1606,10 +1606,6 @@
   }
 }
 .mobile-menu {
-  transform: translate(100%);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile-menu--active.is-open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1619,6 +1615,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  transform: translate(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu--active.is-open {
   transform: translate(0);
 }
 .mobile-menu__link {
