@@ -1663,6 +1663,9 @@
   list-style-type: none;
   margin-bottom: 36px;
 }
+.mobile-menu__contact {
+  margin-top: auto;
+}
 .mobile-menu__social-links {
   display: flex;
   flex-direction: row;
