@@ -195,23 +195,23 @@
       padding-top: 12px;
       text-indent: 16px;
     }
-  }
-  .modal__mail {
-    transition-property: fill, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus-within {
-      fill: getColor("main-decoration-color");
-      color: getColor("main-decoration-color");
+    &__mail {
+      transition-property: fill, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus-within {
+        fill: getColor("main-decoration-color");
+        color: getColor("main-decoration-color");
+      }
     }
-  }
-  .modal__close-btn {
-    transition-property: transform, fill;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-      transform: rotate(360deg);
-      fill: getColor("main-decoration-color");
+    &__close-btn {
+      transition-property: transform, fill;
+      transition-duration: 2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        transform: rotate(360deg);
+        fill: getColor("main-decoration-color");
+      }
     }
   }
 }

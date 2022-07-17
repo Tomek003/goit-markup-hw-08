@@ -88,11 +88,10 @@
     max-width: 1600px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container-clients {
-    max-width: 1200px;
-  }
+.container-clients {
+  max-width: 1200px;
 }
+
 .page-header-logo, .page-header-logo--right {
   position: relative;
   font-family: "Raleway", sans-serif;
@@ -1614,8 +1613,8 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 300%;
-  transform: translate(100%);
+  left: 0;
+  transform: translate(200%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu--active {

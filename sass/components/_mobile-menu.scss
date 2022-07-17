@@ -1,8 +1,8 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 300%;
-  transform: translate(100%);
+  left: 0;
+  transform: translate(200%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &--active {
