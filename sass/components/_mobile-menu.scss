@@ -1,17 +1,17 @@
 .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: getColor("secondary-decoration-color");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   transform: translate(100%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &--active {
+  &--active.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: getColor("secondary-decoration-color");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     transform: translate(0);
   }
   &__link {
@@ -96,6 +96,12 @@
   transform: rotate(90deg) translateY(1000%) translateX(-60%);
 }
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .mobile-menu {
     display: none;
@@ -105,5 +111,6 @@
 @media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
+    visibility: hidden;
   }
 }
