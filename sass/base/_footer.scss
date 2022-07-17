@@ -214,7 +214,6 @@
     &__logo2 {
       font-size: 26px;
       line-height: 31px;
-      text-decoration: none;
       text-align: left;
       color: getColor("font-secondary-color");
     }
@@ -237,11 +236,11 @@
     width: 300px;
     height: 80px;
     &__title {
-      margin-left: -58px;
+      margin-left: -85px;
     }
     &__e-mail {
       position: relative;
-      top: 15px;
+      top: 30px;
       left: 0;
       width: 358px;
       margin-top: -20px;
@@ -249,7 +248,7 @@
     }
     &__submit-button {
       position: relative;
-      top: -35px;
+      top: -20px;
       left: 5px;
       transform: translate(185%);
     }

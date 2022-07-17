@@ -42,7 +42,9 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding-bottom: 94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
     padding-top: 94px;
     font-family: getFont("main-font");
     font-size: 36px;
@@ -55,12 +57,16 @@
       justify-content: space-between;
       list-style-type: none;
       padding-left: 0px;
-      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-bottom: -94px;
     }
     &__image {
       display: flex;
       justify-content: space-between;
       padding-right: 30px;
+      &:last-child {
+        padding-right: 0px;
+      }
     }
   }
 }
