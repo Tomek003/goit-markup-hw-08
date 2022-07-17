@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
+  padding-left: 0px;
   gap: 8px;
   &__item {
     display: block;
@@ -41,6 +42,7 @@
   .portfolio-button {
     flex-wrap: nowrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 60px;
   }
 }

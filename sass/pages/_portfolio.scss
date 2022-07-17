@@ -14,7 +14,7 @@
     max-width: calc(100% - 30px);
     flex: 0 0 calc(100% - 30px);
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,6 +81,8 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .grid__item:hover .grid__overlay {
@@ -114,6 +116,8 @@
       overflow: hidden;
       max-width: calc(33.3% - 30px);
       flex: 0 0 calc((100% - 30px) / 3);
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     &__overlay-text {
       padding: 49px 24px;
