@@ -67,7 +67,7 @@
   height: 80px;
   &__title {
     margin-bottom: 20px;
-    margin-left: 32px;
+    margin-left: 0px;
     font-family: getFont("main-font");
     font-weight: 700;
     font-size: 14px;
@@ -83,13 +83,13 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    margin-top: -2px;
+    padding-left: 0px;
     gap: 10px;
   }
 }
 .newsletter {
   margin-top: 60px;
-  padding-left: 30px;
+  padding-left: 0px;
   &__title {
     font-family: getFont("main-font");
     font-weight: 700;
@@ -99,7 +99,7 @@
     text-transform: uppercase;
     text-align: center;
     color: getColor("font-secondary-color");
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   &__e-mail {
     position: relative;
@@ -125,7 +125,8 @@
     position: absolute;
     top: 13px;
     left: 148px;
-    height: 100px;
+    height: 24px;
+    width: 24px;
     fill: getColor("secondary-decoration-color");
   }
   &__submit-button {
@@ -142,71 +143,12 @@
     font-weight: 700;
     font-size: 16px;
     padding-right: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     line-height: 30px;
     width: 200px;
     height: 50px;
     &:hover {
       cursor: pointer;
-    }
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .social-head {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 80px;
-    &__title {
-      margin-bottom: 20px;
-      margin-left: 0px;
-      padding-bottom: 10px;
-    }
-    &__links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style-type: none;
-      margin-top: -2px;
-      margin-right: 0px;
-    }
-  }
-  .newsletter {
-    margin-top: 60px;
-    padding-left: 0px;
-    &__title {
-      margin-right: 0px;
-      text-align: center;
-      padding-bottom: 10px;
-    }
-    &__e-mail {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 50px;
-      margin-top: -5px;
-      padding-top: 15px;
-      padding-right: 0px;
-      padding-bottom: 15px;
-      padding-left: 15px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-    }
-    &__icon {
-      position: absolute;
-      top: 13px;
-      left: 148px;
-      height: 100px;
-      fill: getColor("secondary-decoration-color");
-    }
-    &__submit-button {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(50%, 50%);
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 }
@@ -216,18 +158,16 @@
     background-color: getColor("fourth-decoration-color");
     &__logo-field {
       position: relative;
-      top: -140px;
+      top: -100px;
       left: -200px;
       width: 253px;
       height: 79px;
     }
     &__logo {
-      margin-top: 60px;
-      padding-top: 60px;
+      margin-top: 75px;
     }
     &__logo2 {
-      margin-top: 60px;
-      padding-top: 60px;
+      margin-top: 75px;
     }
   }
   .social-head {

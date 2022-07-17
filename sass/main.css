@@ -904,7 +904,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients__title {
-    padding-top: 94px;
+    padding-top: 0px;
     margin: 0 auto;
   }
   .clients__list {
@@ -1036,7 +1036,8 @@
 @media screen and (min-width: 1200px) {
   .grid {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 0;
     flex-basis: calc((100% - 30px) / 3);
@@ -1181,7 +1182,7 @@
 }
 .social-head__title {
   margin-bottom: 20px;
-  margin-left: 32px;
+  margin-left: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1197,13 +1198,13 @@
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  margin-top: -2px;
+  padding-left: 0px;
   gap: 10px;
 }
 
 .newsletter {
   margin-top: 60px;
-  padding-left: 30px;
+  padding-left: 0px;
 }
 .newsletter__title {
   font-family: "Roboto", sans-serif;
@@ -1214,7 +1215,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 .newsletter__e-mail {
   position: relative;
@@ -1240,7 +1241,8 @@
   position: absolute;
   top: 13px;
   left: 148px;
-  height: 100px;
+  height: 24px;
+  width: 24px;
   fill: #FFFFFF;
 }
 .newsletter__submit-button {
@@ -1257,7 +1259,7 @@
   font-weight: 700;
   font-size: 16px;
   padding-right: 35px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   line-height: 30px;
   width: 200px;
   height: 50px;
@@ -1266,65 +1268,6 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .social-head {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 80px;
-  }
-  .social-head__title {
-    margin-bottom: 20px;
-    margin-left: 0px;
-    padding-bottom: 10px;
-  }
-  .social-head__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin-top: -2px;
-    margin-right: 0px;
-  }
-  .newsletter {
-    margin-top: 60px;
-    padding-left: 0px;
-  }
-  .newsletter__title {
-    margin-right: 0px;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  .newsletter__e-mail {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 50px;
-    margin-top: -5px;
-    padding-top: 15px;
-    padding-right: 0px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-  }
-  .newsletter__icon {
-    position: absolute;
-    top: 13px;
-    left: 148px;
-    height: 100px;
-    fill: #FFFFFF;
-  }
-  .newsletter__submit-button {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(50%, 50%);
-  }
-  .newsletter__submit-button:hover {
-    cursor: pointer;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     max-width: 1200px;
@@ -1332,18 +1275,16 @@
   }
   .footer__logo-field {
     position: relative;
-    top: -140px;
+    top: -100px;
     left: -200px;
     width: 253px;
     height: 79px;
   }
   .footer__logo, .footer__logo2 {
-    margin-top: 60px;
-    padding-top: 60px;
+    margin-top: 75px;
   }
   .footer__logo2 {
-    margin-top: 60px;
-    padding-top: 60px;
+    margin-top: 75px;
   }
   .social-head {
     position: relative;
@@ -1447,10 +1388,12 @@
 
 .modal {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 450px;
-  min-height: 609px;
+  top: 50%;
+  left: 50%;
+  width: calc(100vw - 30px);
+  max-width: 450px;
+  height: 609px;
+  transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1611,63 +1554,7 @@
   transform: rotate(360deg);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0%, 25%);
-    width: 380px;
-    min-height: 609px;
-  }
-  .modal__title {
-    font-size: 17px;
-    line-height: 15px;
-  }
-  .modal__field, .modal__field1, .modal__field2, .modal__field3 {
-    width: 340px;
-    margin-left: -15px;
-  }
-  .modal__icon--name {
-    position: absolute;
-    top: 105px;
-    left: 28px;
-  }
-  .modal__icon--phone {
-    position: absolute;
-    top: 175px;
-    left: 30px;
-  }
-  .modal__icon--envelope-modal {
-    position: absolute;
-    bottom: 350px;
-    left: 28px;
-  }
-  .modal__close-btn {
-    position: absolute;
-    top: 12px;
-    right: 30px;
-    width: 20px;
-    height: 20px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(5%, 25%);
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .modal {
-    position: absolute;
-    top: 400px;
-    left: 25%;
-    transform: translate(0%, -50%);
-    width: 450px;
-    min-height: 609px;
-  }
   .modal__field3 {
     height: 128px;
     padding-top: 12px;
@@ -1694,11 +1581,7 @@
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 0;
-    left: 25%;
-    transform: translate(50%, 50%);
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
   .modal__field, .modal__field1, .modal__field2, .modal__field3 {
@@ -1740,8 +1623,8 @@
 }
 .mobile-menu--active {
   transform: translate(0%);
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -1831,62 +1714,6 @@
   transform: rotate(90deg) translateY(1000%) translateX(-60%);
 }
 
-/*
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .mobile-menu {
-    width: 100%;
-    height: 100vh;
-    &__link {
-      font-size: 30px;
-      line-height: 35px;
-      &--email {
-        font-size: 24px;
-        line-height: 28px;
-      }
-      &--phone {
-        font-size: 30px;
-        line-height: 35px;
-      }
-    }
-    &__social-links {
-      margin-left: -15px;
-    }
-
-    &__social-item {
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-    &__social-type {
-      font-size: 15px;
-      line-height: 16px;
-    }
-    &__close-btn {
-      position: relative;
-      top: 20px;
-      left: 280px;
-    }
-  }
-}
-.line {
-  position: absolute;
-  transform: rotate(90deg) translateY(800%) translateX(-50%);
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .mobile-menu {
-    width: 100%;
-    height: 100%;
-    &__close-btn {
-      position: relative;
-      top: 30px;
-      left: 450px;
-    }
-  }
-  .line {
-    position: absolute;
-    transform: rotate(90deg) translateY(1000%) translateX(-60%);
-  }
-}*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .mobile-menu {
     display: none;
