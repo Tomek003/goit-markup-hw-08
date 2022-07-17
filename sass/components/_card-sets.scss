@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 0;
   &__item {
-    width: 100%;
+    max-width: 100%;
     &:last-child {
       padding-bottom: 60px;
     }
@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 480px;
     height: 120px;
     margin: 0 auto;
     padding: 0;
