@@ -1000,7 +1000,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grid__overlay-text {
-  padding: 77px 24px 77px 24px;
+  padding: 77px 24px;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
@@ -1028,7 +1028,7 @@
     margin: 4px 24px 20px 24px;
   }
   .grid__overlay-text {
-    padding: 49px 24px 49px 24px;
+    padding: 49px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1040,14 +1040,14 @@
     position: relative;
     overflow: hidden;
     max-width: calc(33.3% - 30px);
-    flex: 0 0 calc(33.3% - 30px);
+    flex: 0 0 calc((100% - 30px) / 3);
     margin: 25px 15px 30px 15px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .grid__overlay-text {
-    padding: 49px 45px 49px 24px;
+    padding: 49px 24px;
   }
 }
 .overlay {
@@ -1609,6 +1609,7 @@
   }
 }
 .mobile-menu {
+  display: none;
   position: absolute;
   top: 0;
   left: -300%;
