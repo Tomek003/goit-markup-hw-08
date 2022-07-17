@@ -1,39 +1,45 @@
 .portfolio-button {
-  display: inline-flex;
-  color: getColor("font-brand-color");
-  font-family: getFont("main-font");
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  border: none;
-  padding: 6px 22px 6px 22px;
-  margin-top: 15px;
-  border-radius: 4px;
-  background-color: getColor("fifth-decoration-color");
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: getColor("main-decoration-color");
-    color: getColor("font-secondary-color");
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  gap: 8px;
+  &__item {
+    display: block;
+    color: getColor("font-brand-color");
+    font-family: getFont("main-font");
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    padding: 6px 22px 6px 22px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: getColor("fifth-decoration-color");
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: getColor("main-decoration-color");
+      color: getColor("font-secondary-color");
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      text-decoration: none;
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio-button {
-    position: relative;
-    top: 0;
-    left: 25%;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-button {
-    position: relative;
-    top: 0;
-    left: 25%;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
