@@ -31,6 +31,7 @@
   }
   &__card {
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 15px;
     background-color: getColor("secondary-decoration-color");
   }
   &__name {
@@ -57,6 +58,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -72,7 +74,7 @@
       cursor: pointer;
     }
     &:first-of-type {
-      margin-left: 122px;
+      margin-left: 75px;
     }
     &:not(:last-of-type) {
       margin-top: 16px;
@@ -89,11 +91,6 @@
 .social-link-icon {
   width: 20px;
   height: 20px;
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .team__list {
-    flex-direction: column;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {

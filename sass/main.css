@@ -764,6 +764,7 @@
 }
 .team__card {
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 15px;
   background-color: #FFFFFF;
 }
 .team__name, .team__job {
@@ -789,6 +790,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -805,7 +807,7 @@
   cursor: pointer;
 }
 .team__social-icons:first-of-type {
-  margin-left: 122px;
+  margin-left: 75px;
 }
 .team__social-icons:not(:last-of-type) {
   margin-top: 16px;
@@ -823,11 +825,6 @@
   height: 20px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .team__list {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-section {
     max-width: 1200px;
@@ -1255,13 +1252,21 @@
   padding-right: 35px;
   margin-bottom: 30px;
   line-height: 30px;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
 }
 .newsletter__submit-button:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .newsletter__submit-button {
+    width: 100%;
+    transform: translateX(33.3%);
+    margin-top: 25px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     max-width: 1200px;
@@ -1305,7 +1310,7 @@
     position: relative;
     top: 35px;
     left: 0;
-    transform: translate(50%, 50%);
+    transform: translate(33.3%, 50%);
   }
 }
 @media screen and (min-width: 1200px) {
