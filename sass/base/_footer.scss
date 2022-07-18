@@ -162,7 +162,7 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     max-width: 1200px;
     background-color: getColor("fourth-decoration-color");
@@ -234,7 +234,7 @@
   .social-head {
     position: relative;
     top: -40px;
-    left: -100px;
+    left: -110px;
     &__title {
       margin-left: -85px;
     }
@@ -242,7 +242,7 @@
   .newsletter {
     position: relative;
     top: -75px;
-    left: -65px;
+    left: -80px;
     width: 300px;
     height: 80px;
     &__title {
@@ -260,7 +260,7 @@
       position: relative;
       top: -20px;
       left: 5px;
-      transform: translate(185%);
+      transform: translate(180%);
     }
   }
 }

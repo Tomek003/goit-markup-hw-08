@@ -1,9 +1,9 @@
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   width: calc(100vw - 30px);
-  max-width: 450px;
+  max-width: 528px;
   height: 609px;
   transform: translate(-50%, -50%);
   background-color: getColor("secondary-decoration-color");
@@ -19,6 +19,7 @@
   &__title {
     margin-top: 40px;
     margin-bottom: 15px;
+    text-align: center;
     font-family: getFont("main-font");
     color: getColor("font-brand-color");
     font-weight: 700;
@@ -29,7 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
+    width: calc(100vw - 40px);
+    max-width: 370px;
     height: 40px;
     margin-top: 4px;
     text-indent: 35px;
@@ -52,26 +54,25 @@
   }
   &__field3 {
     @extend .modal__field;
-    height: 128px;
+    height: 100px;
     padding-top: 12px;
     text-indent: 16px;
   }
 
   &__icon--name {
-    position: absolute;
-    top: 109px;
-    left: 55px;
+    position: fixed;
+    top: 130px;
+    left: 20px;
   }
   &__icon--phone {
-    position: absolute;
-    top: 180px;
-    left: 55px;
+    position: fixed;
+    top: 205px;
+    left: 20px;
   }
-
   &__icon--envelope-modal {
-    position: absolute;
-    bottom: 340px;
-    left: 53px;
+    position: fixed;
+    bottom: 315px;
+    left: 20px;
   }
   &__mail {
     margin-bottom: 14px;
@@ -103,6 +104,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    margin-left: 14px;
     color: getColor("font-fourth-color");
     &::before {
       content: "";
@@ -110,7 +112,7 @@
       width: 16px;
       height: 16px;
       margin-top: 20px;
-      margin-right: 7px;
+      margin-right: 5px;
       outline: 2px solid getColor("font-brand-color");
       border-radius: 4px;
       transition-property: background-color;
@@ -187,6 +189,44 @@
     }
   }
 }
+@media screen and (min-width: 396px) and (max-width: 425px) {
+  .modal {
+    &__icon--name {
+      position: fixed;
+      top: 110px;
+      left: 20px;
+    }
+    &__icon--phone {
+      position: fixed;
+      top: 180px;
+      left: 20px;
+    }
+    &__icon--envelope-modal {
+      position: fixed;
+      bottom: 340px;
+      left: 20px;
+    }
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .modal {
+    &__icon--name {
+      position: absolute;
+      top: 110px;
+      left: 90px;
+    }
+    &__icon--phone {
+      position: fixed;
+      top: 180px;
+      left: 90px;
+    }
+    &__icon--envelope-modal {
+      position: fixed;
+      bottom: 340px;
+      left: 90px;
+    }
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .modal {
@@ -194,6 +234,21 @@
       height: 128px;
       padding-top: 12px;
       text-indent: 16px;
+    }
+    &__icon--name {
+      position: fixed;
+      top: 110px;
+      left: 90px;
+    }
+    &__icon--phone {
+      position: fixed;
+      top: 180px;
+      left: 90px;
+    }
+    &__icon--envelope-modal {
+      position: fixed;
+      bottom: 340px;
+      left: 90px;
     }
     &__mail {
       transition-property: fill, color;
@@ -249,10 +304,20 @@
       font-size: 14px;
       line-height: 24px;
     }
+    &__icon--name {
+      position: absolute;
+      top: 110px;
+      left: 90px;
+    }
+    &__icon--phone {
+      position: absolute;
+      top: 180px;
+      left: 90px;
+    }
     &__icon--envelope-modal {
       position: absolute;
-      bottom: 335px;
-      left: 53px;
+      bottom: 340px;
+      left: 90px;
     }
   }
 }
