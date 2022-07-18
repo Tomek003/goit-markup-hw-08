@@ -12,21 +12,10 @@
   @extend .page-header-logo;
   color: getColor("font-brand-color");
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .page-header-logo {
-    top: 15px;
+    top: 10px;
     left: 10px;
-  }
-  .page-header-logo--right {
-    top: 0;
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  .page-header-logo {
-    top: 0;
-    left: 15px;
   }
   .page-header-logo--right {
     top: 0;

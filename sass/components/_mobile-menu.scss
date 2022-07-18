@@ -1,5 +1,5 @@
 .mobile-menu {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   transform: translate(200%);
@@ -13,8 +13,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    max-width: 480px;
+    max-width: 768px;
+    width: calc(100vw - 10px);
     height: 100vh;
     transform: translate(0);
   }
@@ -51,13 +51,17 @@
   &__list {
     list-style-type: none;
     margin-bottom: 36px;
+    display: flex;
+    flex-wrap: wrap;
   }
   &__contact {
+    display: flex;
+    flex-direction: column;
     margin-top: auto;
   }
   &__social-links {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
   &__social-item {
     list-style-type: none;
@@ -76,9 +80,9 @@
   }
 
   &__close-btn {
-    position: relative;
-    top: 30px;
-    left: 430px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
