@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     max-width: 768px;
-    width: calc(100vw - 10px);
+    width: 100vw;
     height: 100vh;
     transform: translate(0);
   }
@@ -82,7 +82,7 @@
   &__close-btn {
     position: absolute;
     top: 25px;
-    right: 10px;
+    right: 25px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
